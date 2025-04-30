@@ -48,6 +48,7 @@ const Style = ({ attributes, id,isBackend=false }) => {
 		${mainWrapper}{
 		display:flex;
 		justify-content:${alignment};
+		
 			
 		}
 		

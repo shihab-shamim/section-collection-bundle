@@ -2385,6 +2385,7 @@ const Style = ({
 		${mainWrapper}{
 		display:flex;
 		justify-content:${alignment};
+		
 			
 		}
 		

@@ -3530,7 +3530,6 @@ const Style = ({
 				}
 
 				${defaultThemeContainerSl}{
-				${(0,_bpl_tools_utils_getCSS__WEBPACK_IMPORTED_MODULE_2__.getBackgroundCSS)(styles?.bg)}
 				padding:${(0,_bpl_tools_utils_getCSS__WEBPACK_IMPORTED_MODULE_2__.getBoxCSS)(styles?.padding.desktop)} ;
 				margin:${(0,_bpl_tools_utils_getCSS__WEBPACK_IMPORTED_MODULE_2__.getBoxCSS)(styles?.margin.desktop)} ;
 				max-width:${styles?.width?.desktop};
@@ -3589,6 +3588,7 @@ const Style = ({
 						padding:${(0,_bpl_tools_utils_getCSS__WEBPACK_IMPORTED_MODULE_2__.getBoxCSS)(styles?.padding.mobile)} ;
 						}
 					${faqWrapperSl}{
+					
 						gap:${styles?.gap?.mobile};
 				grid-template-columns:${options?.selectedTheme === "theme1" ? "1fr" : " 1fr"};
 				${supportSectionrSl}{
@@ -3597,6 +3597,7 @@ const Style = ({
 
 					}
 					${containerSl}{
+						${(0,_bpl_tools_utils_getCSS__WEBPACK_IMPORTED_MODULE_2__.getBackgroundCSS)(styles?.section?.bg)}
 					padding:${(0,_bpl_tools_utils_getCSS__WEBPACK_IMPORTED_MODULE_2__.getBoxCSS)(styles?.padding.mobile)};
 				margin:${(0,_bpl_tools_utils_getCSS__WEBPACK_IMPORTED_MODULE_2__.getBoxCSS)(styles?.margin.mobile)} ;
 				max-width:${styles?.width?.mobile};

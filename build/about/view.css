@@ -164,6 +164,8 @@
   }
 }
 .wp-block-b-blocks-about-us .about-us.themeOne .btn {
+  width: -moz-fit-content;
+  width: fit-content;
   --bs-btn-padding-x: 0.75rem;
   --bs-btn-padding-y: 0.375rem;
   --bs-btn-font-size: 1rem;

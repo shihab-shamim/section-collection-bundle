@@ -93,14 +93,14 @@ const Style = ({ attributes, setAttributes, device }) => {
           }
         />
 
-        <Background
+       { options?.selectedTheme ==="theme1"?"": <Background
           className="mt15"
           isImage={false}
           value={styles?.bg}
           onChange={(value) =>
             setAttributes({ styles: updateData(styles, value, "bg") })
           }
-        />
+        />}
 
         <PanelRow>
           <Label>{__("Padding", "b-blocks")}</Label> <Device />

@@ -184,7 +184,6 @@ const Style = ({ attributes, id }) => {
 				}
 
 				${defaultThemeContainerSl}{
-				${getBackgroundCSS(styles?.bg)}
 				padding:${getBoxCSS(styles?.padding.desktop)} ;
 				margin:${getBoxCSS(styles?.margin.desktop)} ;
 				max-width:${styles?.width?.desktop};
@@ -243,6 +242,7 @@ const Style = ({ attributes, id }) => {
 						padding:${getBoxCSS(styles?.padding.mobile)} ;
 						}
 					${faqWrapperSl}{
+					
 						gap:${styles?.gap?.mobile};
 				grid-template-columns:${options?.selectedTheme === "theme1" ? "1fr" : " 1fr"};
 				${supportSectionrSl}{
@@ -251,6 +251,7 @@ const Style = ({ attributes, id }) => {
 
 					}
 					${containerSl}{
+						${getBackgroundCSS(styles?.section?.bg)}
 					padding:${getBoxCSS(styles?.padding.mobile)};
 				margin:${getBoxCSS(styles?.margin.mobile)} ;
 				max-width:${styles?.width?.mobile};

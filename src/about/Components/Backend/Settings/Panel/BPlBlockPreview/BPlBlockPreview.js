@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Button, Popover } from "@wordpress/components";
 import "./style.scss";
 
-const BPlBlockPreview = ({ options, value, onChange }) => {
+const BPlBlockPreview = ({ options=[], value, onChange }) => {
   const [activeIndex, setActiveIndex] = useState(null);
 
   const handleButtonClick = (blockValue, idx) => {

@@ -13,10 +13,10 @@ import Advanced from "../../../../../../bpl-tools/Advanced/index";
 
 import { themes } from "../../../utils/options";
 
-import { updateData } from "../../../utils/functions";
+// import { updateData } from "../../../utils/functions";
 import BPlBlockPreview from "./Panel/BPlBlockPreview/BPlBlockPreview";
 
-const Settings = ({ attributes, setAttributes, device, clientId }) => {
+const Settings = ({ attributes, setAttributes, device }) => {
   const { alignment, advanced, themeSl } = attributes;
 
   const updateTheme = (newTheme) => {
