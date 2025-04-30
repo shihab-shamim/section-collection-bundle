@@ -1,0 +1,48 @@
+$primaryColor: #4527a4;
+
+.bBlocksInspectorInfo {
+  padding: 6px;
+
+  a {
+    text-decoration: none;
+    font-weight: 700;
+  }
+}
+
+.wp-block-b-blocks-feature-section {
+
+
+  // .respone {
+  //   margin-left: 170px;
+  // }
+  // p {
+  //    font-size: "14px"; 
+  //    color: "red";
+  //    font-style: "italic" 
+     
+  // }
+  .span{
+    font-size: 14px; 
+    color: red;
+    font-style: italic;
+    font-weight: 500;
+  }
+  .text{
+    color: rgba(255, 0, 0, 0.795);
+    font-style: italic 
+  }
+  .selectHelp {
+    color: #616063;
+  }
+}
+
+.bPlBlockPreviewWrapper {
+  display: flex;
+  align-items: center;
+  .bPl-previewBtn {
+    &.bPl-activeBtn {
+      background: #4527a4;
+      color:#fff;
+    }
+  }
+}

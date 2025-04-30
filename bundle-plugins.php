@@ -27,7 +27,7 @@ if( !class_exists( 'PRACTICEPlugin' ) ){
 		}
 
 		function onInit(){
-			$blocks =['faq',"ticker","team","about","timeline","testimonial"];
+			$blocks =['faq',"ticker","team","about","timeline","testimonial","feature"];
 			foreach ( $blocks as $block ) {
 				register_block_type( __DIR__ . "/build/".$block );
 			}

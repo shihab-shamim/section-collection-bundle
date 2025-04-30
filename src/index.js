@@ -5,5 +5,6 @@ import './team';
 import './about';
 import './timeline';
 import './testimonial';
+import './feature';
 wp.blocks.updateCategory('practiceBundle', { icon: 'block-default' });
 
