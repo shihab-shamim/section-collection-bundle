@@ -1,0 +1,77 @@
+$primaryColor: #4527a4;
+
+.bBlocksInspectorInfo {
+	padding: 6px;
+
+	a {
+		text-decoration: none;
+		font-weight: 700;
+	}
+}
+
+.wp-block-b-blocks-timeline-wpblock{
+	.selectHelp{
+		color: #616063;
+	}
+}
+.btn{
+	margin-top: 6px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 4px 4px;
+}
+
+.delete{
+	border: 1px solid red;
+	border-radius: 4px;
+	background-color:white;
+	color: red;
+	transition-duration: 500ms;
+	width: 100%;
+}
+
+.delete:hover{
+	color:white;
+	background-color: red;
+	transition-duration: 500ms;
+	cursor: pointer;
+}
+.copy{
+	border: 1px solid rgb(34, 104, 255);
+	border-radius: 4px;
+	background-color:white;
+	color: rgb(34, 104, 255);
+	transition-duration: 500ms;
+	width: 100%;
+}
+
+.copy:hover{
+	color:white;
+	background-color: rgb(34, 104, 255);
+	transition-duration: 500ms;
+	cursor: pointer;
+}
+.add{
+	border: 1px solid #4527A4;
+	border-radius: 4px;
+	background-color:#4527A4;
+	color: white;
+	font-size: 14px;
+	padding: 6px;
+	transition-duration: 500ms;
+	width: 100%;
+}
+
+.add:hover{
+	color:#2d1874;
+	background-color: white;
+	transition-duration: 500ms;
+	cursor: pointer;
+}
+
+.extra-lable{
+	padding-top: 10px;
+	font-size: 14px;
+	font-weight: 500;
+}
