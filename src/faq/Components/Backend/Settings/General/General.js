@@ -85,13 +85,13 @@ const General = ({ attributes, setAttributes, device }) => {
                 key={index}
               />
             ))}
-            <div className="btnPrimaryContainer">
+            <div className="custom-btnPrimaryContainer">
               <button
                 onClick={() => handleNewItem("general")}
-                className="btn-primary"
+                className="custom-btn-primary"
               >
                 <svg
-                  className="btn-icon"
+                  className="custom-btn-icon"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                 >
@@ -130,10 +130,10 @@ const General = ({ attributes, setAttributes, device }) => {
                 key={index}
               />
             ))}
-            <div className="btnPrimaryContainer">
+            <div className="custom-btnPrimaryContainer">
               <button
                 onClick={() => handleNewItem("generalTwo")}
-                className="btn-primary"
+                className="custom-btn-primary"
               >
                 <svg
                   className="btn-icon"
@@ -174,10 +174,10 @@ const General = ({ attributes, setAttributes, device }) => {
                 key={index}
               />
             ))}
-            <div className="btnPrimaryContainer">
+            <div className="custom-btnPrimaryContainer">
               <button
                 onClick={() => handleNewItem("support")}
-                className="btn-primary"
+                className="custom-custom-btn PrimaryContainer-primary"
               >
                 <svg
                   className="btn-icon"
@@ -297,7 +297,7 @@ const General = ({ attributes, setAttributes, device }) => {
           }
         />
 
-        <BButtonGroup
+       { options?.selectedTheme ==="theme1"?"": <BButtonGroup
           style={{ marginTop: "15px" }}
           label={__("Alignment", "b-blocks")}
           options={contentAlignment}
@@ -307,7 +307,7 @@ const General = ({ attributes, setAttributes, device }) => {
               options: updateData(options, value, "contentAlignment"),
             })
           }
-        />
+        />}
       </PanelBody> 
        
      

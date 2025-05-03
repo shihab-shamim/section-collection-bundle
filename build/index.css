@@ -122,13 +122,13 @@
     max-width: 150px;
   }
 }
-.btnPrimaryContainer {
+.custom-btnPrimaryContainer {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.btn-primary {
+.custom-btn-primary {
   width: 100%;
   display: flex;
   align-items: center;
@@ -146,7 +146,7 @@
   margin-top: 15px;
 }
 
-.btn-icon {
+.custom-btn-icon {
   width: 16px;
   height: 16px;
   fill: none;
