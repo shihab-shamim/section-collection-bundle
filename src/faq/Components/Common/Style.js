@@ -117,6 +117,7 @@ const Style = ({ attributes, id }) => {
 			
 			
 				}
+			
 			${faqAnswerSl}{
 				${getColorsCSS(styles?.answer?.colors)}
 		

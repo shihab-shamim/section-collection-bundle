@@ -128,7 +128,7 @@ const Style = ({ attributes, setAttributes, device }) => {
           }
         />
 
-        <div className="border-radius">
+       {options?.selectedTheme ==="theme1"?"": <div className="border-radius">
           <Boxcontrol
             label={__("Radius", "b-blocks")}
             values={styles?.radius}
@@ -136,7 +136,7 @@ const Style = ({ attributes, setAttributes, device }) => {
               setAttributes({ styles: updateData(styles, value, "radius") })
             }
           />
-        </div>
+        </div>}
       </PanelBody>
 
       <PanelBody

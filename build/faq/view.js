@@ -3475,6 +3475,7 @@ const Style = ({
 			
 			
 				}
+			
 			${faqAnswerSl}{
 				${(0,_bpl_tools_utils_getCSS__WEBPACK_IMPORTED_MODULE_2__.getColorsCSS)(styles?.answer?.colors)}
 		
