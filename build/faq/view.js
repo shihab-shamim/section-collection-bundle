@@ -3475,7 +3475,11 @@ const Style = ({
 			
 			
 				}
-			
+				${faqQuestionSl} .question{
+
+				color:${styles?.question?.colors?.color}
+				}
+
 			${faqAnswerSl}{
 				${(0,_bpl_tools_utils_getCSS__WEBPACK_IMPORTED_MODULE_2__.getColorsCSS)(styles?.answer?.colors)}
 		
@@ -4282,6 +4286,11 @@ const themeSwitch = (theme = "theme1", attributes) => (0,immer__WEBPACK_IMPORTED
         lineHeight: "1.5",
         letterSpace: "0px"
       };
+      draft["styles"]["width"] = {
+        desktop: "1350px",
+        tablet: "768px",
+        mobile: "500px"
+      };
       draft["styles"]["question"]["colors"] = {
         color: "#192534",
         bgType: "solid",
@@ -4508,7 +4517,7 @@ const themeSwitch = (theme = "theme1", attributes) => (0,immer__WEBPACK_IMPORTED
       };
       draft["styles"]["title"]["color"] = "rgba(252, 252, 253, 1)";
       draft["styles"]["description"]["color"] = "rgba(252, 252, 253, 0.7)";
-      draft["width"] = {
+      draft["styles"]["width"] = {
         desktop: "1350px",
         tablet: "768px",
         mobile: "500px"

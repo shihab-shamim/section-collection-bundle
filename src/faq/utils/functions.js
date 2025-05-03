@@ -108,6 +108,12 @@ draft["styles"]["question"]["typho"]={
   lineHeight: "1.5",
   letterSpace: "0px"
 };
+draft["styles"]["width"]={
+  desktop: "1350px",
+  tablet: "768px",
+  mobile: "500px"
+}
+
 draft["styles"]["question"]["colors"]={color: "#192534",bgType: "solid",bg: ""}
       draft["styles"]["question"]["padding"]={
         top: "5px",
@@ -318,7 +324,7 @@ draft["styles"]["question"]["colors"]={color: "#192534",bgType: "solid",bg: ""}
       draft["styles"]["button"]["colors"]={color: "#000000",bgType: "solid",bg: "#c5fb00"}
       draft["styles"]["title"]["color"]="rgba(252, 252, 253, 1)"
       draft["styles"]["description"]["color"]="rgba(252, 252, 253, 0.7)";
-      draft["width"]={
+      draft["styles"]["width"]={
         desktop: "1350px",
         tablet: "768px",
         mobile: "500px"

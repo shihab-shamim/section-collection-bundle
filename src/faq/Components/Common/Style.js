@@ -117,7 +117,11 @@ const Style = ({ attributes, id }) => {
 			
 			
 				}
-			
+				${faqQuestionSl} .question{
+
+				color:${styles?.question?.colors?.color}
+				}
+
 			${faqAnswerSl}{
 				${getColorsCSS(styles?.answer?.colors)}
 		
