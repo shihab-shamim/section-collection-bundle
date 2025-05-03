@@ -180,7 +180,7 @@ const General = ({ attributes, setAttributes, device }) => {
                 className="custom-custom-btn PrimaryContainer-primary"
               >
                 <svg
-                  className="btn-icon"
+                  className="custom-btn-icon"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                 >
