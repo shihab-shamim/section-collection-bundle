@@ -281,19 +281,19 @@
         "dimension": {
     "margin": {
       "desktop": {
-        "top": "0px",
+        "top": "20px",
         "right": "0px",
         "bottom": "0px",
         "left": "0px"
       },
       "mobile": {
-        "top": "0px",
+        "top": "20px",
         "right": "0px",
         "bottom": "0px",
         "left": "0px"
       },
       "tablet": {
-        "top": "0px",
+        "top": "20px",
         "right": "0px",
         "bottom": "0px",
         "left": "0px"
