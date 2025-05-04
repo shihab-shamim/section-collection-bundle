@@ -302,100 +302,6 @@ $primaryColor: #4527a4;
     }
     
     }
-   
-    // .has-global-padding{
-	// 	padding:0px
-	// }
-	// theme 3 css 
-
-	/* Bootstrap CSS Overrides with theme3Ticker Prefix */
-// .theme3Ticker.container-fluid, .theme3Ticker.row {
-//     --bs-gutter-x: 1.5rem;
-//     --bs-gutter-y: 0;
-// }
-
-// .theme3Ticker.container-fluid, .theme3Ticker.row > * {
-//     padding-right: calc(var(--bs-gutter-x) * .5);
-//     padding-left: calc(var(--bs-gutter-x) * .5);
-//     width: 100%;
-// }
-
-// .theme3Ticker.g-0, .theme3Ticker.row {
-//     --bs-gutter-y: 0;
-// }
-
-// .theme3Ticker.list, .theme3Ticker.row {
-//     display: flex;
-// }
-
-// .theme3Ticker *, .theme3Ticker::after, .theme3Ticker::before {
-//     box-sizing: border-box;
-// }
-
-// .theme3Ticker h1 {
-//     color: var(--bs-heading-color);
-//     font-size: calc(1.375rem + 1.5vw);
-// }
-
-// @media (min-width: 1200px) {
-//     .theme3Ticker h1 {
-//         font-size: 2.5rem;
-//     }
-// }
-
-// .theme3Ticker ul {
-//     padding-left: 2rem;
-//     margin-top: 0;
-//     margin-bottom: 1rem;
-// }
-
-// .theme3Ticker img {
-//     vertical-align: middle;
-// }
-
-// .theme3Ticker.img-fluid {
-//     max-width: 100%;
-//     height: auto;
-// }
-
-// .theme3Ticker.container-fluid {
-//     margin-right: auto;
-//     margin-left: auto;
-// }
-
-// .theme3Ticker.row {
-//     flex-wrap: wrap;
-//     margin-top: calc(-1 * var(--bs-gutter-y));
-//     margin-right: calc(-.5 * var(--bs-gutter-x));
-//     margin-left: calc(-.5 * var(--bs-gutter-x));
-// }
-
-// .theme3Ticker.row > * {
-//     flex-shrink: 0;
-//     max-width: 100%;
-//     margin-top: var(--bs-gutter-y);
-// }
-
-// .theme3Ticker.col-12 {
-//     flex: 0 0 auto;
-//     width: 100%;
-// }
-
-// .theme3Ticker.g-0 {
-//     --bs-gutter-x: 0;
-// }
-
-// .theme3Ticker.align-items-center {
-//     align-items: center !important;
-// }
-
-// .theme3Ticker.mb-0 {
-//     margin-block-end: 0 !important;
-// }
-
-// .theme3Ticker.p-0 {
-//     padding: 0 !important;
-// }
 
 
 
@@ -472,8 +378,3 @@ $primaryColor: #4527a4;
 	padding-right:0px !important;
   overflow:hidden !important;
 }
-// .wp-block-post-content-is-layout-constrained{
-//   padding:0px !important;
-
-// }
-// has-global-padding 
