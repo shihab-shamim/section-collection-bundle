@@ -30,6 +30,7 @@ const CallToActionsTwo = ({ attributes, setAttributes}) => {
                                   allowedFormats={["core/bold","core/italic","core/link", "core/text-color",]}
                                  // placeholder="Enter Your Heading"
                                 />
+                                <br/>
                                 <span className="cta-highlight-text cta-highlight-text-two">
                                   <RichText
                                     className="cta-highlight-text cta-highlight-text-two"

@@ -137,7 +137,7 @@ export const themeSwitch = (layout, attributes = {}) => produce(attributes, (dra
       draft["callToActions"] =
         [
           {
-            title: "Get Started Used        ",
+            title: "Get Started Used",
             highlight: "For Free",
             description: "Dream it up, then add it to your design",
             buttonName: "Get a Demo",

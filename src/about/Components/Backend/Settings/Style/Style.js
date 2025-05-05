@@ -2,7 +2,7 @@ import { __ } from "@wordpress/i18n";
 import {
   PanelBody,
   __experimentalBorderBoxControl as BorderBoxControl,
-  __experimentalSpacer as Spacer,
+  // __experimentalSpacer as Spacer,
   RangeControl,
   PanelRow,
   ToggleControl,

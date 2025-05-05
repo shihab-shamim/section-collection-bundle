@@ -2799,7 +2799,7 @@ const CallToActionsTwo = ({
     }),
     allowedFormats: ["core/bold", "core/italic", "core/link", "core/text-color"]
     // placeholder="Enter Your Heading"
-  }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", {
+  }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("br", null), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", {
     className: "cta-highlight-text cta-highlight-text-two"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.RichText, {
     className: "cta-highlight-text cta-highlight-text-two",

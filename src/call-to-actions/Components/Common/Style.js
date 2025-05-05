@@ -1,5 +1,6 @@
 import { generateCSS } from '../../../../../bpl-tools/Advanced/generateCSS';
 import { getBackgroundCSS, getBoxCSS, getTypoCSS, isValidCSS } from '../../../../../bpl-tools/utils/getCSS';
+
 const Style = ({ attributes, id, }) => {
 
 	const { advanced, style } = attributes;

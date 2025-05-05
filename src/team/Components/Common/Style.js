@@ -78,17 +78,17 @@ const Style = ({ attributes, id }) => {
   const highlightSecondarySl = `${sectionTwoContainerSl} .highlight_secondary`;
   const descriptionSl = `${sectionTwoContainerSl} .team-description`;
   const rowTwoSl = `${sectionTwoContainerSl} .row`;
-  const colTwoSl = `${rowTwoSl} .col-md-4`;
+  // const colTwoSl = `${rowTwoSl} .col-md-4`;
   const teamSl = `${rowTwoSl} .team`;
-  const teamImgSl = `${teamSl} .team-image`;
+  // const teamImgSl = `${teamSl} .team-image`;
   const teamContentSl = `${teamSl} .team-content`;
   const teamNameSl = `${teamContentSl} .team-name`;
   const teamRoleSl = `${teamContentSl} .team-role`;
-  const teamTwoRowSl = `${sectionTwoContainerSl} .row`;
-  const teamTwoColSl = `${teamTwoRowSl} .col-md-2`;
-  const teamTwoSl = `${teamTwoRowSl} .team`;
-  const teamTwoImgSl = `${teamTwoSl} .team-image`;
-  const teamTwoContentSl = `${teamTwoSl} .team-content`;
+  // const teamTwoRowSl = `${sectionTwoContainerSl} .row`;
+  // const teamTwoColSl = `${teamTwoRowSl} .col-md-2`;
+  // const teamTwoSl = `${teamTwoRowSl} .team`;
+  // const teamTwoImgSl = `${teamTwoSl} .team-image`;
+  // const teamTwoContentSl = `${teamTwoSl} .team-content`;
   const teamTwoNameTypoSl = `${teamNameSl} h5`;
   // const teamTwoRoleSl = `${teamRoleSl} .team-role`;
 

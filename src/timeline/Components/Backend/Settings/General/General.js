@@ -6,7 +6,7 @@ import {
   __experimentalInputControl as InputControl,
   PanelBody,
   PanelRow,
-  SelectControl,
+  // SelectControl,
   TextareaControl,
   Flex,
   FormToggle,
@@ -19,8 +19,8 @@ import {
   vwUnit,
 } from "../../../../../../../bpl-tools/utils/options";
 import { updateData } from "../../../../../../../bpl-tools/utils/functions";
-import { ThemeOptions } from "../../../../utils/options";
-import { themeChange } from "../../../../utils/functions";
+// import { ThemeOptions } from "../../../../utils/options";
+// import { themeChange } from "../../../../utils/functions";
 import { copyIcon, deleteIcon } from "../../../../utils/icons";
 
 const General = ({ attributes, device, setAttributes }) => {
