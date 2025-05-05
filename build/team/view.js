@@ -3425,7 +3425,7 @@ const Style = ({
   const headingTextAlignSl = `${headingColSl} .text-center`;
   const headingBtnSl = `${headingTextAlignSl} .btn`;
   const headingBtnFSSl = `${headingBtnSl} .fs-20`;
-  const headingBtnSubtitleSl = `${headingBtnSl} .subtitle`;
+  const headingBtnSubtitleSl = `${headingBtnSl} .subtitleText`;
   const headingTitleSl = `${headingTextAlignSl} .title`;
   const itemContainerSl = `${bgBodySl} .container`;
   const itemRowSl = `${itemContainerSl} .row`;
@@ -3481,7 +3481,7 @@ const Style = ({
   // const teamTwoImgSl = `${teamTwoSl} .team-image`;
   // const teamTwoContentSl = `${teamTwoSl} .team-content`;
   const teamTwoNameTypoSl = `${teamNameSl} h5`;
-  // const teamTwoRoleSl = `${teamRoleSl} .team-role`;
+  // const teamTwoRoleSl = `${teamRoleSl} .team-role`;     
 
   const shadowValue = shadow?.map(s => (0,_bpl_tools_utils_getCSS__WEBPACK_IMPORTED_MODULE_2__.getShadowCSS)(s, "box")).join(", ") || "none";
   const hoverShadowValue = hoverShadow?.map(s => (0,_bpl_tools_utils_getCSS__WEBPACK_IMPORTED_MODULE_2__.getShadowCSS)(s, "box")).join(", ") || "none";
@@ -3513,8 +3513,6 @@ const Style = ({
         ${speakerImageBoxImgSl}{
           box-shadow: ${imageShadowValue}
         }
-
-        
 
         ${itemTeamMemberRoundedSl}{
          border-radius: ${(0,_bpl_tools_utils_getCSS__WEBPACK_IMPORTED_MODULE_2__.getBoxCSS)(image?.borderRadius)} 
@@ -3698,6 +3696,11 @@ const Style = ({
           margin: ${(0,_bpl_tools_utils_getCSS__WEBPACK_IMPORTED_MODULE_2__.getBoxCSS)(linkArrowIcon?.margin)};
         }
 
+        ${itemTeamMemberIconSl}:hover .link-icon{
+          color: ${linkArrowIcon?.bgColor?.hover?.color} !important;
+          fill: ${linkArrowIcon?.bgColor?.hover?.color} !important;
+        }
+
         ${itemTeamMemberLinkIconSl}{
           color: ${linkArrowIcon?.bgColor?.normal?.color} !important;
           fill: ${linkArrowIcon?.bgColor?.normal?.color} !important;
@@ -3875,7 +3878,7 @@ const TeamSectionDefault = ({
       __html: heading?.icon
     }
   }), isEditor ? (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
-    className: "d-inline-block flex-grow-1 fw-medium subtitle",
+    className: "d-inline-block flex-grow-1 fw-medium subtitleText",
     tagName: "span",
     placeholder: "Enter subtitle",
     allowedFormats: ["core/bold", "core/italic", "core/link", "core/text-color"],

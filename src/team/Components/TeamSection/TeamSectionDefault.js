@@ -35,7 +35,7 @@ const TeamSectionDefault = ({ attributes, setAttributes }) => {
                       />
                       {isEditor ? (
                         <RichText
-                          className="d-inline-block flex-grow-1 fw-medium subtitle"
+                          className="d-inline-block flex-grow-1 fw-medium subtitleText"
                           tagName="span"
                           placeholder="Enter subtitle"
                           allowedFormats={[

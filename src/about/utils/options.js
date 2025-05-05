@@ -1,4 +1,17 @@
 import { __ } from "@wordpress/i18n";
+import about from "../assets/about-us/style-one/about-2-img-mobile.png"
+import icon1 from "../assets/about-us/style-one/about-2-icon-1.png"
+import icon2 from "../assets/about-us/style-one/about-2-icon-2.png"
+import icon3 from "../assets/about-us/style-one/about-2-icon-3.png"
+import icon4 from "../assets/about-us/style-one/about-2-icon-4.png"
+import about2img1 from "../assets/about-us/style-two/about-img-1.png"
+import about2img2 from "../assets/about-us/style-two/about-img-2.png"
+import about2img3 from "../assets/about-us/style-two/about-img-3.png"
+import about3img1 from "../assets/about-us/style-three/mission-img-1.png"
+import about3img2 from "../assets/about-us/style-three/mission-img-2.png"
+import about3img3 from "../assets/about-us/style-three/mission-img-3.png"
+import about3img4 from "../assets/about-us/style-three/mission-img-4.png"
+import about4img1 from "../assets/about-us/style-four/values-img.png"
 
 export const generalStyleTabs = [
   { name: "general", title: __("General", "textdomain") },
@@ -16,12 +29,9 @@ export const themes = {
     about: {
       heading: {
         image: {
-          desktop:
-            "https://pixellyo.com/nextai/html/assets/img/about-2-img-mobile.png",
-          mobile:
-            "https://pixellyo.com/nextai/html/assets/img/about-2-img-mobile.png",
-          tablet:
-            "https://pixellyo.com/nextai/html/assets/img/about-2-img-mobile.png",
+          desktop: about,
+          mobile: about,
+          tablet: about,
         },
         title: "Our Mission is to Make Work Meaningful",
         button: {
@@ -34,7 +44,7 @@ export const themes = {
         {
           id: 1,
           image: {
-            url: "https://pixellyo.com/nextai/html/assets/img/about-2-icon-1.png",
+            url: icon1,
           },
           title: "Business Plans Auth for all",
           description:
@@ -43,7 +53,7 @@ export const themes = {
         {
           id: 2,
           image: {
-            url: "https://pixellyo.com/nextai/html/assets/img/about-2-icon-2.png",
+            url: icon2,
           },
           title: "Business Plans Auth for all",
           description:
@@ -52,7 +62,7 @@ export const themes = {
         {
           id: 3,
           image: {
-            url: "https://pixellyo.com/nextai/html/assets/img/about-2-icon-3.png",
+            url: icon3,
           },
           title: "Business Plans Auth for all",
           description:
@@ -61,7 +71,7 @@ export const themes = {
         {
           id: 4,
           image: {
-            url: "https://pixellyo.com/nextai/html/assets/img/about-2-icon-4.png",
+            url: icon4,
           },
           title: "Business Plans Auth for all",
           description:
@@ -71,11 +81,11 @@ export const themes = {
       isOpenLinkInNewTab: {},
       bg: {
         desktop: {
-          type: "gradient",
+          type: "image",
           color: "#ff0000",
           gradient: "linear-gradient(184deg, #2b3035 0%, #343a40 25.55%)",
           image: {
-            url: "https://plus.unsplash.com/premium_photo-1672116453118-5971acb7b93b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            url: "https://i.ibb.co.com/cSZwRzPC/Screenshot-2025-05-05-153010-Photoroom-min.png",
           },
           position: "center center",
           repeat: "no-repeat",
@@ -83,11 +93,11 @@ export const themes = {
           overlayColor: "#00000080",
         },
         mobile: {
-          type: "gradient",
+          type: "image",
           color: "#ff0000",
           gradient: "linear-gradient(184deg, #2b3035 0%, #343a40 25.55%)",
           image: {
-            url: "https://plus.unsplash.com/premium_photo-1672116453118-5971acb7b93b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            url: "https://i.ibb.co.com/cSZwRzPC/Screenshot-2025-05-05-153010-Photoroom-min.png",
           },
           position: "center center",
           repeat: "no-repeat",
@@ -95,11 +105,11 @@ export const themes = {
           overlayColor: "#00000080",
         },
         tablet: {
-          type: "gradient",
+          type: "image",
           color: "#ff0000",
           gradient: "linear-gradient(184deg, #2b3035 0%, #343a40 25.55%)",
           image: {
-            url: "https://plus.unsplash.com/premium_photo-1672116453118-5971acb7b93b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            url: "https://i.ibb.co.com/cSZwRzPC/Screenshot-2025-05-05-153010-Photoroom-min.png",
           },
           position: "center center",
           repeat: "no-repeat",
@@ -269,9 +279,9 @@ export const themes = {
           },
           mobile: {
             top: "60px",
-            right: 0,
+            right: "30px",
             bottom: "60px",
-            left: 0,
+            left: "30px",
           },
         },
       },
@@ -283,7 +293,7 @@ export const themes = {
         images: {
           desktop: [
             {
-              url: "https://pixellyo.com/nextai/html/assets/img/about-img-3.png",
+              url: about2img1,
               alt: "About Us",
               width: "300",
               height: "225",
@@ -296,7 +306,7 @@ export const themes = {
               imageGap: 15,
             },
             {
-              url: "https://pixellyo.com/nextai/html/assets/img/about-img-4.png",
+              url: about2img2,
               alt: "About Us",
               width: "300",
               height: "225",
@@ -309,7 +319,7 @@ export const themes = {
               imageGap: 15,
             },
             {
-              url: "https://pixellyo.com/nextai/html/assets/img/about-img-5.png",
+              url: about2img3,
               alt: "About Us",
               width: "300",
               height: "225",
@@ -324,7 +334,7 @@ export const themes = {
           ],
           tablet: [
             {
-              url: "https://pixellyo.com/nextai/html/assets/img/about-img-3.png",
+              url: about2img1,
               alt: "About Us",
               width: "300",
               height: "225",
@@ -337,7 +347,7 @@ export const themes = {
               imageGap: 15,
             },
             {
-              url: "https://pixellyo.com/nextai/html/assets/img/about-img-4.png",
+              url: about2img2,
               alt: "About Us",
               width: "300",
               height: "225",
@@ -350,7 +360,7 @@ export const themes = {
               imageGap: 15,
             },
             {
-              url: "https://pixellyo.com/nextai/html/assets/img/about-img-5.png",
+              url: about2img3,
               alt: "About Us",
               width: "300",
               height: "225",
@@ -365,7 +375,7 @@ export const themes = {
           ],
           mobile: [
             {
-              url: "https://pixellyo.com/nextai/html/assets/img/about-img-3.png",
+              url: about2img1,
               alt: "About Us",
               width: "300",
               height: "225",
@@ -378,7 +388,7 @@ export const themes = {
               imageGap: 15,
             },
             {
-              url: "https://pixellyo.com/nextai/html/assets/img/about-img-4.png",
+              url: about2img2,
               alt: "About Us",
               width: "300",
               height: "225",
@@ -391,7 +401,7 @@ export const themes = {
               imageGap: 15,
             },
             {
-              url: "https://pixellyo.com/nextai/html/assets/img/about-img-5.png",
+              url: about2img3,
               alt: "About Us",
               width: "300",
               height: "225",
@@ -655,9 +665,9 @@ export const themes = {
           },
           mobile: {
             top: "16px",
-            right: "16px",
+            right: "40px",
             bottom: "16px",
-            left: "16px",
+            left: "40px",
           },
         },
       },
@@ -669,7 +679,7 @@ export const themes = {
         images: {
           desktop: [
             {
-              url: "https://pixellyo.com/nextai/html/assets/img/mission-img-1.png",
+              url: about3img1,
               alt: "About Us",
               width: "300",
               height: "225",
@@ -683,7 +693,7 @@ export const themes = {
             },
 
             {
-              url: "https://pixellyo.com/nextai/html/assets/img/mission-img-2.png",
+              url: about3img2,
               alt: "About Us",
               width: "300",
               height: "225",
@@ -696,7 +706,7 @@ export const themes = {
               imageGap: 15,
             },
             {
-              url: "https://pixellyo.com/nextai/html/assets/img/mission-img-3.png",
+              url: about3img3,
               alt: "About Us",
               width: "300",
               height: "225",
@@ -709,7 +719,7 @@ export const themes = {
               imageGap: 15,
             },
             {
-              url: "https://pixellyo.com/nextai/html/assets/img/mission-img-4.png",
+              url: about3img4,
               alt: "About Us",
               width: "300",
               height: "225",
@@ -724,7 +734,7 @@ export const themes = {
           ],
           tablet: [
             {
-              url: "https://pixellyo.com/nextai/html/assets/img/mission-img-1.png",
+              url: about3img1,
               alt: "About Us",
               width: "300",
               height: "225",
@@ -738,7 +748,7 @@ export const themes = {
             },
 
             {
-              url: "https://pixellyo.com/nextai/html/assets/img/mission-img-2.png",
+              url: about3img2,
               alt: "About Us",
               width: "300",
               height: "225",
@@ -751,7 +761,7 @@ export const themes = {
               imageGap: 15,
             },
             {
-              url: "https://pixellyo.com/nextai/html/assets/img/mission-img-3.png",
+              url: about3img3,
               alt: "About Us",
               width: "300",
               height: "225",
@@ -764,7 +774,7 @@ export const themes = {
               imageGap: 15,
             },
             {
-              url: "https://pixellyo.com/nextai/html/assets/img/mission-img-4.png",
+              url: about3img4,
               alt: "About Us",
               width: "300",
               height: "225",
@@ -779,7 +789,7 @@ export const themes = {
           ],
           mobile: [
             {
-              url: "https://pixellyo.com/nextai/html/assets/img/mission-img-1.png",
+              url: about3img1,
               alt: "About Us",
               width: "300",
               height: "225",
@@ -793,7 +803,7 @@ export const themes = {
             },
 
             {
-              url: "https://pixellyo.com/nextai/html/assets/img/mission-img-2.png",
+              url: about3img2,
               alt: "About Us",
               width: "300",
               height: "225",
@@ -806,7 +816,7 @@ export const themes = {
               imageGap: 15,
             },
             {
-              url: "https://pixellyo.com/nextai/html/assets/img/mission-img-3.png",
+              url: about3img3,
               alt: "About Us",
               width: "300",
               height: "225",
@@ -819,7 +829,7 @@ export const themes = {
               imageGap: 15,
             },
             {
-              url: "https://pixellyo.com/nextai/html/assets/img/mission-img-4.png",
+              url: about3img4,
               alt: "About Us",
               width: "300",
               height: "225",
@@ -1056,9 +1066,9 @@ export const themes = {
           },
           mobile: {
             top: "60px",
-            right: 0,
+            right: "30px",
             bottom: "60px",
-            left: 0,
+            left: "30px",
           },
         },
       },
@@ -1068,9 +1078,9 @@ export const themes = {
     about: {
       heading: {
         image: {
-          desktop: "https://pixellyo.com/nextai/html/assets/img/values-img.png",
-          tablet: "https://pixellyo.com/nextai/html/assets/img/values-img.png",
-          mobile: "https://pixellyo.com/nextai/html/assets/img/values-img.png",
+          desktop: about4img1,
+          tablet: about4img1,
+          mobile: about4img1,
         },
         title: "We Value Everyone That is Part of Our Company",
         description:
@@ -1351,9 +1361,9 @@ export const themes = {
           },
           mobile: {
             top: "60px",
-            right: 0,
+            right: "30px",
             bottom: "60px",
-            left: 0,
+            left: "30px",
           },
         },
       },

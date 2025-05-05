@@ -9,7 +9,7 @@ import { generateCSS } from "../../../../../bpl-tools/Advanced/generateCSS";
 import {
   mobileBreakpoint,
   tabBreakpoint,
-} from "../../../../../bpl-tools/utils/data";
+} from "../../../../../bpl-tools/utils/data";  
 
 const Style = ({ attributes, id }) => {
   const { styles, about, themeSl, advanced } = attributes || {};

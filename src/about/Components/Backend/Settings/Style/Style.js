@@ -2,7 +2,6 @@ import { __ } from "@wordpress/i18n";
 import {
   PanelBody,
   __experimentalBorderBoxControl as BorderBoxControl,
-  // __experimentalSpacer as Spacer,
   RangeControl,
   PanelRow,
   ToggleControl,
@@ -16,7 +15,7 @@ import {
   BoxControl,
   Background,
 } from "../../../../../../../bpl-tools/Components";
-import { updateData } from "../../../../../utils/functions";
+import { updateData } from "../../../../utils/functions"; 
 
 const Style = ({ attributes, setAttributes, device }) => {
   const { styles, themeSl, about } = attributes;

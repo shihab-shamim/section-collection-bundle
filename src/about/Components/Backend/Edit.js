@@ -7,7 +7,6 @@ import AboutUs from "../AboutUs/AboutUs";
 import AboutUsThree from "../AboutUs/AboutUsThree";
 import AboutUsTwo from "../AboutUs/AboutUsTwo";
 import AboutUsFour from "../AboutUs/AboutUsFour";
-// import { BplBlockPreview } from "../../../../../bpl-tools/Components";
 
 const Edit = (props) => {
   const { attributes, setAttributes, clientId, device } = props;
@@ -24,26 +23,7 @@ const Edit = (props) => {
             device={device}
             id={`block-${clientId}`}
           />
-
-          { 
-            themeSl==="themeOne"?<AboutUs
-              attributes={attributes}
-              setAttributes={setAttributes}
-              device={device}
-            />:themeSl==="themeTwo"? <AboutUsTwo
-              attributes={attributes}
-              setAttributes={setAttributes}
-              device={device}
-            />:themeSl==="themeThree"?<AboutUsThree
-              attributes={attributes}
-              setAttributes={setAttributes}
-              device={device}/>:themeSl==="themeFour"?  <AboutUsFour
-              attributes={attributes}
-              setAttributes={setAttributes}
-              device={device}/>:null
-          }
-
-          {/* {themeSl === "themeOne" && (
+          {themeSl === "themeOne" && (
             <AboutUs
               attributes={attributes}
               setAttributes={setAttributes}
@@ -57,7 +37,6 @@ const Edit = (props) => {
               device={device}
             />
           )}
-
           {themeSl === "themeThree" && (
             <AboutUsThree
               attributes={attributes}
@@ -72,15 +51,7 @@ const Edit = (props) => {
               device={device}
             />
           )}
-          {themeSl === "themeFive" && (
-            <AboutUsFive
-              attributes={attributes}
-              setAttributes={setAttributes}
-              device={device}
-            />
-          )} */}
         </div>
-        {/* <BplBlockPreview/> */}
       </div>
     </>
   );

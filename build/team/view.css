@@ -799,6 +799,9 @@
 .wp-block-b-blocks-team-section .team-section.styleTwo .text-center {
   text-align: center;
 }
+.wp-block-b-blocks-team-section .team-section.styleTwo .team-description {
+  padding: 0px 5px 0px 5px;
+}
 .wp-block-b-blocks-team-section .team-section.styleTwo .container {
   padding-right: 15px;
   padding-left: 15px;

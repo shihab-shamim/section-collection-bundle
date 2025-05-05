@@ -188,7 +188,7 @@
               "mobile": 32
             },
             "bgColor": {
-              "normal": { "color": "#fff", "bg": "#140833" },
+              "normal": { "color": "#a17eff", "bg": "#140833" },
               "hover": { "color": "#fff", "bg": "#6328FF" }
             },
             "border": {
@@ -274,8 +274,7 @@
   "example": {
     "attributes": {}
   },
-  "editorScript": "file:./index.js",
-  "editorStyle": "file:./index.css",
+  "editorScript": "file:../index.js",
   "style": "file:./view.css",
   "render": "file:./render.php",
   "viewScript": "file:./view.js"

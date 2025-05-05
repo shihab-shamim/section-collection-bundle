@@ -199,7 +199,7 @@
             },
             "bgColor": {
               "normal": {
-                "color": "#fff",
+                "color": "#a17eff",
                 "bg": "#140833"
               },
               "hover": {
@@ -292,8 +292,7 @@
   "example": {
     "attributes": {}
   },
-  "editorScript": "file:./index.js",
-  "editorStyle": "file:./index.css",
+  "editorScript": "file:../index.js",
   "style": "file:./view.css",
   "render": "file:./render.php",
   "viewScript": "file:./view.js"

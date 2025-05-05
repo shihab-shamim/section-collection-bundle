@@ -1,7 +1,6 @@
 import {
   __experimentalInputControl as InputControl,
   TextareaControl,
-  __experimentalSpacer as Spacer,
   ToggleControl,
 } from "@wordpress/components";
 import { __ } from "@wordpress/i18n";
@@ -9,7 +8,9 @@ import { produce } from "immer";
 import {
   IconLibrary,
   InlineMediaUpload,
-} from "../../../../../../bpl-tools/Components";
+} from "../../../../../../bpl-tools/Components";  
+
+
 const AboutUsPanel = ({
   attributes,
   setAttributes,
@@ -73,6 +74,8 @@ const AboutUsPanel = ({
         />
       )}
 
+      <div style={{ marginTop: "20px" }}></div>
+
       {(themeSl === "themeTwo" || themeSl === "themeFour") && (
         <div className="about-us-icon">
           <IconLibrary
@@ -83,7 +86,7 @@ const AboutUsPanel = ({
         </div>
       )}
 
-      <Spacer />
+      <div style={{ marginTop: "20px" }}></div>
 
       <InputControl
         type="text"
@@ -92,7 +95,7 @@ const AboutUsPanel = ({
         onChange={(title) => updateAboutUsItems("title", title)}
       />
 
-      <Spacer />
+      <div style={{ marginTop: "20px" }}></div>
 
       {themeSl === "themeFour" && (
         <TextareaControl
@@ -120,7 +123,7 @@ const AboutUsPanel = ({
         />
       )}
 
-      <Spacer />
+      <div style={{ marginTop: "20px" }}></div>
 
       {hasLink && (
         <ToggleControl

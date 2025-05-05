@@ -9,9 +9,6 @@ import {
   getShadowCSS,
   getTypoCSS,
 } from "../../../../../bpl-tools/utils/getCSS";
-
-
-
 import { getGradientCSS } from "../../utils/functions";
 
 const Style = ({ attributes, id }) => {
@@ -34,7 +31,7 @@ const Style = ({ attributes, id }) => {
   const headingTextAlignSl = `${headingColSl} .text-center`;
   const headingBtnSl = `${headingTextAlignSl} .btn`;
   const headingBtnFSSl = `${headingBtnSl} .fs-20`;
-  const headingBtnSubtitleSl = `${headingBtnSl} .subtitle`;
+  const headingBtnSubtitleSl = `${headingBtnSl} .subtitleText`;
   const headingTitleSl = `${headingTextAlignSl} .title`;
   const itemContainerSl = `${bgBodySl} .container`;
   const itemRowSl = `${itemContainerSl} .row`;
@@ -90,13 +87,13 @@ const Style = ({ attributes, id }) => {
   // const teamTwoImgSl = `${teamTwoSl} .team-image`;
   // const teamTwoContentSl = `${teamTwoSl} .team-content`;
   const teamTwoNameTypoSl = `${teamNameSl} h5`;
-  // const teamTwoRoleSl = `${teamRoleSl} .team-role`;
+  // const teamTwoRoleSl = `${teamRoleSl} .team-role`;     
 
   const shadowValue =
     shadow?.map((s) => getShadowCSS(s, "box")).join(", ") || "none";
 
   const hoverShadowValue =
-    hoverShadow?.map((s) => getShadowCSS(s, "box")).join(", ") || "none";
+    hoverShadow?.map((s) => getShadowCSS(s, "box")).join(", ") || "none"; 
 
   const imageShadowValue =
     image?.shadow?.map((s) => getShadowCSS(s, "box")).join(", ") || "none";
@@ -129,8 +126,6 @@ const Style = ({ attributes, id }) => {
         ${speakerImageBoxImgSl}{
           box-shadow: ${imageShadowValue}
         }
-
-        
 
         ${itemTeamMemberRoundedSl}{
          border-radius: ${getBoxCSS(image?.borderRadius)} 
@@ -312,6 +307,11 @@ const Style = ({ attributes, id }) => {
           height: ${linkArrowIcon?.iconContainerSize?.desktop}px;
           border-radius: ${getBoxCSS(linkArrowIcon?.borderRadius)} !important; 
           margin: ${getBoxCSS(linkArrowIcon?.margin)};
+        }
+
+        ${itemTeamMemberIconSl}:hover .link-icon{
+          color: ${linkArrowIcon?.bgColor?.hover?.color} !important;
+          fill: ${linkArrowIcon?.bgColor?.hover?.color} !important;
         }
 
         ${itemTeamMemberLinkIconSl}{

@@ -163,28 +163,27 @@ const General = ({ attributes, setAttributes, device }) => {
           <Spacer />
           <div style={{ marginTop: "20px" }}></div>
 
-          {themeSl === "themeOne" ||
-            (themeSl === "themeFour" && (
-              <>
-                <PanelRow>
-                  <Label className="">{__("Image", "b-blocks")}</Label>
-                  <Device />
-                </PanelRow>
-                <InlineMediaUpload
-                  value={image?.[device]}
-                  onChange={(newImage) => {
-                    setAttributes({
-                      about: {
-                        ...about,
-                        heading: updateData(heading, newImage, "image", device),
-                      },
-                    });
-                  }}
-                  type="image"
-                  size="full"
-                />
-              </>
-            ))}
+          {(themeSl === "themeOne" || themeSl === "themeFour") && (
+            <>
+              <PanelRow>
+                <Label className="">{__("Image", "b-blocks")}</Label>
+                <Device />
+              </PanelRow>
+              <InlineMediaUpload
+                value={image?.[device]}
+                onChange={(newImage) => {
+                  setAttributes({
+                    about: {
+                      ...about,
+                      heading: updateData(heading, newImage, "image", device),
+                    },
+                  });
+                }}
+                type="image"
+                size="full"
+              />
+            </>
+          )}
 
           <Spacer />
 
@@ -269,7 +268,7 @@ const General = ({ attributes, setAttributes, device }) => {
                 ))}
               </>
             </>
-            // </PanelBody>
+            
           )}
         </PanelBody>
 

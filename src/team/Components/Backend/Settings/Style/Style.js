@@ -760,9 +760,9 @@ const Style = ({ attributes, setAttributes, device }) => {
 
             <div style={{ marginTop: "20px" }}></div>
 
-            <ColorControl
-              label={__("Arrow Icon Background Hover Color", "b-blocks")}
-              value={linkArrowIcon?.bgColor?.hover?.bg}
+            <ColorsControl
+              label={__("Arrow Icon Hover Color", "b-blocks")}
+              value={linkArrowIcon?.bgColor?.hover}
               onChange={(value) => {
                 setAttributes({
                   styles: updateData(
@@ -771,11 +771,11 @@ const Style = ({ attributes, setAttributes, device }) => {
                     "items",
                     "linkArrowIcon",
                     "bgColor",
-                    "hover",
-                    "bg"
+                    "hover"
                   ),
                 });
               }}
+              defaultColor={linkArrowIcon?.bgColor?.hover}
             />
 
             <div style={{ marginTop: "20px" }}></div>

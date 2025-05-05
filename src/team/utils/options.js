@@ -180,7 +180,7 @@ export const styleItems = {
             mobile: 32,
           },
           bgColor: {
-            normal: { color: "#fff", bg: "#140833" },
+            normal: { color: "#a17eff", bg: "#140833" },
             hover: { color: "#fff", bg: "#6328FF" },
           },
           border: {
@@ -1201,41 +1201,6 @@ export const styleItems = {
   },
 };
 
-// // Format style keys into readable labels (styleDark -> "Dark Style")
-// const formatLabel = (key) => {
-//   return (
-//     key
-//       .replace("style", "")
-//       .replace(/([A-Z])/g, " $1")
-//       .trim()
-//       .split(" ")
-//       .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-//       .join(" ") + " Style"
-//   );
-// };
-
-// // Generate block content string for a style
-// const getBlockContent = (styleKey) => {
-//   const styleConfig = styleItems[styleKey] || styleItems.styleDefault;
-//   return `<!-- wp:b-blocks/team-section ${JSON.stringify(styleConfig)} /-->`;
-// };
-
-// // Get all attributes for a style
-// export const getStyleAttributes = (styleKey) => {
-//   const styleConfig = styleItems[styleKey] || styleItems.styleDefault;
-//   return {
-//     team: { ...styleConfig.team },
-//     styles: { ...styleConfig.styles },
-//     styleSl: styleKey,
-//   };
-// };
-
-// // Generate styles array from styleItems
-// export const styles = Object.keys(styleItems).map((key) => ({
-//   value: key,
-//   label: formatLabel(key),
-//   content: getBlockContent(key),
-// }));
 
 export const toolTipPresets = [
   {

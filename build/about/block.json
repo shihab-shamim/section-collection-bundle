@@ -29,9 +29,9 @@
       "default": {
         "heading": {
           "image": {
-            "desktop": "https://pixellyo.com/nextai/html/assets/img/about-2-img-mobile.png",
-            "mobile": "https://pixellyo.com/nextai/html/assets/img/about-2-img-mobile.png",
-            "tablet": "https://pixellyo.com/nextai/html/assets/img/about-2-img-mobile.png"
+            "desktop": "https://i.ibb.co.com/wNLQgVPt/about-2-img-mobile.png",
+            "mobile": "https://i.ibb.co.com/wNLQgVPt/about-2-img-mobile.png",
+            "tablet": "https://i.ibb.co.com/wNLQgVPt/about-2-img-mobile.png"
           },
           "title": "Our Mission is to Make Work Meaningful",
           "button": {
@@ -44,7 +44,7 @@
           {
             "id": 1,
             "image": {
-              "url": "https://pixellyo.com/nextai/html/assets/img/about-2-icon-1.png"
+              "url": "https://i.ibb.co.com/zpG6rMx/about-2-icon-1.png"
             },
             "title": "Business Plans Auth for all",
             "description": "Progressively onboard every potential user with just one library."
@@ -52,7 +52,7 @@
           {
             "id": 2,
             "image": {
-              "url": "https://pixellyo.com/nextai/html/assets/img/about-2-icon-2.png"
+              "url": "https://i.ibb.co.com/jPYQrB0M/about-2-icon-2.png"
             },
             "title": "Business Plans Auth for all",
             "description": "Progressively onboard every potential user with just one library."
@@ -60,7 +60,7 @@
           {
             "id": 3,
             "image": {
-              "url": "https://pixellyo.com/nextai/html/assets/img/about-2-icon-3.png"
+              "url": "https://i.ibb.co.com/h1ZQj8KN/about-2-icon-3.png"
             },
             "title": "Business Plans Auth for all",
             "description": "Progressively onboard every potential user with just one library."
@@ -68,7 +68,7 @@
           {
             "id": 4,
             "image": {
-              "url": "https://pixellyo.com/nextai/html/assets/img/about-2-icon-4.png"
+              "url": "https://i.ibb.co.com/mVGkYYF8/about-2-icon-4.png"
             },
             "title": "Business Plans Auth for all",
             "description": "Progressively onboard every potential user with just one library."
@@ -77,11 +77,11 @@
         "isOpenLinkInNewTab": {},
         "bg": {
           "desktop": {
-            "type": "gradient",
+            "type": "image",
             "color": "#ff0000",
             "gradient": "linear-gradient(184deg, #2b3035 0%, #343a40 25.55%)",
             "image": {
-              "url": "https://plus.unsplash.com/premium_photo-1672116453118-5971acb7b93b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              "url": "https://i.ibb.co.com/cSZwRzPC/Screenshot-2025-05-05-153010-Photoroom-min.png"
             },
             "position": "center center",
             "repeat": "no-repeat",
@@ -89,11 +89,11 @@
             "overlayColor": "#00000080"
           },
           "mobile": {
-            "type": "gradient",
+            "type": "image",
             "color": "#ff0000",
             "gradient": "linear-gradient(184deg, #2b3035 0%, #343a40 25.55%)",
             "image": {
-              "url": "https://plus.unsplash.com/premium_photo-1672116453118-5971acb7b93b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              "url": "https://i.ibb.co.com/cSZwRzPC/Screenshot-2025-05-05-153010-Photoroom-min.png"
             },
             "position": "center center",
             "repeat": "no-repeat",
@@ -101,11 +101,11 @@
             "overlayColor": "#00000080"
           },
           "tablet": {
-            "type": "gradient",
+            "type": "image",
             "color": "#ff0000",
             "gradient": "linear-gradient(184deg, #2b3035 0%, #343a40 25.55%)",
             "image": {
-              "url": "https://plus.unsplash.com/premium_photo-1672116453118-5971acb7b93b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              "url": "https://i.ibb.co.com/cSZwRzPC/Screenshot-2025-05-05-153010-Photoroom-min.png"
             },
             "position": "center center",
             "repeat": "no-repeat",
@@ -291,9 +291,9 @@
             },
             "mobile": {
               "top": "60px",
-              "right": 0,
+              "right": "30px",
               "bottom": "60px",
-              "left": 0
+              "left": "30px"
             }
           }
         }
@@ -489,8 +489,7 @@
   "example": {
     "attributes": {}
   },
-  "editorScript": "file:./index.js",
-  "editorStyle": "file:./index.css",
+  "editorScript": "file:../index.js",
   "style": "file:./view.css",
   "render": "file:./render.php",
   "viewScript": "file:./view.js"
