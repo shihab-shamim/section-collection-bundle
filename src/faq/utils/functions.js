@@ -231,24 +231,25 @@ draft["styles"]["question"]["colors"]={color: "#192534",bgType: "solid",bg: ""}
     };
     draft["styles"]["padding"]={
       desktop: {
-        top: "0",
-        right: "0",
-        bottom: "0",
-        left: "0"
+        top: "100px",
+        right: "50px",
+        bottom: "100px",
+        left: "50px"
       },
       tablet: {
-        top: "",
-        right: "",
-        bottom: "",
-        left: ""
+        top: "80px",
+        right: "60px",
+        bottom: "80px",
+        left: "60px"
       },
       mobile: {
-        top: "5px",
-        right: "5px",
-        bottom: "5px",
-        left: "5px"
+        top: "30px",
+        right: "30px",
+        bottom: "30px",
+        left: "30px"
       }
     };
+
 
     break;
 
@@ -460,10 +461,10 @@ draft["styles"]["question"]["gap"]="5px";
         left: "60px"
       },
       mobile: {
-        top: "5px",
-        right: "5px",
-        bottom: "5px",
-        left: "5px"
+        top: "30px",
+        right: "30px",
+        bottom: "30px",
+        left: "30px"
       }
     };
 
@@ -657,7 +658,7 @@ draft["styles"]["question"]["gap"]="5px";
         tablet: "40px",
         mobile: "30px"
       };
-       draft["styles"]["padding"]={
+      draft["styles"]["padding"]={
         desktop: {
           top: "100px",
           right: "50px",
@@ -671,12 +672,13 @@ draft["styles"]["question"]["gap"]="5px";
           left: "60px"
         },
         mobile: {
-          top: "5px",
-          right: "5px",
-          bottom: "5px",
-          left: "5px"
+          top: "30px",
+          right: "30px",
+          bottom: "30px",
+          left: "30px"
         }
       };
+  
       draft["faqItems"]=[
         {
           question: "Does BTCPayServer cost extra?",

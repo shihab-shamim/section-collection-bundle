@@ -102,6 +102,7 @@ $primaryColor: #4527a4;
                       flex-shrink: 0 !important;
                       vertical-align: middle !important;
                       display: flex;
+                      margin-top: 2px;
                     }
                     .cta-button-icon-Three {
                       fill: azure;
@@ -148,6 +149,9 @@ $primaryColor: #4527a4;
             }
             .cta-section-two{
               border-bottom: 0px solid rgba(230, 14, 14, 0.1) !important;
+            }
+            .cta-section-three{
+              border:none !important;
             }
             @media only screen and (min-width: 641px) and (max-width: 1023px) {
               .cta-section {

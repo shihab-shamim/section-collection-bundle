@@ -2372,7 +2372,7 @@ const Style = ({
   return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("style", {
     dangerouslySetInnerHTML: {
       __html: `
-		${(0,_bpl_tools_utils_getCSS__WEBPACK_IMPORTED_MODULE_1__.getTypoCSS)('', ticker?.typho)?.googleFontLink}
+		${(0,_bpl_tools_utils_getCSS__WEBPACK_IMPORTED_MODULE_1__.getTypoCSS)("", ticker?.typho)?.googleFontLink}
         ${(0,_bpl_tools_utils_getCSS__WEBPACK_IMPORTED_MODULE_1__.getTypoCSS)(name, ticker?.typho)?.styles}	
         ${(0,_bpl_tools_utils_getCSS__WEBPACK_IMPORTED_MODULE_1__.getTypoCSS)(themeName, ticker?.typho)?.styles}	
 
@@ -2510,7 +2510,7 @@ e
 
 
 						${_bpl_tools_utils_data__WEBPACK_IMPORTED_MODULE_3__.tabBreakpoint} { 
-							   ${wrapperContainer} { 
+						   	   ${wrapperContainer} { 
 							   ${(0,_bpl_tools_utils_getCSS__WEBPACK_IMPORTED_MODULE_1__.isValidCSS)("min-height", styles?.height.tablet)}
 							   width:${styles?.width.tablet};
 							   } 

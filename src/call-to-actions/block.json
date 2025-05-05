@@ -78,21 +78,21 @@
         },
         "padding": {
           "desktop": {
-            "top": "30px",
+            "top": "136px",
             "right": "0px",
-            "bottom": "30px",
+            "bottom": "136px",
             "left": "0px"
           },
           "tablet": {
-            "top": "20px",
+            "top": "60px",
             "right": "0px",
-            "bottom": "20px",
+            "bottom": "60px",
             "left": "0px"
           },
           "mobile": {
-            "top": "20px",
+            "top": "30px",
             "right": "0px",
-            "bottom": "20px",
+            "bottom": "30px",
             "left": "0px"
           }
         },
@@ -454,8 +454,7 @@
   "example": {
     "attributes": {}
   },
-  "editorScript": "file:./index.js",
-  "editorStyle": "file:./index.css",
+  "editorScript": "file:../index.js",
   "style": "file:./view.css",
   "render": "file:./render.php",
   "viewScript": "file:./view.js"

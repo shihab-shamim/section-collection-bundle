@@ -89,6 +89,7 @@
   flex-shrink: 0 !important;
   vertical-align: middle !important;
   display: flex;
+  margin-top: 2px;
 }
 .wp-block-b-blocks-call-to-actions .bBlocksCallToActions .cta-main-container .cta-sub-container .cta-container-row .cta-col .cta-section .cta-row-section .cta-hero-section .cta-button .cta-button-icon-Three {
   fill: azure;
@@ -129,6 +130,9 @@
 }
 .wp-block-b-blocks-call-to-actions .bBlocksCallToActions .cta-main-container .cta-sub-container .cta-container-row .cta-col .cta-section-two {
   border-bottom: 0px solid rgba(230, 14, 14, 0.1) !important;
+}
+.wp-block-b-blocks-call-to-actions .bBlocksCallToActions .cta-main-container .cta-sub-container .cta-container-row .cta-col .cta-section-three {
+  border: none !important;
 }
 @media only screen and (min-width: 641px) and (max-width: 1023px) {
   .wp-block-b-blocks-call-to-actions .bBlocksCallToActions .cta-main-container .cta-sub-container .cta-container-row .cta-col .cta-section {

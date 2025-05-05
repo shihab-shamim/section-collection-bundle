@@ -1,41 +1,63 @@
-import { getBackgroundCSS, getBoxCSS, getColorsCSS,getTypoCSS,getBorderBoxCSS, isValidCSS} from '../../../../../bpl-tools/utils/getCSS';
-import generateCSS from "../../../../../bpl-tools/Advanced/generateCSS"
-import { mobileBreakpoint, tabBreakpoint } from '../../../../../bpl-tools/utils/data';
+import {
+  getBackgroundCSS,
+  getBoxCSS,
+  getColorsCSS,
+  getTypoCSS,
+  getBorderBoxCSS,
+  isValidCSS,
+} from "../../../../../bpl-tools/utils/getCSS";
+import generateCSS from "../../../../../bpl-tools/Advanced/generateCSS";
+import {
+  mobileBreakpoint,
+  tabBreakpoint,
+} from "../../../../../bpl-tools/utils/data";
 
-const Style = ({ attributes, id,isBackend=false }) => {
-	const {advanced ,styles,alignment,borderOne,themeTwoLogoRadius,themeTwoLogoBorder,themeTwoLogoColor,themeTwoLogoSize,themeTwoLogo,pulserContentStyle,pulserRadius,puslerBgColor,pulserContentStyleContent,pulserContentRadius,layout,options} = attributes;
-	const {ticker}=styles;
-	
-	
+const Style = ({ attributes, id, isBackend = false }) => {
+  const {
+    advanced,
+    styles,
+    alignment,
+    borderOne,
+    themeTwoLogoRadius,
+    themeTwoLogoBorder,
+    themeTwoLogoColor,
+    themeTwoLogoSize,
+    themeTwoLogo,
+    pulserContentStyle,
+    pulserRadius,
+    puslerBgColor,
+    pulserContentStyleContent,
+    pulserContentRadius,
+    layout,
+    options,
+  } = attributes;
+  const { ticker } = styles;
 
-	const mainSl = `#${id}`;
-	const tricker = `${mainSl} .tricker`;
-	const name = `${tricker} .name`;
-	const container=`${mainSl} .container`;
-	const wrapperContainer=`${mainSl} .wrapper-container`;
-	const contentContainer=`${mainSl} .content-container`;
-	const tickerList =`${mainSl} .ticker-list`;
-	const pulserContent =`${mainSl} .pulser__content`;
-	const imgFluid =`${mainSl} .img-fluid`;
-	const pulser =`${mainSl} .pulser`;
-	const theme3Ticker =`${mainSl} .theme3Ticker`;
-	const mainWrapper =`${mainSl} .mainWrapper`;
-	const  tickerButton=`${theme3Ticker} .tickerButton`;
-	const  tickerButtonScroller=`${theme3Ticker} .theme3Ticker-scroller-x__list`;
-	const  tickerButtonScrollerSecond=`${theme3Ticker} .theme3Ticker-scroller-x__list_second`;
-	const  listRow=`${theme3Ticker} .list-row`;
-	const  themeName=`${theme3Ticker} .name`;
-	const  iconImage=`${theme3Ticker} .iconImage`;
-	
-	
+  const mainSl = `#${id}`;
+  const tricker = `${mainSl} .tricker`;
+  const name = `${tricker} .name`;
+  const container = `${mainSl} .container`;
+  const wrapperContainer = `${mainSl} .wrapper-container`;
+  const contentContainer = `${mainSl} .content-container`;
+  const tickerList = `${mainSl} .ticker-list`;
+  const pulserContent = `${mainSl} .pulser__content`;
+  const imgFluid = `${mainSl} .img-fluid`;
+  const pulser = `${mainSl} .pulser`;
+  const theme3Ticker = `${mainSl} .theme3Ticker`;
+  const mainWrapper = `${mainSl} .mainWrapper`;
+  const tickerButton = `${theme3Ticker} .tickerButton`;
+  const tickerButtonScroller = `${theme3Ticker} .theme3Ticker-scroller-x__list`;
+  const tickerButtonScrollerSecond = `${theme3Ticker} .theme3Ticker-scroller-x__list_second`;
+  const listRow = `${theme3Ticker} .list-row`;
+  const themeName = `${theme3Ticker} .name`;
+  const iconImage = `${theme3Ticker} .iconImage`;
 
-
-
-	return <>
-	<style dangerouslySetInnerHTML={{
-		
-		__html: `
-		${getTypoCSS('', ticker?.typho)?.googleFontLink}
+  return (
+    <>
+      <style
+        dangerouslySetInnerHTML={{
+          __html: `
+		${getTypoCSS("", ticker?.typho)?.googleFontLink}
         ${getTypoCSS(name, ticker?.typho)?.styles}	
         ${getTypoCSS(themeName, ticker?.typho)?.styles}	
 
@@ -57,7 +79,7 @@ const Style = ({ attributes, id,isBackend=false }) => {
 
 		.ticker-scroller-x__list:hover,${tickerButtonScroller}:hover,${tickerButtonScrollerSecond}:hover
 		{
-			animation-play-state:${options?.hoverStop?"paused":"running"}
+			animation-play-state:${options?.hoverStop ? "paused" : "running"}
 		}
 			${tricker}{
 		${getColorsCSS(ticker?.colors)}
@@ -81,14 +103,16 @@ const Style = ({ attributes, id,isBackend=false }) => {
 		}
 		${container}{
 			
-        mask: linear-gradient(90deg, transparent, #fff ${ options.effect?"20%":"0"}, #fff ${ options.effect?"80%":"100%"}, transparent);
+        mask: linear-gradient(90deg, transparent, #fff ${
+          options.effect ? "20%" : "0"
+        }, #fff ${options.effect ? "80%" : "100%"}, transparent);
 
 			
 			}
 
 			
 			${wrapperContainer}{
-			${isValidCSS("min-height",styles?.height.desktop)}
+			${isValidCSS("min-height", styles?.height.desktop)}
 			width:${styles?.width.desktop};
 			
 			
@@ -104,16 +128,34 @@ const Style = ({ attributes, id,isBackend=false }) => {
 					--_animation-duration:${options?.animationDuration}s;
 				}
 					${tickerButtonScroller}{
-					  animation: theme3Ticker-scroll var(--_animation-duration,${options?.animationDuration}s) ${options?.firstColumnDirection === "left" ? "reverse" : options?.firstColumnDirection === "right" ? "forwards" : ""} linear infinite;
+					  animation: theme3Ticker-scroll var(--_animation-duration,${
+              options?.animationDuration
+            }s) ${
+              options?.firstColumnDirection === "left"
+                ? "reverse"
+                : options?.firstColumnDirection === "right"
+                ? "forwards"
+                : ""
+            } linear infinite;
 					}
 					 ${tickerButtonScrollerSecond}{
-					 animation: theme3Ticker-scroll var(--_animation-duration, ${options?.animationDuration}s) ${options?.secondeColumnDirection === "left" ? "reverse" : options?.secondeColumnDirection === "right" ? "forwards" : ""} linear infinite;
+					 animation: theme3Ticker-scroll var(--_animation-duration, ${
+             options?.animationDuration
+           }s) ${
+             options?.secondeColumnDirection === "left"
+               ? "reverse"
+               : options?.secondeColumnDirection === "right"
+               ? "forwards"
+               : ""
+           } linear infinite;
 
 					 }
 					
 					 .ticker-scroller-x__list{
 
-					 	animation:scroll var(--_animation-duration,${options?.animationDuration}s) var(--_animation-direction,forwards) linear infinite;
+					 	animation:scroll var(--_animation-duration,${
+              options?.animationDuration
+            }s) var(--_animation-direction,forwards) linear infinite;
 						
 
 					 }
@@ -136,14 +178,14 @@ const Style = ({ attributes, id,isBackend=false }) => {
 							width: ${themeTwoLogoSize};
 							height:  ${themeTwoLogoSize};
 							border-radius:${getBoxCSS(themeTwoLogoRadius)};
-							${themeTwoLogo?.type ==="image"?getBorderBoxCSS(themeTwoLogoBorder):""}
+							${themeTwoLogo?.type === "image" ? getBorderBoxCSS(themeTwoLogoBorder) : ""}
 							
 						}
 							 ${imgFluid} svg {
 								fill: ${themeTwoLogoColor};  
 								width: ${themeTwoLogoSize};
 								height: ${themeTwoLogoSize};
-								${themeTwoLogo?.type ==="icon"?getBorderBoxCSS(themeTwoLogoBorder):""}
+								${themeTwoLogo?.type === "icon" ? getBorderBoxCSS(themeTwoLogoBorder) : ""}
 								border-radius:${getBoxCSS(themeTwoLogoRadius)};
 							}
 							
@@ -173,8 +215,8 @@ e
 
 
 						${tabBreakpoint} { 
-							   ${wrapperContainer} { 
-							   ${isValidCSS("min-height",styles?.height.tablet)}
+						   	   ${wrapperContainer} { 
+							   ${isValidCSS("min-height", styles?.height.tablet)}
 							   width:${styles?.width.tablet};
 							   } 
 							   ${pulser}{
@@ -192,7 +234,7 @@ e
 							   ${pulser}{
 							 width:${pulserContentStyle?.width.mobile};
 							height:${pulserContentStyle?.height.mobile};
-							display:${options?.isAnimationShowMobile?"none":""};
+							display:${options?.isAnimationShowMobile ? "none" : ""};
 							   }
 							   ${pulserContent}{
 								width:${pulserContentStyleContent?.width.mobile};
@@ -200,16 +242,22 @@ e
 								}
 								
                             ${wrapperContainer}{ 
-							${isValidCSS("min-height",styles?.height.mobile)}
+							${isValidCSS("min-height", styles?.height.mobile)}
 							width:${styles?.width.mobile};
 							} 
 
 							}
 
 						   
-	`}} />
-	<style dangerouslySetInnerHTML={{__html:`${generateCSS(id,advanced,isBackend)}`}} />
-	</>
-}
-export default Style; 
-
+	`,
+        }}
+      />
+      <style
+        dangerouslySetInnerHTML={{
+          __html: `${generateCSS(id, advanced, isBackend)}`,
+        }}
+      />
+    </>
+  );
+};
+export default Style;

@@ -5,9 +5,8 @@ import { updateData } from "../../../../../../bpl-tools/utils/functions";
 
 const CallToActionsTwo = ({ attributes, setAttributes}) => {
 
-    const isEditor = useSelect((select) => select('core/editor'));
-    const { callToActions} = attributes;
-
+  const isEditor = useSelect((select) => select('core/editor'));
+  const { callToActions} = attributes;
 
   return (
         <div className="cta-main-container">
