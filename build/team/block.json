@@ -4,7 +4,7 @@
   "name": "b-blocks/team-section",
   "version": "1.0.0",
   "title": "Team Section",
-  "category": "practiceBundle",
+  "category": "section_collection",
   "description": "The Team Section highlights your team with images, titles, and brief descriptions in a compact design.",
   "keywords": [
     "team section block",
@@ -292,7 +292,8 @@
   "example": {
     "attributes": {}
   },
-  "editorScript": "file:../index.js",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
   "style": "file:./view.css",
   "render": "file:./render.php",
   "viewScript": "file:./view.js"

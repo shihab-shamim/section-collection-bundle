@@ -1,13 +1,8 @@
 import { __ } from "@wordpress/i18n";
-// import { purposeTypeOptions } from '../../../../utils/options';
-// import { updateData } from '../../../../utils/functions';
 import { BoxControl, Device, Label  } from "../../../../../../../bpl-tools/Components";
 import {
-  // __experimentalInputControl as InputControl,
-  // __experimentalNumberControl as NumberControl,
   __experimentalUnitControl as UnitControl,
   __experimentalBoxControl as BoxC,
-  // __experimentalBorderControl as BorderControl,
   __experimentalInputControl as InputControl,
   PanelBody,
   PanelRow,
@@ -32,8 +27,6 @@ const General = ({ attributes, device, setAttributes }) => {
   const { layout, selectedTheme, timeline, options } = attributes;
   const { section, body } = layout || {};
   const { button } = options || {};
-
-  // console.log(timeline);
 
   const handleDelete = (Index) => {
     const updatedTimeline = timeline.timelines.filter(
@@ -96,8 +89,6 @@ const General = ({ attributes, device, setAttributes }) => {
     });
   };
 
-  // console.log(body.margin.desktop);
-
   return (
     <>
       <PanelBody
@@ -105,7 +96,7 @@ const General = ({ attributes, device, setAttributes }) => {
         title={__("Layout setting", "b-blocks")}
         initialOpen={true}
       >
-        <PanelRow>
+        {/* <PanelRow>
           <Label className="mt0">Select A Theme</Label>
           <SelectControl
             value={selectedTheme}
@@ -114,23 +105,7 @@ const General = ({ attributes, device, setAttributes }) => {
               setAttributes(themeChange(value, attributes, device))
             }
           />
-        </PanelRow>
-        <Flex justify="start" align="center" gap={2}>
-          <FormToggle
-          // checked={sectionHeader.status}
-          // onChange={() =>
-          //   setAttributes({
-          //     layout: updateData(
-          //       layout,
-          //       !sectionHeader.status,
-          //       "sectionHeader",
-          //       "status"
-          //     ),
-          //   })
-          // }
-          />
-          <p className="mt10">Section Header</p>
-        </Flex>
+        </PanelRow> */}
 
         {/* {sectionHeader.status && (
           <>
@@ -529,19 +504,6 @@ const General = ({ attributes, device, setAttributes }) => {
             )}
           </>
         )}
-      </PanelBody>
-      <PanelBody
-        className="bPlPanelBody"
-        title={__("Options", "b-blocks")}
-        initialOpen={false}
-      >
-        <SelectControl
-          label={__("Purpose", "b-blocks")}
-          labelPosition="left"
-          // value={purposeType}
-          // options={purposeTypeOptions}
-          // onChange={(v) => setAttributes({ purposeType: updateData(purposeType, v) })}
-        />
       </PanelBody>
     </>
   );

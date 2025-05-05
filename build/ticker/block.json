@@ -4,7 +4,7 @@
   "name": "b-blocks/ticker-plugins",
   "version": "1.0.0",
   "title": "Ticker",
-  "category": "practiceBundle",
+  "category": "section_collection",
   "description": "Dynamic ticker for urgent notifications and messages",
   "keywords": [
     "Ticker Text",
@@ -281,7 +281,7 @@
         "dimension": {
           "margin": {
             "desktop": {
-              "top": "20px",
+              "top": "0px",
               "right": "0px",
               "bottom": "0px",
               "left": "0px"

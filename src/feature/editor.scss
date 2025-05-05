@@ -11,16 +11,6 @@ $primaryColor: #4527a4;
 
 .wp-block-b-blocks-feature-section {
 
-
-  // .respone {
-  //   margin-left: 170px;
-  // }
-  // p {
-  //    font-size: "14px"; 
-  //    color: "red";
-  //    font-style: "italic" 
-     
-  // }
   .span{
     font-size: 14px; 
     color: red;
@@ -33,6 +23,12 @@ $primaryColor: #4527a4;
   }
   .selectHelp {
     color: #616063;
+  }
+  .bPlIconLibrary{
+    .panel-icon svg{
+      width: 28px;
+      height: 28px;
+    }
   }
 }
 

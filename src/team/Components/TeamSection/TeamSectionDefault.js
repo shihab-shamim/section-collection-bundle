@@ -26,7 +26,6 @@ const TeamSectionDefault = ({ attributes, setAttributes }) => {
               <div className="row g-4 justify-content-center">
                 <div className="col-md-10 col-lg-8">
                   <div className="text-center">
-                    {/* akhane problems */}
                     <span className="btn btn-sm align-items-center bg-primary-emphasis hover:bg-primary-emphasis text-primary-subtle hover:text-primary-subtle cursor-default mb-4">
                       <span
                         className="align-middle fs-20 flex-shrink-0"

@@ -1,4 +1,4 @@
-import Advanced from '../../../../../../bpl-tools/Advanced/index';
+// import Advanced from '../../../../../bpl-tools/Advanced/index';
 import { __ } from '@wordpress/i18n';
 import { InspectorControls, BlockControls, AlignmentToolbar } from '@wordpress/block-editor';
 import { TabPanel } from '@wordpress/components';
@@ -13,8 +13,8 @@ import { themeSwitch } from '../../../utils/functions';
 
 
 const Settings = ({ attributes, setAttributes, device, }) => {
-
-	const { alignment, advanced, layout } = attributes;
+    // advanced
+	const { alignment, layout } = attributes;
 
 
 	return <>
@@ -33,7 +33,7 @@ const Settings = ({ attributes, setAttributes, device, }) => {
 
 						{'style' === tab.name && <Style attributes={attributes} setAttributes={setAttributes} device={device} />}
 
-						{'advanced' === tab.name && <Advanced advanced={advanced} onChange={(newData) => setAttributes({ advanced: newData })} isPremium={true} />}
+						{/* {'advanced' === tab.name && <Advanced advanced={advanced} onChange={(newData) => setAttributes({ advanced: newData })} isPremium={true} />} */}
 					</>
 				}
 			</TabPanel>

@@ -6,8 +6,12 @@
   padding: 0;
   box-sizing: border-box;
   overflow-x: hidden;
+  margin-top: 20px !important;
   /* Custom Styles with theme3Ticker Prefix */
   /* Keyframes for Animations with theme3Ticker Prefix */
+}
+.wp-block-b-blocks-ticker-plugins .mainWrapper {
+  margin-top: 0 !important;
 }
 .wp-block-b-blocks-ticker-plugins .container {
   overflow: hidden;

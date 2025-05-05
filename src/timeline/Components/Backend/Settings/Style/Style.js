@@ -1,8 +1,5 @@
 import { __ } from "@wordpress/i18n";
-import {
-  PanelBody,
-  // __experimentalBoxControl as BoxControl,
-} from "@wordpress/components";
+import { PanelBody } from "@wordpress/components";
 import {
   Background,
   ColorControl,
@@ -13,8 +10,6 @@ import { updateData } from "../../../../utils/functions";
 
 const Style = ({ attributes, setAttributes }) => {
   const { styles, selectedTheme } = attributes;
-
-  // console.log(styles.sectionBg);
 
   return (
     <>
@@ -40,8 +35,6 @@ const Style = ({ attributes, setAttributes }) => {
             }
           />
         )}
-
-        {/* <BoxControl values={values} onChange={setValues} /> */}
 
         <ColorControl
           label={"Header Color"}

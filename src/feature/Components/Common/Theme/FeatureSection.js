@@ -23,7 +23,7 @@ const FeatureSection = ({ attributes, setAttributes, }) => {
                                 {isEditor ? (
                                     <RichText className="d-inline-block"
                                         value={subTitle?.text}
-                                        placeholder="Your Badge"
+                                        placeholder="Your Badge Text"
                                         onChange={(v) => {
                                             setAttributes({ heading: { ...heading, subTitle: { ...heading.subTitle, text: v } } })
                                         }
@@ -42,7 +42,7 @@ const FeatureSection = ({ attributes, setAttributes, }) => {
                                         value={title?.text}
                                         onChange={v => { setAttributes({ heading: { ...heading, title: { ...heading.title, text: v } } }) }}
                                         allowedFormats={['core/bold', 'core/italic', 'core/link', 'core/text-color']}
-                                        placeholder="Enter Your Name"
+                                        placeholder="Enter Your Title"
                                     />) : (<h3 className="title" dangerouslySetInnerHTML={{ __html: title?.text }} />)
                                 }
                             </>
@@ -70,7 +70,7 @@ const FeatureSection = ({ attributes, setAttributes, }) => {
                                             value={item.title}
                                             onChange={(v) => setAttributes({ features: updateData(features, v, indexFeature, 'title') })}
                                             allowedFormats={['core/bold', 'core/italic', 'core/link', 'core/text-color']}
-                                            placeholder="Enter Your Name"
+                                            placeholder="Enter Your Title"
                                         />
                                     ) : (
                                         <h6 className="title-text" dangerouslySetInnerHTML={{ __html: item.title }} />

@@ -19,10 +19,10 @@ const Style = ({ attributes, id }) => {
   const leftCard = `${leftCardCont} .left-card`;
   const ballSvg = `${leftCardCont} .ball-svg`;
   const leftCardText = `${leftCard} .card-text-cont`;
-  const cardTitle = `${leftCardText} h4`;
+  const cardTitle = `${leftCardText} .card-title`;
   const cardDescription = `${leftCardText} p`;
 
-  const headerSl = `${leftPartSl} h4`;
+  const headerSl = `${leftPartSl} .header`;
   const rightPartSl = `${textContSl} .right-part`;
   const dashedLineSl = `${rightPartSl} .dashed-line li::before`;
   const listsContSl = `${rightPartSl} .lists-cont`;
@@ -35,9 +35,6 @@ const Style = ({ attributes, id }) => {
   // ======================= theme 2 ======================= //
 
   const maincontSl2 = `${mainSl} .main-cont2`;
-  // const containerSl = `${maincontSl2} .container`
-
-  // console.log(styles.sectionBg);
 
   function getBackground(styleObj) {
     if (styleObj.bgType === "solid") {
@@ -61,20 +58,15 @@ const Style = ({ attributes, id }) => {
 		${getTypoCSS("", styles.timelines.description.typo)?.googleFontLink}
 		
 
-        ${getTypoCSS(headerSl, styles.header.typo)?.styles}
-        ${getTypoCSS(cardTitle, styles.leftCard.text.title.typo)?.styles}
-        ${
-          getTypoCSS(cardDescription, styles.leftCard.text.description.typo)
-            ?.styles
-        }
-        ${getTypoCSS(timelineTitleSl, styles.timelines.title.typo)?.styles}
-        ${
-          getTypoCSS(timelineDescriptionSl, styles.timelines.description.typo)
-            ?.styles
-        }
+    ${getTypoCSS(headerSl, styles.header.typo)?.styles}
+    ${getTypoCSS(cardTitle, styles.leftCard.text.title.typo)?.styles}
+    ${getTypoCSS(cardDescription, styles.leftCard.text.description.typo)?.styles}
+    ${getTypoCSS(timelineTitleSl, styles.timelines.title.typo)?.styles}
+    ${getTypoCSS(timelineDescriptionSl, styles.timelines.description.typo)?.styles}
+
+
 		${maincontSl} {
 			${getBackgroundCSS(styles.sectionBg)}
-			
 			margin:${getBoxCSS(layout.section.margin.desktop)};
 			padding:${getBoxCSS(layout.section.padding.desktop)};
 

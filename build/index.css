@@ -2583,6 +2583,10 @@
 .wp-block-b-blocks-feature-section .selectHelp {
   color: #616063;
 }
+.wp-block-b-blocks-feature-section .bPlIconLibrary .panel-icon svg {
+  width: 28px;
+  height: 28px;
+}
 
 .bPlBlockPreviewWrapper {
   display: flex;
@@ -2591,6 +2595,59 @@
 .bPlBlockPreviewWrapper .bPl-previewBtn.bPl-activeBtn {
   background: #4527a4;
   color: #fff;
+}
+/*!********************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/call-to-actions/editor.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************/
+.bBlocksInspectorInfo {
+  padding: 6px;
+}
+.bBlocksInspectorInfo a {
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.wp-block-b-blocks-call-to-actions .span {
+  font-size: 14px;
+  color: red;
+  font-style: italic;
+  font-weight: 500;
+}
+.wp-block-b-blocks-call-to-actions .text {
+  color: rgba(255, 0, 0, 0.795);
+  font-style: italic;
+}
+.wp-block-b-blocks-call-to-actions .tab {
+  margin-top: 20px;
+}
+.wp-block-b-blocks-call-to-actions .tabCo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.wp-block-b-blocks-call-to-actions .tabCon {
+  width: 114px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  background: rgba(248, 245, 245, 0.5294117647);
+  outline: 1px solid rgba(184, 15, 15, 0);
+  white-space: nowrap;
+  color: #010411;
+  box-shadow: inset 0 0 0 1px #4527a4, 0 0 0px #4527a4, 0 0 0px #4527a4;
+}
+.wp-block-b-blocks-call-to-actions .tabCon:focus:not(:disabled) {
+  border: 2px solid #4527a4 !important;
+  outline: none !important;
+  box-shadow: 0 0 0 0 #4527a4 !important;
+}
+.wp-block-b-blocks-call-to-actions .tabCon.active {
+  background-color: #551fd4;
+  color: white;
+}
+.wp-block-b-blocks-call-to-actions .selectHelp {
+  color: #616063;
 }
 
 /*# sourceMappingURL=index.css.map*/

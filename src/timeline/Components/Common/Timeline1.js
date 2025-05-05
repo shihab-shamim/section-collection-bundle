@@ -20,6 +20,7 @@ const Timeline1 = ({ attributes, setAttributes, from }) => {
                 <>
                   <RichText
                     tagName="h4"
+                    className="header"
                     value={timeline.header}
                     onChange={(value) =>
                       setAttributes({
@@ -40,6 +41,7 @@ const Timeline1 = ({ attributes, setAttributes, from }) => {
                         <div className="card-text-cont">
                           <RichText
                             tagName="h4"
+                            className="card-title"
                             value={card.title}
                             onChange={(value) =>
                               setAttributes({
@@ -80,7 +82,7 @@ const Timeline1 = ({ attributes, setAttributes, from }) => {
                 </>
               ) : (
                 <>
-                  <h4> {timeline.header} </h4>
+                  <h4 className="header"> {timeline.header} </h4>
                   <button type="button" className="btn">
                     {timeline.button.title}
                   </button>
@@ -89,7 +91,7 @@ const Timeline1 = ({ attributes, setAttributes, from }) => {
                     {timeline.leftContent.cards.map((card, index) => (
                       <div className="left-card" key={index}>
                         <div className="card-text-cont">
-                          <h4 className="">{card.title}</h4>
+                          <h4 className="card-title">{card.title}</h4>
                           <p className="">{card.description}</p>
                         </div>
                         <BallSvg />

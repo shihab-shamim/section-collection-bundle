@@ -3392,9 +3392,9 @@ const Style = ({
   const leftCard = `${leftCardCont} .left-card`;
   const ballSvg = `${leftCardCont} .ball-svg`;
   const leftCardText = `${leftCard} .card-text-cont`;
-  const cardTitle = `${leftCardText} h4`;
+  const cardTitle = `${leftCardText} .card-title`;
   const cardDescription = `${leftCardText} p`;
-  const headerSl = `${leftPartSl} h4`;
+  const headerSl = `${leftPartSl} .header`;
   const rightPartSl = `${textContSl} .right-part`;
   const dashedLineSl = `${rightPartSl} .dashed-line li::before`;
   const listsContSl = `${rightPartSl} .lists-cont`;
@@ -3407,10 +3407,6 @@ const Style = ({
   // ======================= theme 2 ======================= //
 
   const maincontSl2 = `${mainSl} .main-cont2`;
-  // const containerSl = `${maincontSl2} .container`
-
-  // console.log(styles.sectionBg);
-
   function getBackground(styleObj) {
     if (styleObj.bgType === "solid") {
       return styleObj.bg;
@@ -3431,14 +3427,15 @@ const Style = ({
 		${(0,_bpl_tools_utils_getCSS__WEBPACK_IMPORTED_MODULE_1__.getTypoCSS)("", styles.timelines.description.typo)?.googleFontLink}
 		
 
-        ${(0,_bpl_tools_utils_getCSS__WEBPACK_IMPORTED_MODULE_1__.getTypoCSS)(headerSl, styles.header.typo)?.styles}
-        ${(0,_bpl_tools_utils_getCSS__WEBPACK_IMPORTED_MODULE_1__.getTypoCSS)(cardTitle, styles.leftCard.text.title.typo)?.styles}
-        ${(0,_bpl_tools_utils_getCSS__WEBPACK_IMPORTED_MODULE_1__.getTypoCSS)(cardDescription, styles.leftCard.text.description.typo)?.styles}
-        ${(0,_bpl_tools_utils_getCSS__WEBPACK_IMPORTED_MODULE_1__.getTypoCSS)(timelineTitleSl, styles.timelines.title.typo)?.styles}
-        ${(0,_bpl_tools_utils_getCSS__WEBPACK_IMPORTED_MODULE_1__.getTypoCSS)(timelineDescriptionSl, styles.timelines.description.typo)?.styles}
+    ${(0,_bpl_tools_utils_getCSS__WEBPACK_IMPORTED_MODULE_1__.getTypoCSS)(headerSl, styles.header.typo)?.styles}
+    ${(0,_bpl_tools_utils_getCSS__WEBPACK_IMPORTED_MODULE_1__.getTypoCSS)(cardTitle, styles.leftCard.text.title.typo)?.styles}
+    ${(0,_bpl_tools_utils_getCSS__WEBPACK_IMPORTED_MODULE_1__.getTypoCSS)(cardDescription, styles.leftCard.text.description.typo)?.styles}
+    ${(0,_bpl_tools_utils_getCSS__WEBPACK_IMPORTED_MODULE_1__.getTypoCSS)(timelineTitleSl, styles.timelines.title.typo)?.styles}
+    ${(0,_bpl_tools_utils_getCSS__WEBPACK_IMPORTED_MODULE_1__.getTypoCSS)(timelineDescriptionSl, styles.timelines.description.typo)?.styles}
+
+
 		${maincontSl} {
 			${(0,_bpl_tools_utils_getCSS__WEBPACK_IMPORTED_MODULE_1__.getBackgroundCSS)(styles.sectionBg)}
-			
 			margin:${(0,_bpl_tools_utils_getCSS__WEBPACK_IMPORTED_MODULE_1__.getBoxCSS)(layout.section.margin.desktop)};
 			padding:${(0,_bpl_tools_utils_getCSS__WEBPACK_IMPORTED_MODULE_1__.getBoxCSS)(layout.section.padding.desktop)};
 
@@ -3577,6 +3574,7 @@ const Timeline1 = ({
     className: "left-part"
   }, from === "server" ? (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
     tagName: "h4",
+    className: "header",
     value: timeline.header,
     onChange: value => setAttributes({
       timeline: (0,_bpl_tools_utils_functions__WEBPACK_IMPORTED_MODULE_3__.updateData)(timeline, value, "header")
@@ -3598,6 +3596,7 @@ const Timeline1 = ({
     className: "card-text-cont"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
     tagName: "h4",
+    className: "card-title",
     value: card.title,
     onChange: value => setAttributes({
       timeline: (0,_bpl_tools_utils_functions__WEBPACK_IMPORTED_MODULE_3__.updateData)(timeline, value, "leftContent", "cards", index, "title")
@@ -3610,7 +3609,9 @@ const Timeline1 = ({
       timeline: (0,_bpl_tools_utils_functions__WEBPACK_IMPORTED_MODULE_3__.updateData)(timeline, value, "leftContent", "cards", index, "description")
     }),
     placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__.__)("card title...")
-  })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_Compos_BallSvg__WEBPACK_IMPORTED_MODULE_1__["default"], null))))) : (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("h4", null, " ", timeline.header, " "), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
+  })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_Compos_BallSvg__WEBPACK_IMPORTED_MODULE_1__["default"], null))))) : (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("h4", {
+    className: "header"
+  }, " ", timeline.header, " "), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
     type: "button",
     className: "btn"
   }, timeline.button.title), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
@@ -3621,7 +3622,7 @@ const Timeline1 = ({
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "card-text-cont"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("h4", {
-    className: ""
+    className: "card-title"
   }, card.title), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
     className: ""
   }, card.description)), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_Compos_BallSvg__WEBPACK_IMPORTED_MODULE_1__["default"], null)))))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
@@ -3890,8 +3891,6 @@ const updateData = (attr, value, ...props) => {
 };
 const themeChange = (theme = "theme1", attributes) => (0,immer__WEBPACK_IMPORTED_MODULE_0__.produce)(attributes, draft => {
   draft["selectedTheme"] = theme;
-  // console.log(theme);
-
   switch (theme) {
     //======================= case for theme 1 ========================//
     case "theme1":

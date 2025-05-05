@@ -3469,17 +3469,17 @@ const Style = ({
   const highlightSecondarySl = `${sectionTwoContainerSl} .highlight_secondary`;
   const descriptionSl = `${sectionTwoContainerSl} .team-description`;
   const rowTwoSl = `${sectionTwoContainerSl} .row`;
-  // const colTwoSl = `${rowTwoSl} .col-md-4`;
+  const colTwoSl = `${rowTwoSl} .col-md-4`;
   const teamSl = `${rowTwoSl} .team`;
-  // const teamImgSl = `${teamSl} .team-image`;
+  const teamImgSl = `${teamSl} .team-image`;
   const teamContentSl = `${teamSl} .team-content`;
   const teamNameSl = `${teamContentSl} .team-name`;
   const teamRoleSl = `${teamContentSl} .team-role`;
-  // const teamTwoRowSl = `${sectionTwoContainerSl} .row`;
-  // const teamTwoColSl = `${teamTwoRowSl} .col-md-2`;
-  // const teamTwoSl = `${teamTwoRowSl} .team`;
-  // const teamTwoImgSl = `${teamTwoSl} .team-image`;
-  // const teamTwoContentSl = `${teamTwoSl} .team-content`;
+  const teamTwoRowSl = `${sectionTwoContainerSl} .row`;
+  const teamTwoColSl = `${teamTwoRowSl} .col-md-2`;
+  const teamTwoSl = `${teamTwoRowSl} .team`;
+  const teamTwoImgSl = `${teamTwoSl} .team-image`;
+  const teamTwoContentSl = `${teamTwoSl} .team-content`;
   const teamTwoNameTypoSl = `${teamNameSl} h5`;
   // const teamTwoRoleSl = `${teamRoleSl} .team-role`;
 
@@ -3513,6 +3513,8 @@ const Style = ({
         ${speakerImageBoxImgSl}{
           box-shadow: ${imageShadowValue}
         }
+
+        
 
         ${itemTeamMemberRoundedSl}{
          border-radius: ${(0,_bpl_tools_utils_getCSS__WEBPACK_IMPORTED_MODULE_2__.getBoxCSS)(image?.borderRadius)} 
@@ -3731,6 +3733,20 @@ const Style = ({
           fill: ${badge?.bgColor?.hover?.color} !important;
         }
 
+        ${_bpl_tools_utils_data__WEBPACK_IMPORTED_MODULE_1__.deskBreakpoint}{
+        .small{
+          max-width: 165px;
+          min-height: 165px;
+          objectFit: cover;
+        }
+
+        .large{
+          max-width: 360px;
+          min-height: 360px;
+          objectFit: cover;
+        }
+        }
+
         ${_bpl_tools_utils_data__WEBPACK_IMPORTED_MODULE_1__.tabBreakpoint}{
           ${headingBtnFSSl}{
             width: ${icon?.size?.tablet}px;
@@ -3747,6 +3763,18 @@ const Style = ({
           ${itemTeamMemberLinkIconSl}{
             width: ${linkArrowIcon?.size?.tablet}px;
             height: ${linkArrowIcon?.size?.tablet}px;
+          }
+
+          .small{
+            max-width: 165px;
+            min-height: 165px;
+            objectFit: cover;
+          }
+
+          .large{
+            max-width: 360px;
+            min-height: 360px;
+            objectFit: cover;
           }
         }
 
@@ -3766,6 +3794,18 @@ const Style = ({
           ${itemTeamMemberLinkIconSl}{
             width: ${linkArrowIcon?.size?.mobile}px;
             height: ${linkArrowIcon?.size?.mobile}px;
+          }
+
+          .small{
+            width: 120px;
+            height: 120px;
+            objectFit: cover;
+          }
+
+          .large{
+            width: 290px;
+            height: 290px;
+            objectFit: cover;
           }
         }
 
@@ -4346,10 +4386,12 @@ const TeamSectionTwo = ({
     }) => (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       onClick: open,
       style: {
-        cursor: "pointer"
+        cursor: "pointer",
+        display: "flex",
+        justifyContent: "center"
       }
     }, item?.image ? (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
-      className: "img-circle img-responsive",
+      className: "img-circle large img-responsive",
       src: item?.image,
       alt: "Selected"
     }) : (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.Button, {
@@ -4357,14 +4399,16 @@ const TeamSectionTwo = ({
     }, "Select Image"))
   })) : (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
     style: {
-      cursor: "pointer"
+      cursor: "pointer",
+      display: "flex",
+      justifyContent: "center"
     },
     href: item?.portfoloLink,
     target: item?.isOpenNewTab ? "_blank" : "_self",
     rel: "noreferrer noopener"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
     src: item?.image,
-    className: "img-circle img-responsive",
+    className: "img-circle large img-responsive",
     alt: "image"
   })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "team-links"
@@ -4469,10 +4513,12 @@ const TeamSectionTwo = ({
     }) => (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       onClick: open,
       style: {
-        cursor: "pointer"
+        cursor: "pointer",
+        display: "flex",
+        justifyContent: "center"
       }
     }, item?.image ? (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
-      className: "img-circle img-responsive",
+      className: "img-circle small img-responsive",
       src: item?.image,
       alt: "Selected"
     }) : (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.Button, {
@@ -4480,12 +4526,14 @@ const TeamSectionTwo = ({
     }, "Select Image"))
   })) : (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
     style: {
-      cursor: "pointer"
+      cursor: "pointer",
+      display: "flex",
+      justifyContent: "center"
     },
     href: item?.portfoloLink
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
     src: item?.image,
-    className: "img-circle img-responsive",
+    className: "img-circle small img-responsive",
     alt: "image"
   })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "team-links"

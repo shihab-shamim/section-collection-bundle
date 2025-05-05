@@ -10,10 +10,7 @@ import { generalStyleTabs, toolTipPresets } from "../../../utils/options";
 import General from "./General/General";
 import Style from "./Style/Style";
 import Advanced from "../../../../../../bpl-tools/Advanced/index";
-
 import { themes } from "../../../utils/options";
-
-// import { updateData } from "../../../utils/functions";
 import BPlBlockPreview from "./Panel/BPlBlockPreview/BPlBlockPreview";
 
 const Settings = ({ attributes, setAttributes, device }) => {

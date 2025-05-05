@@ -6,5 +6,6 @@ import './about';
 import './timeline';
 import './testimonial';
 import './feature';
-wp.blocks.updateCategory('practiceBundle', { icon: 'block-default' });
+import './call-to-actions';
+wp.blocks.updateCategory('section_collection', { icon: 'block-default' });
 

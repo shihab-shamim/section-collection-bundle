@@ -25,7 +25,6 @@ export const updateData = (attr, value, ...props) => {
 export const themeChange = (theme = "theme1", attributes) =>
   produce(attributes, (draft) => {
     draft["selectedTheme"] = theme;
-    // console.log(theme);
 
     switch (theme) {
       //======================= case for theme 1 ========================//

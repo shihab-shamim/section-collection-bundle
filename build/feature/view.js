@@ -2,196 +2,6 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "../bpl-tools/Advanced/generateCSS.js":
-/*!********************************************!*\
-  !*** ../bpl-tools/Advanced/generateCSS.js ***!
-  \********************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   animationFn: () => (/* binding */ animationFn),
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__),
-/* harmony export */   generateCSS: () => (/* binding */ generateCSS)
-/* harmony export */ });
-/* harmony import */ var _utils_data__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../utils/data */ "../bpl-tools/utils/data.js");
-/* harmony import */ var _utils_functions__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../utils/functions */ "../bpl-tools/utils/functions.js");
-/* harmony import */ var _utils_getCSS__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../utils/getCSS */ "../bpl-tools/utils/getCSS.js");
-
-
-
-const dimensionCSS = dimension => {
-  const {
-    padding,
-    margin
-  } = dimension || {};
-  const pCSS = p => (0,_utils_getCSS__WEBPACK_IMPORTED_MODULE_2__.isValidCSS)('padding', (0,_utils_getCSS__WEBPACK_IMPORTED_MODULE_2__.getBoxCSS)(p));
-  const mCSS = m => (0,_utils_getCSS__WEBPACK_IMPORTED_MODULE_2__.isValidCSS)('margin', (0,_utils_getCSS__WEBPACK_IMPORTED_MODULE_2__.getBoxCSS)(m));
-  return {
-    desktop: pCSS(padding?.desktop) + mCSS(margin?.desktop),
-    tablet: pCSS(padding?.tablet) + mCSS(margin?.tablet),
-    mobile: pCSS(padding?.mobile) + mCSS(margin?.mobile)
-  };
-};
-const borderShadowCSS = borderShadow => {
-  const {
-    normal,
-    hover
-  } = borderShadow || {};
-  const stateGenerate = state => {
-    const {
-      border,
-      radius,
-      shadow
-    } = state || {};
-    const radiusCSS = radius ? (0,_utils_getCSS__WEBPACK_IMPORTED_MODULE_2__.isValidCSS)('border-radius', (0,_utils_getCSS__WEBPACK_IMPORTED_MODULE_2__.getBoxCSS)(radius)) : '';
-    const shadowCSS = shadow ? `box-shadow: ${(0,_utils_getCSS__WEBPACK_IMPORTED_MODULE_2__.getMultiShadowCSS)(shadow)};` : '';
-    return (0,_utils_getCSS__WEBPACK_IMPORTED_MODULE_2__.getBorderBoxCSS)(border) + radiusCSS + shadowCSS;
-  };
-  return {
-    normal: stateGenerate(normal),
-    hover: stateGenerate(hover)
-  };
-};
-const visibilityCSS = visibility => {
-  const {
-    zIndex,
-    overflow
-  } = visibility || {};
-  const overflowCSS = overflow ? `overflow: ${overflow};` : '';
-  const zIndexCSS = device => zIndex?.[device] ? `z-index: ${zIndex[device]};` : '';
-  return {
-    desktop: zIndexCSS('desktop') + overflowCSS,
-    tablet: zIndexCSS('tablet'),
-    mobile: zIndexCSS('mobile')
-  };
-};
-const responsiveCSS = (responsive, isBackend) => {
-  const {
-    desktop = false,
-    tablet = false,
-    mobile = false
-  } = responsive || {};
-  const css = isBackend ? 'opacity: 0.5;' : 'display: none;';
-  const resCSS = val => val ? css : '';
-  return {
-    desktop: resCSS(desktop),
-    tablet: resCSS(tablet),
-    mobile: resCSS(mobile)
-  };
-};
-const transitionCSS = (background, borderShadow, transform) => {
-  const {
-    transition: bgT = 0.4
-  } = background || {};
-  const {
-    transition: bsT = 0.4
-  } = borderShadow || {};
-  const {
-    transition: tfT = 200
-  } = transform || {};
-  return `transition: background ${bgT}s, border ${bsT}s, border-radius ${bsT}s, box-shadow ${bsT}s, transform ${tfT}ms ease-in-out;`;
-};
-
-// export const animationFn = (animation, id,isBackend) => {
-// 	const selector = isBackend?`#${id} > div`:`$#${id}`;
-// 	const element = document.querySelector(selector);
-// 	if (element && animation && animation?.type) {
-// 		element.setAttribute('data-aos', animation.type);
-// 		element.setAttribute('data-aos-duration', animation.duration || 0.4);
-// 		element.setAttribute('data-aos-delay', animation.delay || 0);
-// 	}
-// }
-const animationFn = (animation, id, isBackend) => {
-  const selector = isBackend ? `#${id} > div` : `#${id}`;
-  const element = document.querySelector(selector);
-  if (element && animation && animation.type) {
-    element.setAttribute('data-aos', animation.type);
-    element.setAttribute('data-aos-duration', animation.duration || 0.4);
-    element.setAttribute('data-aos-delay', animation.delay || 0);
-    if (!element.classList.contains('aos-init')) {
-      element.classList.add('aos-init');
-      window?.AOS?.init();
-    }
-    if (isBackend) {
-      const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-          if (entry.intersectionRatio > 0.5) {
-            element.classList.add('aos-animate');
-          } else {
-            element.classList.remove('aos-animate');
-          }
-        });
-      }, {
-        threshold: [0.5]
-      });
-      observer.observe(element);
-    }
-  }
-};
-const generateCSS = (id, advanced, isBackend = false) => {
-  const {
-    dimension,
-    transform,
-    background,
-    borderShadow,
-    mask,
-    animation,
-    visibility,
-    responsive,
-    css = ''
-  } = advanced || {};
-  const selector = isBackend ? `#${id} > div > div` : `#${id} > div`;
-
-  // !isBackend && animationFn(animation, id);
-  animationFn(animation, id, isBackend);
-  const dCSS = dimensionCSS(dimension).desktop + visibilityCSS(visibility).desktop + transitionCSS(background, borderShadow, transform) + (0,_utils_getCSS__WEBPACK_IMPORTED_MODULE_2__.getMaskCSS)(mask);
-  const tCSS = dimensionCSS(dimension).tablet + visibilityCSS(visibility).tablet + responsiveCSS(responsive, isBackend).tablet;
-  const mCSS = dimensionCSS(dimension).mobile + visibilityCSS(visibility).mobile + responsiveCSS(responsive, isBackend).mobile;
-  const nCSS = borderShadowCSS(borderShadow).normal;
-  const hCSS = borderShadowCSS(borderShadow).hover;
-  const resCSS = responsiveCSS(responsive, isBackend).desktop;
-  return `
-		${dCSS || nCSS ? `${selector} {
-			${dCSS}
-			${nCSS}
-		}` : ''}
-		${hCSS ? `${selector}:hover {
-			${hCSS}
-		}` : ''}
-
-		${resCSS ? `${_utils_data__WEBPACK_IMPORTED_MODULE_0__.deskBreakpoint} {
-			${selector}{
-				${resCSS}
-			}
-		}` : ''}
-
-		${tCSS ? `${_utils_data__WEBPACK_IMPORTED_MODULE_0__.tabBreakpoint} {
-			${selector}{
-				${tCSS}
-			}
-		}` : ''}
-
-		${mCSS ? `${_utils_data__WEBPACK_IMPORTED_MODULE_0__.mobileBreakpoint} {
-			${selector}{
-				${mCSS}
-			}
-		}` : ''}
-
-		${(0,_utils_getCSS__WEBPACK_IMPORTED_MODULE_2__.getAdvBGCSS)(background?.normal, selector)}
-		${(0,_utils_getCSS__WEBPACK_IMPORTED_MODULE_2__.getAdvBGCSS)(background?.hover, selector, true)}
-		${(0,_utils_getCSS__WEBPACK_IMPORTED_MODULE_2__.getOverlayCSS)(background?.overlay, selector)}
-		${(0,_utils_getCSS__WEBPACK_IMPORTED_MODULE_2__.getOverlayCSS)(background?.hoverOverlay, selector, true)}
-		${(0,_utils_functions__WEBPACK_IMPORTED_MODULE_1__.isExist)(transform?.normal) ? (0,_utils_getCSS__WEBPACK_IMPORTED_MODULE_2__.getTransformCSS)(transform?.normal, selector) : ""}
-		${(0,_utils_functions__WEBPACK_IMPORTED_MODULE_1__.isExist)(transform?.hover) ? (0,_utils_getCSS__WEBPACK_IMPORTED_MODULE_2__.getTransformCSS)(transform?.hover, selector, true) : ""}
-
-		${css}
-	`.replace(/\s+/g, ' ');
-};
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (generateCSS);
-
-/***/ }),
-
 /***/ "../bpl-tools/Components/Mask/assets/shapes/blob.svg":
 /*!***********************************************************!*\
   !*** ../bpl-tools/Components/Mask/assets/shapes/blob.svg ***!
@@ -3562,27 +3372,28 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _bpl_tools_utils_data__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../../bpl-tools/utils/data */ "../bpl-tools/utils/data.js");
 /* harmony import */ var _bpl_tools_utils_getCSS__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../bpl-tools/utils/getCSS */ "../bpl-tools/utils/getCSS.js");
-/* harmony import */ var _bpl_tools_Advanced_generateCSS__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../../bpl-tools/Advanced/generateCSS */ "../bpl-tools/Advanced/generateCSS.js");
-/* harmony import */ var _utils_functions__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../utils/functions */ "./src/feature/utils/functions.js");
+/* harmony import */ var _utils_functions__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../utils/functions */ "./src/feature/utils/functions.js");
 
 
 
-
+// import {generateCSS} from '../../../../bpl-tools/Advanced/generateCSS';
 
 const Style = ({
   attributes,
   id,
   device = "desktop"
 }) => {
+  // advanced
   const {
     alignment,
     section,
     heading,
-    style,
-    advanced
+    style
   } = attributes;
-  const isBackend = false;
-  const cssString = (0,_bpl_tools_Advanced_generateCSS__WEBPACK_IMPORTED_MODULE_3__.generateCSS)(id, advanced, isBackend);
+
+  // const isBackend = false;
+  // const cssString = generateCSS(id, advanced, isBackend);
+
   const mainSl = `#${id}`;
 
   //feature 1
@@ -3640,6 +3451,8 @@ const Style = ({
   const featureTitle = `${featureItem} .feature-title`;
   const featureLink = `${featureTitle} .feature-link `;
   const featureDescription = `${featureItem} .feature-description`;
+  // ${cssString}
+
   const firstColStyles = `
 
     ${mainSl} .usage-section-1 .row .first-col.last-feature {
@@ -3821,7 +3634,7 @@ const Style = ({
           ${(0,_bpl_tools_utils_getCSS__WEBPACK_IMPORTED_MODULE_2__.isValidCSS)("border-radius", (0,_bpl_tools_utils_getCSS__WEBPACK_IMPORTED_MODULE_2__.getBoxCSS)(style?.iconButton?.border?.radius))}
           background-color: ${style?.iconButton?.colorBg}; 
 
-         ${(0,_utils_functions__WEBPACK_IMPORTED_MODULE_4__.getBorderStyles)(style?.iconButton?.border)};
+         ${(0,_utils_functions__WEBPACK_IMPORTED_MODULE_3__.getBorderStyles)(style?.iconButton?.border)};
 
         }
 
@@ -3872,7 +3685,7 @@ const Style = ({
           height: ${style?.iconButton?.height};
           ${(0,_bpl_tools_utils_getCSS__WEBPACK_IMPORTED_MODULE_2__.isValidCSS)("border-radius", (0,_bpl_tools_utils_getCSS__WEBPACK_IMPORTED_MODULE_2__.getBoxCSS)(style?.iconButton?.border?.radius))}!important;
           background-color: ${style?.iconButton?.colorBg};
-        ${(0,_utils_functions__WEBPACK_IMPORTED_MODULE_4__.getBorderStyles)(style?.iconButton?.border)}!important; 
+        ${(0,_utils_functions__WEBPACK_IMPORTED_MODULE_3__.getBorderStyles)(style?.iconButton?.border)}!important; 
         }
         ${badgeIcon} svg{
            width: ${style?.icon?.height};
@@ -3893,7 +3706,7 @@ const Style = ({
          color:${style?.des?.color};
     
         }
-        ${cssString}
+   
 
         @media only screen and (min-width: 641px) and (max-width: 1024px) {
 
@@ -4132,7 +3945,7 @@ const FeatureSection = ({
   }), isEditor ? (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.RichText, {
     className: "d-inline-block",
     value: subTitle?.text,
-    placeholder: "Your Badge",
+    placeholder: "Your Badge Text",
     onChange: v => {
       setAttributes({
         heading: {
@@ -4166,7 +3979,7 @@ const FeatureSection = ({
       });
     },
     allowedFormats: ['core/bold', 'core/italic', 'core/link', 'core/text-color'],
-    placeholder: "Enter Your Name"
+    placeholder: "Enter Your Title"
   }) : (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", {
     className: "title",
     dangerouslySetInnerHTML: {
@@ -4196,7 +4009,7 @@ const FeatureSection = ({
         features: (0,_bpl_tools_utils_functions__WEBPACK_IMPORTED_MODULE_3__.updateData)(features, v, indexFeature, 'title')
       }),
       allowedFormats: ['core/bold', 'core/italic', 'core/link', 'core/text-color'],
-      placeholder: "Enter Your Name"
+      placeholder: "Enter Your Title"
     }) : (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("h6", {
       className: "title-text",
       dangerouslySetInnerHTML: {
@@ -4340,7 +4153,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-// import { updateData } from '../../../../../bpl-tools/utils/functions';
 
 const FeatureTwoSection = ({
   attributes,

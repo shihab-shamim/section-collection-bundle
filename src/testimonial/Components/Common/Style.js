@@ -48,8 +48,6 @@ const Style = ({ attributes, id }) => {
     : `animation: scrollY var(--_animation-duration, ${scroll.speed}s)
                   var(--_animation-direction, forwards) linear infinite;`;
 
-  //   console.log(testimonial.image.border);
-
   const fogEffectConfig = fogEffect
     ? selectedTheme === "theme1"
       ? `

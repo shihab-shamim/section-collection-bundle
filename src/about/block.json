@@ -4,7 +4,7 @@
   "name": "b-blocks/about-us",
   "version": "1.0.0",
   "title": "About Us",
-  "category": "practiceBundle",
+  "category": "section_collection",
   "description": "Short description of the about us",
   "keywords": [
     "about",
@@ -244,6 +244,46 @@
             "right": "0rem",
             "bottom": "0rem",
             "left": "0rem"
+          },
+          "margin": {
+            "desktop": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "tablet": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "mobile": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "padding": {
+            "desktop": {
+              "top": "120px",
+              "right": 0,
+              "bottom": "120px",
+              "left": 0
+            },
+            "tablet": {
+              "top": "66.7px",
+              "right": 0,
+              "bottom": "66.7px",
+              "left": 0
+            },
+            "mobile": {
+              "top": "60px",
+              "right": 0,
+              "bottom": "60px",
+              "left": 0
+            }
           }
         }
       }
@@ -435,7 +475,8 @@
   "example": {
     "attributes": {}
   },
-  "editorScript": "file:../index.js",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
   "style": "file:./view.css",
   "render": "file:./render.php",
   "viewScript": "file:./view.js"

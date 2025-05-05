@@ -8,9 +8,6 @@ import Timeline2 from "../Common/Timeline2";
 
 const Edit = (props) => {
   const { attributes, setAttributes, clientId, device } = props;
-  // const { purposeType } = attributes;
-  // console.log(device);
-  // console.log(attributes);
   
   const from = "server";
   const {selectedTheme} = attributes || {}

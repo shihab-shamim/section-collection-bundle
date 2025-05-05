@@ -2,7 +2,6 @@
 import { __ } from "@wordpress/i18n";
 
 import { TextControl, __experimentalSpacer as Spacer, TextareaControl, ToggleControl } from '@wordpress/components';
-// import { IconLibrary } from '../../../../../../../../../../bpl-tools/Components';
 import { IconLibrary } from '../../../../../../../bpl-tools/Components';
 import { updateData } from '../../../../../../../bpl-tools/utils/functions';
 
@@ -28,8 +27,10 @@ const Features = ({ attributes, setAttributes, arrKey, index }) => {
           />
           <Spacer />
 
-          <TextControl value={features[index]?.title.replace(/<[^>]*>/g, '')}
+          <TextControl 
+            value={features[index]?.title.replace(/<[^>]*>/g, '')}
             label={__("Title", "b-blocks")}
+            placeholder="Enter Your Title"
             onChange={val => setAttributes({ features: updateData(features, val, index, 'title') })}
           />
           <Spacer />
@@ -38,7 +39,7 @@ const Features = ({ attributes, setAttributes, arrKey, index }) => {
             label={__("Description", "b-blocks")}
             value={features[index]?.description.replace(/<[^>]*>/g, '')}
             onChange={dec => setAttributes({ features: updateData(features, dec, index, 'description') })}
-            placeholder="Enter description"
+            placeholder="Enter Your Description"
           />
 
           {

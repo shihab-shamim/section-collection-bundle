@@ -1,4 +1,5 @@
 import {
+  deskBreakpoint,
   mobileBreakpoint,
   tabBreakpoint,
 } from "../../../../../bpl-tools/utils/data";
@@ -8,6 +9,9 @@ import {
   getShadowCSS,
   getTypoCSS,
 } from "../../../../../bpl-tools/utils/getCSS";
+
+
+
 import { getGradientCSS } from "../../utils/functions";
 
 const Style = ({ attributes, id }) => {
@@ -74,17 +78,17 @@ const Style = ({ attributes, id }) => {
   const highlightSecondarySl = `${sectionTwoContainerSl} .highlight_secondary`;
   const descriptionSl = `${sectionTwoContainerSl} .team-description`;
   const rowTwoSl = `${sectionTwoContainerSl} .row`;
-  // const colTwoSl = `${rowTwoSl} .col-md-4`;
+  const colTwoSl = `${rowTwoSl} .col-md-4`;
   const teamSl = `${rowTwoSl} .team`;
-  // const teamImgSl = `${teamSl} .team-image`;
+  const teamImgSl = `${teamSl} .team-image`;
   const teamContentSl = `${teamSl} .team-content`;
   const teamNameSl = `${teamContentSl} .team-name`;
   const teamRoleSl = `${teamContentSl} .team-role`;
-  // const teamTwoRowSl = `${sectionTwoContainerSl} .row`;
-  // const teamTwoColSl = `${teamTwoRowSl} .col-md-2`;
-  // const teamTwoSl = `${teamTwoRowSl} .team`;
-  // const teamTwoImgSl = `${teamTwoSl} .team-image`;
-  // const teamTwoContentSl = `${teamTwoSl} .team-content`;
+  const teamTwoRowSl = `${sectionTwoContainerSl} .row`;
+  const teamTwoColSl = `${teamTwoRowSl} .col-md-2`;
+  const teamTwoSl = `${teamTwoRowSl} .team`;
+  const teamTwoImgSl = `${teamTwoSl} .team-image`;
+  const teamTwoContentSl = `${teamTwoSl} .team-content`;
   const teamTwoNameTypoSl = `${teamNameSl} h5`;
   // const teamTwoRoleSl = `${teamRoleSl} .team-role`;
 
@@ -125,6 +129,8 @@ const Style = ({ attributes, id }) => {
         ${speakerImageBoxImgSl}{
           box-shadow: ${imageShadowValue}
         }
+
+        
 
         ${itemTeamMemberRoundedSl}{
          border-radius: ${getBoxCSS(image?.borderRadius)} 
@@ -343,6 +349,20 @@ const Style = ({ attributes, id }) => {
           fill: ${badge?.bgColor?.hover?.color} !important;
         }
 
+        ${deskBreakpoint}{
+        .small{
+          max-width: 165px;
+          min-height: 165px;
+          objectFit: cover;
+        }
+
+        .large{
+          max-width: 360px;
+          min-height: 360px;
+          objectFit: cover;
+        }
+        }
+
         ${tabBreakpoint}{
           ${headingBtnFSSl}{
             width: ${icon?.size?.tablet}px;
@@ -359,6 +379,18 @@ const Style = ({ attributes, id }) => {
           ${itemTeamMemberLinkIconSl}{
             width: ${linkArrowIcon?.size?.tablet}px;
             height: ${linkArrowIcon?.size?.tablet}px;
+          }
+
+          .small{
+            max-width: 165px;
+            min-height: 165px;
+            objectFit: cover;
+          }
+
+          .large{
+            max-width: 360px;
+            min-height: 360px;
+            objectFit: cover;
           }
         }
 
@@ -378,6 +410,18 @@ const Style = ({ attributes, id }) => {
           ${itemTeamMemberLinkIconSl}{
             width: ${linkArrowIcon?.size?.mobile}px;
             height: ${linkArrowIcon?.size?.mobile}px;
+          }
+
+          .small{
+            width: 120px;
+            height: 120px;
+            objectFit: cover;
+          }
+
+          .large{
+            width: 290px;
+            height: 290px;
+            objectFit: cover;
           }
         }
 

@@ -227,6 +227,54 @@ export const themes = {
           width: 1,
         },
       },
+      bg: {
+        borderRadius: {
+          top: "0rem",
+          right: "0rem",
+          bottom: "0rem",
+          left: "0rem",
+        },
+        margin: {
+          desktop: {
+            top: 0,
+            right: 0,
+            bottom: 0,
+            left: 0,
+          },
+          tablet: {
+            top: 0,
+            right: 0,
+            bottom: 0,
+            left: 0,
+          },
+          mobile: {
+            top: 0,
+            right: 0,
+            bottom: 0,
+            left: 0,
+          },
+        },
+        padding: {
+          desktop: {
+            top: "120px",
+            right: 0,
+            bottom: "120px",
+            left: 0,
+          },
+          tablet: {
+            top: "66.7px",
+            right: 0,
+            bottom: "66.7px",
+            left: 0,
+          },
+          mobile: {
+            top: "60px",
+            right: 0,
+            bottom: "60px",
+            left: 0,
+          },
+        },
+      },
     },
   },
   themeTwo: {
@@ -372,7 +420,7 @@ export const themes = {
           },
           title: "Brief",
           description:
-            "Create a future project brief directly in Flowmapp to use for creating.",
+            "Create a future project brief directly in Flowmap to use for creating.",
         },
         {
           id: 2,
@@ -571,6 +619,46 @@ export const themes = {
           right: "1rem",
           bottom: "1rem",
           left: "1rem",
+        },
+        margin: {
+          desktop: {
+            top: 0,
+            right: 0,
+            bottom: 0,
+            left: 0,
+          },
+          tablet: {
+            top: 0,
+            right: 0,
+            bottom: 0,
+            left: 0,
+          },
+          mobile: {
+            top: 0,
+            right: 0,
+            bottom: 0,
+            left: 0,
+          },
+        },
+        padding: {
+          desktop: {
+            top: "48px",
+            right: "48px",
+            bottom: "48px",
+            left: "48px",
+          },
+          tablet: {
+            top: "48px",
+            right: "48px",
+            bottom: "48px",
+            left: "48px",
+          },
+          mobile: {
+            top: "16px",
+            right: "16px",
+            bottom: "16px",
+            left: "16px",
+          },
         },
       },
     },
@@ -928,10 +1016,50 @@ export const themes = {
       },
       bg: {
         borderRadius: {
-          top: "0.25rem",
-          right: "0.25rem",
-          bottom: "0.25rem",
-          left: "0.25rem",
+          top: "0rem",
+          right: "0rem",
+          bottom: "0rem",
+          left: "0rem",
+        },
+        margin: {
+          desktop: {
+            top: 0,
+            right: 0,
+            bottom: 0,
+            left: 0,
+          },
+          tablet: {
+            top: 0,
+            right: 0,
+            bottom: 0,
+            left: 0,
+          },
+          mobile: {
+            top: 0,
+            right: 0,
+            bottom: 0,
+            left: 0,
+          },
+        },
+        padding: {
+          desktop: {
+            top: "120px",
+            right: 0,
+            bottom: "120px",
+            left: 0,
+          },
+          tablet: {
+            top: "66.7px",
+            right: 0,
+            bottom: "66.7px",
+            left: 0,
+          },
+          mobile: {
+            top: "60px",
+            right: 0,
+            bottom: "60px",
+            left: 0,
+          },
         },
       },
     },
@@ -1183,10 +1311,50 @@ export const themes = {
       },
       bg: {
         borderRadius: {
-          top: "0.25rem",
-          right: "0.25rem",
-          bottom: "0.25rem",
-          left: "0.25rem",
+          top: "0rem",
+          right: "0rem",
+          bottom: "0rem",
+          left: "0rem",
+        },
+        margin: {
+          desktop: {
+            top: 0,
+            right: 0,
+            bottom: 0,
+            left: 0,
+          },
+          tablet: {
+            top: 0,
+            right: 0,
+            bottom: 0,
+            left: 0,
+          },
+          mobile: {
+            top: 0,
+            right: 0,
+            bottom: 0,
+            left: 0,
+          },
+        },
+        padding: {
+          desktop: {
+            top: "120px",
+            right: 0,
+            bottom: "120px",
+            left: 0,
+          },
+          tablet: {
+            top: "66.7px",
+            right: 0,
+            bottom: "66.7px",
+            left: 0,
+          },
+          mobile: {
+            top: "60px",
+            right: 0,
+            bottom: "60px",
+            left: 0,
+          },
         },
       },
     },

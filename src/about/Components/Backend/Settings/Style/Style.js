@@ -16,7 +16,7 @@ import {
   BoxControl,
   Background,
 } from "../../../../../../../bpl-tools/Components";
-import { updateData } from "../../../../utils/functions";
+import { updateData } from "../../../../../utils/functions";
 
 const Style = ({ attributes, setAttributes, device }) => {
   const { styles, themeSl, about } = attributes;
@@ -76,8 +76,6 @@ const Style = ({ attributes, setAttributes, device }) => {
             step={1}
           />
 
-          <Spacer />
-
           <div style={{ marginTop: "20px" }}></div>
 
           <ColorControl
@@ -98,7 +96,6 @@ const Style = ({ attributes, setAttributes, device }) => {
             defaultColor={button?.icon?.color}
           />
 
-          <Spacer />
           <div style={{ marginTop: "20px" }}></div>
 
           <Typography
@@ -117,8 +114,6 @@ const Style = ({ attributes, setAttributes, device }) => {
             }}
             defaultTypo={button?.typography}
           />
-
-          <Spacer />
 
           <div style={{ marginTop: "20px" }}></div>
 
@@ -162,7 +157,6 @@ const Style = ({ attributes, setAttributes, device }) => {
             </>
           )}
 
-          <Spacer />
           <div style={{ marginTop: "20px" }}></div>
 
           <BorderBoxControl
@@ -180,8 +174,6 @@ const Style = ({ attributes, setAttributes, device }) => {
               })
             }
           />
-
-          <Spacer />
 
           <div style={{ marginTop: "20px" }}></div>
 
@@ -201,7 +193,6 @@ const Style = ({ attributes, setAttributes, device }) => {
             }}
           />
 
-          <Spacer />
           <div style={{ marginTop: "20px" }}></div>
 
           <BoxControl
@@ -238,7 +229,6 @@ const Style = ({ attributes, setAttributes, device }) => {
             }
           />
 
-          <Spacer />
           <div style={{ marginTop: "20px" }}></div>
 
           <PanelRow>
@@ -264,7 +254,6 @@ const Style = ({ attributes, setAttributes, device }) => {
             step={1}
           />
 
-          <Spacer />
           <div style={{ marginTop: "20px" }}></div>
 
           <Typography
@@ -284,7 +273,6 @@ const Style = ({ attributes, setAttributes, device }) => {
             defaultTypo={heading?.title?.typography}
           />
 
-          <Spacer />
           <div style={{ marginTop: "20px" }}></div>
 
           <ColorControl
@@ -304,7 +292,6 @@ const Style = ({ attributes, setAttributes, device }) => {
             defaultColor={heading?.title?.color}
           />
 
-          <Spacer />
           <div style={{ marginTop: "20px" }}></div>
 
           {(themeSl === "themeThree" || themeSl === "themeFour") && (
@@ -326,7 +313,6 @@ const Style = ({ attributes, setAttributes, device }) => {
                 defaultTypo={heading?.description?.typography}
               />
 
-              <Spacer />
               <div style={{ marginTop: "20px" }}></div>
 
               <ColorControl
@@ -348,7 +334,6 @@ const Style = ({ attributes, setAttributes, device }) => {
             </>
           )}
 
-          <Spacer />
           <div style={{ marginTop: "20px" }}></div>
 
           {(themeSl === "themeOne" || themeSl === "themeFour") && (
@@ -377,7 +362,6 @@ const Style = ({ attributes, setAttributes, device }) => {
                 step={1}
               />
 
-              <Spacer />
               <div style={{ marginTop: "20px" }}></div>
 
               <PanelRow>
@@ -406,7 +390,6 @@ const Style = ({ attributes, setAttributes, device }) => {
             </>
           )}
 
-          <Spacer />
           <div style={{ marginTop: "20px" }}></div>
 
           {themeSl === "themeOne" && (
@@ -437,7 +420,6 @@ const Style = ({ attributes, setAttributes, device }) => {
             </>
           )}
 
-          <Spacer />
           <div style={{ marginTop: "20px" }}></div>
 
           {(themeSl === "themeTwo" || themeSl === "themeThree") && (
@@ -483,7 +465,6 @@ const Style = ({ attributes, setAttributes, device }) => {
             />
           )} */}
 
-          <Spacer />
           <div style={{ marginTop: "20px" }}></div>
 
           <ToggleControl
@@ -527,7 +508,6 @@ const Style = ({ attributes, setAttributes, device }) => {
               }}
             />
 
-            <Spacer />
             <div style={{ marginTop: "20px" }}></div>
 
             <ColorControl
@@ -547,7 +527,6 @@ const Style = ({ attributes, setAttributes, device }) => {
               defaultColor={items?.title?.color}
             />
 
-            <Spacer />
             <div style={{ marginTop: "20px" }}></div>
 
             <Typography
@@ -566,7 +545,6 @@ const Style = ({ attributes, setAttributes, device }) => {
               }}
             />
 
-            <Spacer />
             <div style={{ marginTop: "20px" }}></div>
 
             <ColorControl
@@ -586,7 +564,6 @@ const Style = ({ attributes, setAttributes, device }) => {
               defaultColor={items?.description?.color}
             />
 
-            <Spacer />
             <div style={{ marginTop: "20px" }}></div>
 
             {themeSl === "themeTwo" && (
@@ -607,7 +584,6 @@ const Style = ({ attributes, setAttributes, device }) => {
               />
             )}
 
-            <Spacer />
             <div style={{ marginTop: "20px" }}></div>
 
             <PanelRow>
@@ -633,7 +609,6 @@ const Style = ({ attributes, setAttributes, device }) => {
               step={1}
             />
 
-            <Spacer />
             <div style={{ marginTop: "20px" }}></div>
 
             {themeSl === "themeFour" && (
@@ -654,7 +629,6 @@ const Style = ({ attributes, setAttributes, device }) => {
                   }
                 />
 
-                <Spacer />
                 <div style={{ marginTop: "20px" }}></div>
 
                 <ColorsControl
@@ -674,7 +648,6 @@ const Style = ({ attributes, setAttributes, device }) => {
                   }}
                 />
 
-                <Spacer />
                 <div style={{ marginTop: "20px" }}></div>
 
                 <ColorsControl
@@ -694,7 +667,6 @@ const Style = ({ attributes, setAttributes, device }) => {
                   }}
                 />
 
-                <Spacer />
                 <div style={{ marginTop: "20px" }}></div>
 
                 <PanelRow>
@@ -722,7 +694,6 @@ const Style = ({ attributes, setAttributes, device }) => {
                   step={1}
                 />
 
-                <Spacer />
                 <div style={{ marginTop: "20px" }}></div>
 
                 <BoxControl
@@ -743,7 +714,6 @@ const Style = ({ attributes, setAttributes, device }) => {
               </>
             )}
 
-            <Spacer />
             <div style={{ marginTop: "20px" }}></div>
 
             {themeSl === "themeOne" && (
@@ -765,7 +735,6 @@ const Style = ({ attributes, setAttributes, device }) => {
                   defaultColor={items?.separator?.color}
                 />
 
-                <Spacer />
                 <div style={{ marginTop: "20px" }}></div>
 
                 <RangeControl
@@ -813,7 +782,6 @@ const Style = ({ attributes, setAttributes, device }) => {
               }}
             />
 
-            <Spacer />
             <div style={{ marginTop: "20px" }}></div>
 
             <ColorControl
@@ -833,7 +801,6 @@ const Style = ({ attributes, setAttributes, device }) => {
               defaultColor={styles?.item?.title?.color}
             />
 
-            <Spacer />
             <div style={{ marginTop: "20px" }}></div>
 
             <Typography
@@ -852,7 +819,6 @@ const Style = ({ attributes, setAttributes, device }) => {
               }}
             />
 
-            <Spacer />
             <div style={{ marginTop: "20px" }}></div>
 
             <ColorControl
@@ -898,7 +864,6 @@ const Style = ({ attributes, setAttributes, device }) => {
             }}
           />
 
-          <Spacer />
           <div style={{ marginTop: "20px" }}></div>
 
           <BoxControl
@@ -909,6 +874,35 @@ const Style = ({ attributes, setAttributes, device }) => {
                 styles: updateData(styles, values, "bg", "borderRadius"),
               })
             }
+          />
+
+          <div style={{ marginTop: "20px" }}></div>
+
+          <PanelRow>
+            <Label className="">{__("Margin", "b-blocks")}</Label>
+            <Device />
+          </PanelRow>
+          <BoxControl
+            values={styles?.bg?.margin?.[device]}
+            onChange={(values) => {
+              setAttributes({
+                styles: updateData(styles, values, "bg", "margin", device),
+              });
+            }}
+          />
+          <div style={{ marginTop: "20px" }}></div>
+
+          <PanelRow>
+            <Label className="">{__("Padding", "b-blocks")}</Label>
+            <Device />
+          </PanelRow>
+          <BoxControl
+            values={styles?.bg?.padding?.[device]}
+            onChange={(values) => {
+              setAttributes({
+                styles: updateData(styles, values, "bg", "padding", device),
+              });
+            }}
           />
         </PanelBody>
       </>

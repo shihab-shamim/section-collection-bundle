@@ -18,8 +18,6 @@ const Style = ({ attributes, setAttributes }) => {
   const { section, testimonial } = styles || {};
   const { bg, name, designation, content, image, tags } = testimonial || {};
 
-  // console.log(styles.testimonial.bg);
-
   return (
     <>
       <PanelBody

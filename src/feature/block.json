@@ -4,7 +4,7 @@
   "name": "b-blocks/feature-section",
   "version": "1.0.0",
   "title": "Feature Section",
-  "category": "practiceBundle",
+  "category": "section_collection",
   "description": "Feature Section plugin showcases your website's key features effortlessly and beautifully",
   "keywords": ["Feature Section", "Feature", "Section"],
   "textdomain": "b-blocks",
@@ -483,7 +483,8 @@
   "example": {
     "attributes": {}
   },
-  "editorScript": "file:../index.js",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
   "style": "file:./view.css",
   "render": "file:./render.php",
   "viewScript": "file:./view.js"

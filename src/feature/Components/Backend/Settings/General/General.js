@@ -45,6 +45,7 @@ const General = ({ attributes, setAttributes, device = "desktop" }) => {
           >
             <InputControl
               label={__("Badge Text", "b-blocks")}
+              placeholder="Enter Badge Text"
               value={heading?.subTitle?.text?.replace(/<\/?[^>]+(>|$)/g, "")}
               onChange={(newtext) => { setAttributes({ heading: { ...heading, subTitle: { ...heading.subTitle, text: newtext } } }) }}
             />
@@ -60,7 +61,8 @@ const General = ({ attributes, setAttributes, device = "desktop" }) => {
             <Spacer />
 
             <InputControl
-              label={__("Text", "b-blocks")}
+              label={__("title", "b-blocks")}
+              placeholder="Enter Your Title"
               value={heading?.title?.text.replace(/<\/?[^>]+(>|$)/g, "")}
               onChange={(newtext) => { setAttributes({ heading: { ...heading, title: { ...heading.title, text: newtext } } }) }}
             />

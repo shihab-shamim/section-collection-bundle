@@ -1,6 +1,7 @@
 import {
   getBackgroundCSS,
   getBorderCSS,
+  getBoxCSS,
   getColorsCSS,
   getTypoCSS,
 } from "../../../../../bpl-tools/utils/getCSS";
@@ -20,8 +21,6 @@ const Style = ({ attributes, id }) => {
   const { image, rowDirection } = layout || {};
   const { separator, title: itemTitle } = items || {};
   const { width: separatorWidth, color: separatorColor } = separator || {};
-
-  // console.log(heading?.layout?.desktop?.margin?.bottom);
 
   const isBackend = false;
   const cssString = generateCSS(id, advanced, isBackend);
@@ -332,13 +331,17 @@ const Style = ({ attributes, id }) => {
        border-radius: ${styles?.bg?.borderRadius?.top} ${
          styles?.bg?.borderRadius?.right
        } ${styles?.bg?.borderRadius?.bottom} ${styles?.bg?.borderRadius?.left};
+       padding: ${getBoxCSS(styles?.bg?.padding?.desktop)};
+       margin: ${getBoxCSS(styles?.bg?.margin?.desktop)};
       }   
 
       ${aboutSl}{
        ${getBackgroundCSS(bg?.desktop)}
        border-radius: ${styles?.bg?.borderRadius?.top} ${
          styles?.bg?.borderRadius?.right
-       } ${styles?.bg?.borderRadius?.bottom} ${styles?.bg?.borderRadius?.left}; 
+       } ${styles?.bg?.borderRadius?.bottom} ${styles?.bg?.borderRadius?.left};
+       padding: ${getBoxCSS(styles?.bg?.padding?.desktop)};
+       margin: ${getBoxCSS(styles?.bg?.margin?.desktop)};
       }
 
       ${aboutTwoItemsTitleSl}{
@@ -350,10 +353,20 @@ const Style = ({ attributes, id }) => {
       }
 
       ${aboutTwoBodySl} {
-        ${getBackgroundCSS(bg?.desktop)}
-        border-radius: ${styles?.bg?.borderRadius?.top} ${
-          styles?.bg?.borderRadius?.right
-        } ${styles?.bg?.borderRadius?.bottom} ${styles?.bg?.borderRadius?.left};
+       ${getBackgroundCSS(bg?.desktop)}
+       border-radius: ${styles?.bg?.borderRadius?.top} ${
+         styles?.bg?.borderRadius?.right
+       } ${styles?.bg?.borderRadius?.bottom} ${styles?.bg?.borderRadius?.left};
+       padding: ${getBoxCSS(styles?.bg?.padding?.desktop)};
+       margin: ${getBoxCSS(styles?.bg?.margin?.desktop)};
+      }
+
+      ${aboutFourBodySl}{
+       border-radius: ${styles?.bg?.borderRadius?.top} ${
+         styles?.bg?.borderRadius?.right
+       } ${styles?.bg?.borderRadius?.bottom} ${styles?.bg?.borderRadius?.left};
+       padding: ${getBoxCSS(styles?.bg?.padding?.desktop)};
+       margin: ${getBoxCSS(styles?.bg?.margin?.desktop)};
       }
 
       ${aboutTwoImgSl}{
@@ -626,6 +639,26 @@ const Style = ({ attributes, id }) => {
           width: ${items?.icon?.iconBgSize?.mobile}px;
           height: ${items?.icon?.iconBgSize?.mobile}px;
         }
+
+        ${aboutSl}{
+         padding: ${getBoxCSS(styles?.bg?.padding?.mobile)};
+         margin: ${getBoxCSS(styles?.bg?.margin?.mobile)};
+        }
+
+        ${aboutTwoBodySl}{
+         padding: ${getBoxCSS(styles?.bg?.padding?.mobile)};
+         margin: ${getBoxCSS(styles?.bg?.margin?.mobile)};
+        }
+
+        ${aboutThreeBodySl}{
+         padding: ${getBoxCSS(styles?.bg?.padding?.mobile)};
+         margin: ${getBoxCSS(styles?.bg?.margin?.mobile)};
+        }
+
+        ${aboutFourBodySl}{
+         padding: ${getBoxCSS(styles?.bg?.padding?.mobile)};
+         margin: ${getBoxCSS(styles?.bg?.margin?.mobile)};
+        }
       }
 
 
@@ -633,6 +666,26 @@ const Style = ({ attributes, id }) => {
         ${bodyIconsSl}{
           height: auto;
           width: ${items?.icon?.size?.tablet}px;
+        }
+
+        ${aboutSl}{
+         padding: ${getBoxCSS(styles?.bg?.padding?.tablet)};
+         margin: ${getBoxCSS(styles?.bg?.margin?.tablet)};
+        }
+
+        ${aboutTwoBodySl}{
+         padding: ${getBoxCSS(styles?.bg?.padding?.tablet)};
+         margin: ${getBoxCSS(styles?.bg?.margin?.tablet)};
+        }
+
+        ${aboutThreeBodySl}{
+         padding: ${getBoxCSS(styles?.bg?.padding?.tablet)};
+         margin: ${getBoxCSS(styles?.bg?.margin?.tablet)};
+        }
+
+         ${aboutFourBodySl}{
+         padding: ${getBoxCSS(styles?.bg?.padding?.tablet)};
+         margin: ${getBoxCSS(styles?.bg?.margin?.tablet)};
         }
 
         ${btnFs20Sl} {

@@ -19,12 +19,6 @@ const TeamSectionTwo = ({ attributes, setAttributes }) => {
     <div className={`team-section ${styleSl}`}>
       <section id="team" className="text-center section">
         <div className="container">
-          {/* <h2>
-            <span className="highlight_secondary">
-              {heading?.highlightText}
-            </span>
-            {heading?.titleText}
-          </h2> */}
           {isEditor ? (
             <h2>
               <RichText
@@ -85,11 +79,6 @@ const TeamSectionTwo = ({ attributes, setAttributes }) => {
             </h2>
           )}
 
-          {/* <h5>
-            {heading?.descriptionLine1}
-            <br />
-            {heading?.descriptionLine2}
-          </h5> */}
           {isEditor ? (
             <h5 className="team-description">
               <RichText
@@ -157,13 +146,6 @@ const TeamSectionTwo = ({ attributes, setAttributes }) => {
               <div key={index} className="col-md-4 col-sm-12">
                 <div className="team">
                   <div className="team-image">
-                    {/* <a href="#">
-                      <img
-                        src={item?.image}
-                        className="img-circle img-responsive"
-                      />
-                    </a> */}
-
                     {isEditor ? (
                       <MediaUploadCheck>
                         <MediaUpload
@@ -182,10 +164,17 @@ const TeamSectionTwo = ({ attributes, setAttributes }) => {
                           allowedTypes={["image"]}
                           value={item?.image}
                           render={({ open }) => (
-                            <div onClick={open} style={{ cursor: "pointer" }}>
+                            <div
+                              onClick={open}
+                              style={{
+                                cursor: "pointer",
+                                display: "flex",
+                                justifyContent: "center",
+                              }}
+                            >
                               {item?.image ? (
                                 <img
-                                  className="img-circle img-responsive"
+                                  className="img-circle large img-responsive"
                                   src={item?.image}
                                   alt="Selected"
                                 />
@@ -198,14 +187,18 @@ const TeamSectionTwo = ({ attributes, setAttributes }) => {
                       </MediaUploadCheck>
                     ) : (
                       <a
-                        style={{ cursor: "pointer" }}
+                        style={{
+                          cursor: "pointer",
+                          display: "flex",
+                          justifyContent: "center",
+                        }}
                         href={item?.portfoloLink}
                         target={item?.isOpenNewTab ? "_blank" : "_self"}
                         rel="noreferrer noopener"
                       >
                         <img
                           src={item?.image}
-                          className="img-circle img-responsive"
+                          className="img-circle large img-responsive"
                           alt="image"
                         />
                       </a>
@@ -230,9 +223,6 @@ const TeamSectionTwo = ({ attributes, setAttributes }) => {
                   </div>
                   <div className="team-content">
                     <div className="team-name">
-                      {/* <a href="#">
-                        <h5>{item?.name}</h5>
-                      </a> */}
                       {isEditor ? (
                         <a>
                           <RichText
@@ -270,7 +260,6 @@ const TeamSectionTwo = ({ attributes, setAttributes }) => {
                         </a>
                       )}
                     </div>
-                    {/* <div className="team-role">{item?.role}</div> */}
                     {isEditor ? (
                       <RichText
                         tagName="div"
@@ -315,13 +304,6 @@ const TeamSectionTwo = ({ attributes, setAttributes }) => {
               <div key={index} className="col-md-2 col-sm-4 col-xs-6">
                 <div className="team">
                   <div className="team-image">
-                    {/* <a href="#">
-                      <img
-                        src={item?.image}
-                        className="img-circle img-responsive"
-                      />
-                    </a> */}
-
                     {isEditor ? (
                       <MediaUploadCheck>
                         <MediaUpload
@@ -340,10 +322,17 @@ const TeamSectionTwo = ({ attributes, setAttributes }) => {
                           allowedTypes={["image"]}
                           value={item?.image}
                           render={({ open }) => (
-                            <div onClick={open} style={{ cursor: "pointer" }}>
+                            <div
+                              onClick={open}
+                              style={{
+                                cursor: "pointer",
+                                display: "flex",
+                                justifyContent: "center",
+                              }}
+                            >
                               {item?.image ? (
                                 <img
-                                  className="img-circle img-responsive"
+                                  className="img-circle small img-responsive"
                                   src={item?.image}
                                   alt="Selected"
                                 />
@@ -356,12 +345,16 @@ const TeamSectionTwo = ({ attributes, setAttributes }) => {
                       </MediaUploadCheck>
                     ) : (
                       <a
-                        style={{ cursor: "pointer" }}
+                        style={{
+                          cursor: "pointer",
+                          display: "flex",
+                          justifyContent: "center",
+                        }}
                         href={item?.portfoloLink}
                       >
                         <img
                           src={item?.image}
-                          className="img-circle img-responsive"
+                          className="img-circle small img-responsive"
                           alt="image"
                         />
                       </a>
@@ -417,7 +410,6 @@ const TeamSectionTwo = ({ attributes, setAttributes }) => {
                         <h5>{item?.name}</h5>
                       )}
                     </div>
-                    {/* <div className="team-role">{item?.role}</div> */}
                     {isEditor ? (
                       <RichText
                         tagName="div"

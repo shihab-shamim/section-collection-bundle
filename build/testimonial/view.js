@@ -14821,9 +14821,6 @@ const Style = ({
                   animation-play-state: paused;
                 }` : `animation: scrollY var(--_animation-duration, ${scroll.speed}s)
                   var(--_animation-direction, forwards) linear infinite;`;
-
-  //   console.log(testimonial.image.border);
-
   const fogEffectConfig = fogEffect ? selectedTheme === "theme1" ? `
     -webkit-mask: linear-gradient(transparent, #fff 20%, #fff 80%, transparent);
 mask: linear-gradient(transparent, #fff 20%, #fff 80%, transparent);
@@ -15436,22 +15433,6 @@ const Testimonial2nd = ({
     badge,
     sectionBody
   } = layout || {};
-
-  // const swiper = new Swiper(".swiper", {
-  //   slidesPerView: "auto", // Allows multiple slides to be visible
-  //   watchSlidesProgress: true,
-  //   spaceBetween: 30,
-  //   centeredSlides: true,
-  //   loop: true, // Ensures infinite scrolling effect
-  //   speed: 5000, // Adjusts the speed of smooth sliding
-  //   autoplay: {
-  //     delay: 0, // No delay between slides
-  //     disableOnInteraction: false, // Keeps autoplay running after interaction
-  //   },
-  // });
-
-  // console.log(options.simulateTouch );
-
   return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "mainCont"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
@@ -15504,7 +15485,6 @@ const Testimonial2nd = ({
   }, sectionHeader.subtitle))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "section-body",
     style: {
-      // border: "1px solid red",
       padding: "0px",
       position: "relative"
     }
@@ -15513,7 +15493,6 @@ const Testimonial2nd = ({
     style: {
       display: "flex",
       flexDirection: "column"
-      // gap: sectionBody.colGap,
     }
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "testimonial-slider-1"

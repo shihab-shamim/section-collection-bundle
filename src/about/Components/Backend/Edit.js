@@ -7,8 +7,7 @@ import AboutUs from "../AboutUs/AboutUs";
 import AboutUsThree from "../AboutUs/AboutUsThree";
 import AboutUsTwo from "../AboutUs/AboutUsTwo";
 import AboutUsFour from "../AboutUs/AboutUsFour";
-// import AboutUsFive from "../AboutUs/AboutUsFive";
-// import { BplBlockPreview } from "../../../../../bpl-tools/Components";
+import { BplBlockPreview } from "../../../../../bpl-tools/Components";
 
 const Edit = (props) => {
   const { attributes, setAttributes, clientId, device } = props;

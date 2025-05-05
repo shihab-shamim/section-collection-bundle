@@ -1,7 +1,6 @@
 
 import { useSelect } from '@wordpress/data';
 import { RichText } from "@wordpress/block-editor";
-// import { updateData } from '../../../../../bpl-tools/utils/functions';
 import { updateData } from '../../../../../../bpl-tools/utils/functions';
 
 

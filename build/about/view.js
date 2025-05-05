@@ -4819,9 +4819,6 @@ const Style = ({
     width: separatorWidth,
     color: separatorColor
   } = separator || {};
-
-  // console.log(heading?.layout?.desktop?.margin?.bottom);
-
   const isBackend = false;
   const cssString = (0,_bpl_tools_Advanced_generateCSS__WEBPACK_IMPORTED_MODULE_2__.generateCSS)(id, advanced, isBackend);
 
@@ -5074,11 +5071,15 @@ const Style = ({
       ${aboutThreeBodySl}{
        ${(0,_bpl_tools_utils_getCSS__WEBPACK_IMPORTED_MODULE_1__.getBackgroundCSS)(bg?.desktop)}
        border-radius: ${styles?.bg?.borderRadius?.top} ${styles?.bg?.borderRadius?.right} ${styles?.bg?.borderRadius?.bottom} ${styles?.bg?.borderRadius?.left};
+       padding: ${(0,_bpl_tools_utils_getCSS__WEBPACK_IMPORTED_MODULE_1__.getBoxCSS)(styles?.bg?.padding?.desktop)};
+       margin: ${(0,_bpl_tools_utils_getCSS__WEBPACK_IMPORTED_MODULE_1__.getBoxCSS)(styles?.bg?.margin?.desktop)};
       }   
 
       ${aboutSl}{
        ${(0,_bpl_tools_utils_getCSS__WEBPACK_IMPORTED_MODULE_1__.getBackgroundCSS)(bg?.desktop)}
-       border-radius: ${styles?.bg?.borderRadius?.top} ${styles?.bg?.borderRadius?.right} ${styles?.bg?.borderRadius?.bottom} ${styles?.bg?.borderRadius?.left}; 
+       border-radius: ${styles?.bg?.borderRadius?.top} ${styles?.bg?.borderRadius?.right} ${styles?.bg?.borderRadius?.bottom} ${styles?.bg?.borderRadius?.left};
+       padding: ${(0,_bpl_tools_utils_getCSS__WEBPACK_IMPORTED_MODULE_1__.getBoxCSS)(styles?.bg?.padding?.desktop)};
+       margin: ${(0,_bpl_tools_utils_getCSS__WEBPACK_IMPORTED_MODULE_1__.getBoxCSS)(styles?.bg?.margin?.desktop)};
       }
 
       ${aboutTwoItemsTitleSl}{
@@ -5090,8 +5091,16 @@ const Style = ({
       }
 
       ${aboutTwoBodySl} {
-        ${(0,_bpl_tools_utils_getCSS__WEBPACK_IMPORTED_MODULE_1__.getBackgroundCSS)(bg?.desktop)}
-        border-radius: ${styles?.bg?.borderRadius?.top} ${styles?.bg?.borderRadius?.right} ${styles?.bg?.borderRadius?.bottom} ${styles?.bg?.borderRadius?.left};
+       ${(0,_bpl_tools_utils_getCSS__WEBPACK_IMPORTED_MODULE_1__.getBackgroundCSS)(bg?.desktop)}
+       border-radius: ${styles?.bg?.borderRadius?.top} ${styles?.bg?.borderRadius?.right} ${styles?.bg?.borderRadius?.bottom} ${styles?.bg?.borderRadius?.left};
+       padding: ${(0,_bpl_tools_utils_getCSS__WEBPACK_IMPORTED_MODULE_1__.getBoxCSS)(styles?.bg?.padding?.desktop)};
+       margin: ${(0,_bpl_tools_utils_getCSS__WEBPACK_IMPORTED_MODULE_1__.getBoxCSS)(styles?.bg?.margin?.desktop)};
+      }
+
+      ${aboutFourBodySl}{
+       border-radius: ${styles?.bg?.borderRadius?.top} ${styles?.bg?.borderRadius?.right} ${styles?.bg?.borderRadius?.bottom} ${styles?.bg?.borderRadius?.left};
+       padding: ${(0,_bpl_tools_utils_getCSS__WEBPACK_IMPORTED_MODULE_1__.getBoxCSS)(styles?.bg?.padding?.desktop)};
+       margin: ${(0,_bpl_tools_utils_getCSS__WEBPACK_IMPORTED_MODULE_1__.getBoxCSS)(styles?.bg?.margin?.desktop)};
       }
 
       ${aboutTwoImgSl}{
@@ -5332,6 +5341,26 @@ const Style = ({
           width: ${items?.icon?.iconBgSize?.mobile}px;
           height: ${items?.icon?.iconBgSize?.mobile}px;
         }
+
+        ${aboutSl}{
+         padding: ${(0,_bpl_tools_utils_getCSS__WEBPACK_IMPORTED_MODULE_1__.getBoxCSS)(styles?.bg?.padding?.mobile)};
+         margin: ${(0,_bpl_tools_utils_getCSS__WEBPACK_IMPORTED_MODULE_1__.getBoxCSS)(styles?.bg?.margin?.mobile)};
+        }
+
+        ${aboutTwoBodySl}{
+         padding: ${(0,_bpl_tools_utils_getCSS__WEBPACK_IMPORTED_MODULE_1__.getBoxCSS)(styles?.bg?.padding?.mobile)};
+         margin: ${(0,_bpl_tools_utils_getCSS__WEBPACK_IMPORTED_MODULE_1__.getBoxCSS)(styles?.bg?.margin?.mobile)};
+        }
+
+        ${aboutThreeBodySl}{
+         padding: ${(0,_bpl_tools_utils_getCSS__WEBPACK_IMPORTED_MODULE_1__.getBoxCSS)(styles?.bg?.padding?.mobile)};
+         margin: ${(0,_bpl_tools_utils_getCSS__WEBPACK_IMPORTED_MODULE_1__.getBoxCSS)(styles?.bg?.margin?.mobile)};
+        }
+
+        ${aboutFourBodySl}{
+         padding: ${(0,_bpl_tools_utils_getCSS__WEBPACK_IMPORTED_MODULE_1__.getBoxCSS)(styles?.bg?.padding?.mobile)};
+         margin: ${(0,_bpl_tools_utils_getCSS__WEBPACK_IMPORTED_MODULE_1__.getBoxCSS)(styles?.bg?.margin?.mobile)};
+        }
       }
 
 
@@ -5339,6 +5368,26 @@ const Style = ({
         ${bodyIconsSl}{
           height: auto;
           width: ${items?.icon?.size?.tablet}px;
+        }
+
+        ${aboutSl}{
+         padding: ${(0,_bpl_tools_utils_getCSS__WEBPACK_IMPORTED_MODULE_1__.getBoxCSS)(styles?.bg?.padding?.tablet)};
+         margin: ${(0,_bpl_tools_utils_getCSS__WEBPACK_IMPORTED_MODULE_1__.getBoxCSS)(styles?.bg?.margin?.tablet)};
+        }
+
+        ${aboutTwoBodySl}{
+         padding: ${(0,_bpl_tools_utils_getCSS__WEBPACK_IMPORTED_MODULE_1__.getBoxCSS)(styles?.bg?.padding?.tablet)};
+         margin: ${(0,_bpl_tools_utils_getCSS__WEBPACK_IMPORTED_MODULE_1__.getBoxCSS)(styles?.bg?.margin?.tablet)};
+        }
+
+        ${aboutThreeBodySl}{
+         padding: ${(0,_bpl_tools_utils_getCSS__WEBPACK_IMPORTED_MODULE_1__.getBoxCSS)(styles?.bg?.padding?.tablet)};
+         margin: ${(0,_bpl_tools_utils_getCSS__WEBPACK_IMPORTED_MODULE_1__.getBoxCSS)(styles?.bg?.margin?.tablet)};
+        }
+
+         ${aboutFourBodySl}{
+         padding: ${(0,_bpl_tools_utils_getCSS__WEBPACK_IMPORTED_MODULE_1__.getBoxCSS)(styles?.bg?.padding?.tablet)};
+         margin: ${(0,_bpl_tools_utils_getCSS__WEBPACK_IMPORTED_MODULE_1__.getBoxCSS)(styles?.bg?.margin?.tablet)};
         }
 
         ${btnFs20Sl} {

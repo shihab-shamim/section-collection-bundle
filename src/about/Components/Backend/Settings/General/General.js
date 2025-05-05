@@ -50,7 +50,6 @@ const General = ({ attributes, setAttributes, device }) => {
             { label: "Style 1", value: "themeTwo" },
             { label: "Style 2", value: "themeThree" },
             { label: "Style 3", value: "themeFour" },
-            // { label: "Theme 5", value: "themeFive" },
           ]}
           onChange={updateTheme}
         />

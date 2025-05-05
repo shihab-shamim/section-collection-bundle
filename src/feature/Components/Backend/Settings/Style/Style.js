@@ -5,7 +5,7 @@ import { borderDefaultVal, resetItem3Padding, resetItemOnePadding, resetItemPadd
 import { BorderControl } from "../../../../../../../bpl-tools/Components/Deprecated";
 
 
-const Style = ({ attributes, setAttributes, device = "desktop"}) => {
+const Style = ({ attributes, setAttributes, device = "desktop" }) => {
 
 
   const { heading, style, layout, section } = attributes;
@@ -46,13 +46,13 @@ const Style = ({ attributes, setAttributes, device = "desktop"}) => {
                 setAttributes({
                   section: {
                     ...section,
-                    padding: { ...section.padding,[device]: newValue}
+                    padding: { ...section.padding, [device]: newValue }
                   }
                 });
               }}
             />
             <Spacer />
-            
+
             <PanelRow>
               <Label className="">{__("Margin", "b-blocks")}</Label>
               <Device />
@@ -75,13 +75,13 @@ const Style = ({ attributes, setAttributes, device = "desktop"}) => {
 
           <PanelBody
             className="bPlPanelBody"
-            title={__("Heading", "b-blocks")}
+            title={__("Heading Badge", "b-blocks")}
             initialOpen={false}
           >
             <Spacer />
 
             <ToggleControl
-              label={__("Show/Off Subtitle", "b-blocks")}
+              label={__("Show Badge", "b-blocks")}
               checked={heading?.subTitle?.showSubTitle}
               onChange={() => {
                 setAttributes({
@@ -95,89 +95,95 @@ const Style = ({ attributes, setAttributes, device = "desktop"}) => {
                 });
               }}
             />
+            {
+              heading?.subTitle?.showSubTitle
+                ?
+                <>
+                  <Spacer />
+                  <UnitControl
+                    label={__("Icon Height", "b-blocks")}
+                    value={heading?.subTitle?.height}
+                    onChange={(newHeight) => { setAttributes({ heading: { ...heading, subTitle: { ...heading.subTitle, height: newHeight, } } }) }}
+                  />
 
-            <Spacer />
-            <UnitControl
-              label={__("Icon Height", "b-blocks")}
-              value={heading?.subTitle?.height}
-              onChange={(newHeight) => { setAttributes({ heading: { ...heading, subTitle: { ...heading.subTitle, height: newHeight, } } }) }}
-            />
+                  <Spacer />
 
-            <Spacer />
+                  <ColorControl
+                    label={__("Icon Color", "b-blocks")}
+                    defaultColor="#fff"
+                    value={heading?.subTitle?.iconColor}
+                    onChange={(newcolor) => {
+                      setAttributes({
+                        heading: { ...heading, subTitle: { ...heading.subTitle, iconColor: newcolor } },
+                      });
+                    }}
+                  />
 
-            <ColorControl
-              label={__("Icon Color", "b-blocks")}
-              defaultColor="#fff"
-              value={heading?.subTitle?.iconColor}
-              onChange={(newcolor) => {
-                setAttributes({
-                  heading: { ...heading, subTitle: { ...heading.subTitle, iconColor: newcolor } },
-                });
-              }}
-            />
+                  <Typography
+                    label={__("Typography :", "b-blocks")}
+                    value={heading?.subTitle?.typo}
+                    defaults={{
+                      fontSize: { desktop: 15, tablet: 12, mobile: 12 },
+                    }}
+                    onChange={(typog) => {
+                      setAttributes({
+                        heading: { ...heading, subTitle: { ...heading.subTitle, typo: typog } },
+                      });
+                    }}
+                  />
 
-            <Typography
-              label={__("Typography :", "b-blocks")}
-              value={heading?.subTitle?.typo}
-              defaults={{
-                fontSize: { desktop: 15, tablet: 12, mobile: 12 },
-              }}
-              onChange={(typog) => {
-                setAttributes({
-                  heading: { ...heading, subTitle: { ...heading.subTitle, typo: typog } },
-                });
-              }}
-            />
+                  <Spacer />
 
-            <Spacer />
+                  <ColorControl
+                    label={__("Text Color", "b-blocks")}
+                    defaultColor="#fff"
+                    value={heading?.subTitle?.color}
+                    onChange={(newcolor) => {
+                      setAttributes({
+                        heading: { ...heading, subTitle: { ...heading.subTitle, color: newcolor } },
+                      });
+                    }}
+                  />
 
-            <ColorControl
-              label={__("Text Color", "b-blocks")}
-              defaultColor="#fff"
-              value={heading?.subTitle?.color}
-              onChange={(newcolor) => {
-                setAttributes({
-                  heading: { ...heading, subTitle: { ...heading.subTitle, color: newcolor } },
-                });
-              }}
-            />
+                  <Spacer />
 
-            <Spacer />
+                  <SolidBackground
+                    label={__("Background Color", "b-blocks")}
+                    value={heading?.subTitle?.bg}
+                    onChange={(value) => {
+                      setAttributes({
+                        heading: { ...heading, subTitle: { ...heading.subTitle, bg: value } },
+                      });
+                    }}
+                  />
 
-            <SolidBackground
-              label={__("Background Color", "b-blocks")}
-              value={heading?.subTitle?.bg}
-              onChange={(value) => {
-                setAttributes({
-                  heading: { ...heading, subTitle: { ...heading.subTitle, bg: value } },
-                });
-              }}
-            />
+                  <Spacer />
 
-            <Spacer />
+                  <BoxControl
+                    label={__("Padding", "b-blocks")}
+                    values={heading?.subTitle?.padding}
+                    resetValues={resetItemOnePadding}
+                    onChange={(newValue) => {
+                      setAttributes({
+                        heading: { ...heading, subTitle: { ...heading.subTitle, padding: newValue } },
+                      });
+                    }}
+                  />
+                  <Spacer />
 
-            <BoxControl
-              label={__("Padding", "b-blocks")}
-              values={heading?.subTitle?.padding}
-              resetValues={resetItemOnePadding}
-              onChange={(newValue) => {
-                setAttributes({
-                  heading: { ...heading, subTitle: { ...heading.subTitle, padding: newValue } },
-                });
-              }}
-            />
-            <Spacer />
-
-            <BoxControl
-              label={__("Radius", "b-blocks")}
-              values={heading?.subTitle?.radius}
-              resetValues={resetValues}
-              onChange={(redi) => {
-                setAttributes({
-                  heading: { ...heading, subTitle: { ...heading.subTitle, radius: redi } },
-                });
-              }}
-            />
+                  <BoxControl
+                    label={__("Radius", "b-blocks")}
+                    values={heading?.subTitle?.radius}
+                    resetValues={resetValues}
+                    onChange={(redi) => {
+                      setAttributes({
+                        heading: { ...heading, subTitle: { ...heading.subTitle, radius: redi } },
+                      });
+                    }}
+                  />
+                </>
+                : " "
+            }
           </PanelBody>
 
 
@@ -203,61 +209,65 @@ const Style = ({ attributes, setAttributes, device = "desktop"}) => {
                 });
               }}
             />
+            {
+              heading?.title?.showTitle
+                ?
+                <>
+                  <Spacer />
 
-            <Spacer />
+                  <Typography
+                    label={__('Typography:', 'b-blocks')}
+                    defaults={{
+                      fontSize: { desktop: 55, tablet: 28, mobile: 28 },
+                    }}
+                    value={heading?.title?.typo}
+                    onChange={val => {
+                      setAttributes({
+                        heading: { ...heading, title: { ...heading.title, typo: val } },
+                      });
+                    }}
+                  />
 
-            <Typography
-              label={__('Typography:', 'b-blocks')}
-              defaults={{
-                fontSize: { desktop: 55, tablet: 28, mobile: 28 },
-              }}
-              value={heading?.title?.typo}
-              onChange={val => {
-                setAttributes({
-                  heading: { ...heading, title: { ...heading.title, typo: val } },
-                });
-              }}
+                  <Spacer />
 
-            />
+                  <ColorControl
+                    label={__("Text Color", "b-blocks")}
+                    defaultColor="#fff"
+                    value={heading?.title?.color}
+                    onChange={(newcolor) => {
+                      setAttributes({
+                        heading: { ...heading, title: { ...heading.title, color: newcolor } },
+                      });
+                    }}
+                  />
 
-            <Spacer />
+                  <Spacer />
 
-            <ColorControl
-              label={__("Text Color", "b-blocks")}
-              defaultColor="#fff"
-              value={heading?.title?.color}
-              onChange={(newcolor) => {
-                setAttributes({
-                  heading: { ...heading, title: { ...heading.title, color: newcolor } },
-                });
-              }}
-            />
+                  <BoxControl
+                    label={__("Margin", "b-blocks")}
+                    values={heading?.title?.margin}
+                    resetValues={resetValues}
+                    onChange={(newMargin) => {
+                      setAttributes({
+                        heading: { ...heading, title: { ...heading.title, margin: newMargin } },
+                      });
+                    }}
+                  />
+                  <Spacer />
 
-            <Spacer />
-
-            <BoxControl
-              label={__("Margin", "b-blocks")}
-              values={heading?.title?.margin}
-              resetValues={resetValues}
-              onChange={(newMargin) => {
-                setAttributes({
-                  heading: { ...heading, title: { ...heading.title, margin: newMargin } },
-                });
-              }}
-            />
-            <Spacer />
-
-            <BoxControl
-              label={__("Padding", "b-blocks")}
-              values={heading?.title?.padding}
-              resetValues={resetValues}
-              onChange={(newPadding) => {
-                setAttributes({
-                  heading: { ...heading, title: { ...heading.title, padding: newPadding } },
-                });
-              }}
-            />
-
+                  <BoxControl
+                    label={__("Padding", "b-blocks")}
+                    values={heading?.title?.padding}
+                    resetValues={resetValues}
+                    onChange={(newPadding) => {
+                      setAttributes({
+                        heading: { ...heading, title: { ...heading.title, padding: newPadding } },
+                      });
+                    }}
+                  />
+                </>
+                : ""
+            }
           </PanelBody>
 
 
@@ -267,7 +277,7 @@ const Style = ({ attributes, setAttributes, device = "desktop"}) => {
             initialOpen={false}
           >
             <UnitControl
-              label={__("Content Gap", "b-blocks")}
+              label={__("Item Gap", "b-blocks")}
               value={style?.gap}
               onChange={(newValues) => {
                 setAttributes({ style: { ...style, gap: newValues } });
@@ -277,7 +287,7 @@ const Style = ({ attributes, setAttributes, device = "desktop"}) => {
             <Spacer />
 
             <BoxControl
-              label={__("Content Margin", "b-blocks")}
+              label={__("Item Margin", "b-blocks")}
               values={style?.margin}
               resetValues={resetValues}
               onChange={(newValue) => {
@@ -287,7 +297,7 @@ const Style = ({ attributes, setAttributes, device = "desktop"}) => {
             <Spacer />
 
             <BoxControl
-              label={__("Content Padding", "b-blocks")}
+              label={__("Item Padding", "b-blocks")}
               values={style?.padding}
               resetValues={resetValues}
               onChange={(newValue) => {
@@ -298,7 +308,7 @@ const Style = ({ attributes, setAttributes, device = "desktop"}) => {
             <Spacer />
 
             <BoxControl
-              label={__("Content Radius", "b-blocks")}
+              label={__("Item Radius", "b-blocks")}
               values={style?.radius}
               resetValues={resetValues}
               onChange={(newValue) => {
@@ -309,7 +319,7 @@ const Style = ({ attributes, setAttributes, device = "desktop"}) => {
             <Spacer />
 
             <SolidBackground
-              label={__("Content Background Color", "b-blocks")}
+              label={__("Item Background Color", "b-blocks")}
               value={style?.bg}
               onChange={(value) => {
                 setAttributes({ style: { ...style, bg: value } })
@@ -922,13 +932,13 @@ const Style = ({ attributes, setAttributes, device = "desktop"}) => {
             <Spacer />
 
             <UnitControl
-              label={__("Button Height", "b-blocks")}
+              label={__("Icon Container Height", "b-blocks")}
               value={style?.iconButton?.height}
               onChange={(newHeight) => { setAttributes({ style: { ...style, iconButton: { ...style.iconButton, height: newHeight } } }) }}
             />
             <Spacer />
             <ColorControl
-              label={__("Button Bg", "b-blocks")}
+              label={__("Icon Container  Bg", "b-blocks")}
               defaultColor="rgba(18, 17, 17, 0.6)"
               value={style?.iconButton?.colorBg}
               onChange={(newcolor) => {

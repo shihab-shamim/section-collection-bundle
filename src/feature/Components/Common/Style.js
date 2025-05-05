@@ -1,14 +1,14 @@
 import { mobileBreakpoint, tabBreakpoint } from '../../../../../bpl-tools/utils/data';
 import {  getBackgroundCSS, getBoxCSS, getTypoCSS, isValidCSS } from '../../../../../bpl-tools/utils/getCSS';
-import {generateCSS} from '../../../../../bpl-tools/Advanced/generateCSS';
+// import {generateCSS} from '../../../../bpl-tools/Advanced/generateCSS';
 import { getBorderStyles } from '../../utils/functions';
 
 const Style = ({ attributes, id , device="desktop"}) => {
+   // advanced
+    const { alignment, section, heading, style, } = attributes;
 
-    const { alignment, section, heading, style, advanced} = attributes;
-
-    const isBackend = false;
-    const cssString = generateCSS(id, advanced, isBackend);
+    // const isBackend = false;
+    // const cssString = generateCSS(id, advanced, isBackend);
 
     const mainSl = `#${id}`;
 
@@ -76,7 +76,7 @@ const Style = ({ attributes, id , device="desktop"}) => {
     const featureLink = `${featureTitle} .feature-link `;
 
     const featureDescription = `${featureItem} .feature-description`;
-
+    // ${cssString}
 
     const firstColStyles = `
 
@@ -334,7 +334,7 @@ const Style = ({ attributes, id , device="desktop"}) => {
          color:${style?.des?.color};
     
         }
-        ${cssString}
+   
 
         @media only screen and (min-width: 641px) and (max-width: 1024px) {
 
