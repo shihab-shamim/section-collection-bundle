@@ -38,7 +38,7 @@ const FaqItems = ({ item, index, setAttributes, type, attributes }) => {
         }}
       />
       <div className="button-container">
-        <button onClick={() => handleDelete()} className="btn custom-btn-delete">
+        <button onClick={() => handleDelete()} className="custom-btn custom-btn-delete">
           <div className="icon-delete">
             <span className="delete-line delete-line-1"></span>
             <span className="delete-line delete-line-2"></span>

@@ -79,7 +79,7 @@ $primaryColor: #4527a4;
   flex-wrap: wrap;
 }
 
-.btn {
+.custom-btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -112,7 +112,7 @@ $primaryColor: #4527a4;
     align-items: center;
   }
 
-  .btn {
+  .custom-btn {
     width: 100%;
     max-width: 150px;
     // color: #140833 !important;
