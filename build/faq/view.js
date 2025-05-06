@@ -4218,10 +4218,10 @@ const themeSwitch = (theme = "theme1", attributes) => (0,immer__WEBPACK_IMPORTED
           left: "50px"
         },
         mobile: {
-          top: "0px",
-          right: "0px",
-          bottom: "0px",
-          left: "0px"
+          top: "30px",
+          right: "30px",
+          bottom: "30px",
+          left: "30px"
         }
       };
       draft["styles"]["section"]["bg"] = {
