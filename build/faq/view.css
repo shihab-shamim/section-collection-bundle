@@ -17,6 +17,9 @@
   display: flex;
   margin-top: 50px;
 }
+.wp-block-b-blocks-faq-blocks .wrapper .defaultThemeContainer {
+  padding: 30px !important;
+}
 .wp-block-b-blocks-faq-blocks .wrapper .heading {
   display: flex;
   flex-direction: column;
