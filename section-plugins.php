@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: section Bundle Blocks
+ * Plugin Name: section  Blocks
  * Description: Short description of the plugin
  * Version: 1.0.0
  * Author: bPlugins
@@ -27,7 +27,7 @@ if( !class_exists( 'PRACTICEPlugin' ) ){
 		}
 
 		function onInit(){
-			$blocks =['faq',"ticker","team","about","timeline","testimonial","feature","call-to-actions"];
+			$blocks =['faq',"ticker","team","about","timeline","testimonial","feature","call-to-actions","section",];
 			foreach ( $blocks as $block ) {
 				register_block_type( __DIR__ . "/build/".$block );
 			}
