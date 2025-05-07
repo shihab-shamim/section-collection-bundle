@@ -173,23 +173,23 @@ $primaryColor: #4527a4;
           flex-shrink: 0;
           width: 100%;
           max-width: 100%;
-          padding-right: 12px;
-          padding-left: 12px;
+          // padding-right: 12px;
+          // padding-left: 12px;
           margin-top: 0px;
         }
       }
-      @media only screen and (min-width: 641px) and (max-width: 1024px) {
-        .cta-sub-container {
-          padding-right: 21px;
-          padding-left: 21px;
-        }
-      }
-      @media only screen and (max-width: 641px) {
-        .cta-sub-container {
-          padding-right: 21px;
-          padding-left: 21px;
-        }
-      }
+      // @media only screen and (min-width: 641px) and (max-width: 1024px) {
+      //   .cta-sub-container {
+      //     padding-right: 21px;
+      //     padding-left: 21px;
+      //   }
+      // }
+      // @media only screen and (max-width: 641px) {
+      //   .cta-sub-container {
+      //     padding-right: 21px;
+      //     padding-left: 21px;
+      //   }
+      // }
     }
   }
 }

@@ -13,7 +13,8 @@ export const themeOptions = [
 	// { label: "Style Four", value: "theme-4" },
 ];
 
-export const resetPadding = { top: "30px", right: "0px", bottom: "30px", left: "0px" };
+export const resetPadding = { top: "0px", right: "0px", bottom: "0px", left: "0px" };
+export const resetCtaMargin = { top: "0px", right: "0px",bottom: "0px", left: "0px" };
 
 export const resetMargin = { top: "0px", right: "-12px", bottom: "0px", left: "-12px" };
 

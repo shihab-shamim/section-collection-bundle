@@ -2570,20 +2570,20 @@
   font-weight: 700;
 }
 
-.wp-block-b-blocks-feature-section .span {
+.wp-block-b-blocks-info-list .span {
   font-size: 14px;
   color: red;
   font-style: italic;
   font-weight: 500;
 }
-.wp-block-b-blocks-feature-section .text {
+.wp-block-b-blocks-info-list .text {
   color: rgba(255, 0, 0, 0.795);
   font-style: italic;
 }
-.wp-block-b-blocks-feature-section .selectHelp {
+.wp-block-b-blocks-info-list .selectHelp {
   color: #616063;
 }
-.wp-block-b-blocks-feature-section .bPlIconLibrary .panel-icon svg {
+.wp-block-b-blocks-info-list .bPlIconLibrary .panel-icon svg {
   width: 28px;
   height: 28px;
 }

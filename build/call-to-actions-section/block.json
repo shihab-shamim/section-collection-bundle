@@ -2,7 +2,7 @@
   "$schema": "https://schemas.wp.org/trunk/block.json",
   "apiVersion": 3,
   "name": "b-blocks/call-to-actions",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "title": "Call To Actions",
   "category": "section_collection",
   "description": "Call To Actions plugin showcases your website's key features effortlessly and beautifully.",
@@ -59,7 +59,7 @@
       "default": {
         "background": {
           "type": "solid",
-          "color": "#495057",
+          "color": "#2b303600",
           "gradient": "linear-gradient(45deg, #FF0000, #00FF00)",
           "image": {
             "url": "https://templates.bplugins.com/wp-content/uploads/2025/02/section-collection-plugin-bg-1.png"
@@ -78,21 +78,41 @@
         },
         "padding": {
           "desktop": {
-            "top": "136px",
+            "top": "0px",
             "right": "0px",
-            "bottom": "136px",
+            "bottom": "0px",
             "left": "0px"
           },
           "tablet": {
-            "top": "60px",
+            "top": "0px",
+            "right": "50px",
+            "bottom": "0px",
+            "left": "50px"
+          },
+          "mobile": {
+            "top": "0px",
+            "right": "40px",
+            "bottom": "0px",
+            "left": "40px"
+          }
+        },
+        "margin": {
+          "desktop": {
+            "top": "0px",
             "right": "0px",
-            "bottom": "60px",
+            "bottom": "0px",
+            "left": "0px"
+          },
+          "tablet": {
+            "top": "0px",
+            "right": "0px",
+            "bottom": "0px",
             "left": "0px"
           },
           "mobile": {
-            "top": "30px",
+            "top": "0px",
             "right": "0px",
-            "bottom": "30px",
+            "bottom": "0px",
             "left": "0px"
           }
         },

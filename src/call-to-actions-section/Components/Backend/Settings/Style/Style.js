@@ -1,7 +1,7 @@
 import { __ } from "@wordpress/i18n";
 import { PanelBody, __experimentalSpacer as Spacer, PanelRow, __experimentalUnitControl as UnitControl, Button, } from "@wordpress/components";
 import { Background, BoxControl, ColorControl, Device, Gradient, Label, SolidBackground, Typography } from "../../../../../../../bpl-tools/Components";
-import { paddingReset, resetButtonPadding, resetButtonRadius, resetMargin, resetPadding, resetRadius } from "../../../../utils/options";
+import { paddingReset, resetButtonPadding, resetButtonRadius, resetCtaMargin, resetMargin, resetPadding, resetRadius } from "../../../../utils/options";
 import { updateData } from "../../../../../../../bpl-tools/utils/functions";
 import { useState } from "react";
 
@@ -38,6 +38,16 @@ const Style = ({ attributes, setAttributes, device = "desktop" }) => {
               values={style?.padding[device]}
               resetValues={resetPadding}
               onChange={(newValue) => { setAttributes({ style: { ...style, padding: { ...style?.padding, [device]: newValue } } }); }}
+            />
+            <Spacer />
+            <PanelRow>
+              <Label className="">{__("Margin", "b-blocks")}</Label>
+              <Device />
+            </PanelRow>
+            <BoxControl
+              values={style?.margin[device]}
+              resetValues={resetCtaMargin}
+              onChange={(newValue) => {setAttributes({style: {...style, margin: { ...style.margin, [device]: newValue }}}); }}
             />
             <Spacer />
             <BoxControl
@@ -183,25 +193,25 @@ const Style = ({ attributes, setAttributes, device = "desktop" }) => {
                 <Spacer />
                 {(theme === "theme-1" || theme === "theme-2") && (
                   <>
-                <Gradient
-                  label={__("Highlight Text Color", "b-blocks")}
-                  value={
-                    theme === "theme-1"
-                      ? style?.ctaStyle?.title?.gradient
-                      : style?.ctaStyle?.title?.gradientTwo
-                  }
-                  onChange={(textcolor) => {
-                    if (theme === "theme-1") {
-                      setAttributes({
-                        style: updateData(style, textcolor, 'ctaStyle', 'title', 'gradient'),
-                      });
-                    } else if (theme === "theme-2") {
-                      setAttributes({
-                        style: updateData(style, textcolor, 'ctaStyle', 'title', 'gradientTwo'),
-                      });
-                    }
-                  }}
-                />
+                    <Gradient
+                      label={__("Highlight Text Color", "b-blocks")}
+                      value={
+                        theme === "theme-1"
+                          ? style?.ctaStyle?.title?.gradient
+                          : style?.ctaStyle?.title?.gradientTwo
+                      }
+                      onChange={(textcolor) => {
+                        if (theme === "theme-1") {
+                          setAttributes({
+                            style: updateData(style, textcolor, 'ctaStyle', 'title', 'gradient'),
+                          });
+                        } else if (theme === "theme-2") {
+                          setAttributes({
+                            style: updateData(style, textcolor, 'ctaStyle', 'title', 'gradientTwo'),
+                          });
+                        }
+                      }}
+                    />
                   </>
                 )}
               </>
@@ -264,8 +274,8 @@ const Style = ({ attributes, setAttributes, device = "desktop" }) => {
                     theme === "theme-1"
                       ? style?.ctaStyle?.button?.bg
                       : theme === "theme-2"
-                      ? style?.ctaStyle?.button?.bgtwo
-                      : style?.ctaStyle?.button?.bgThree
+                        ? style?.ctaStyle?.button?.bgtwo
+                        : style?.ctaStyle?.button?.bgThree
                   }
                   onChange={(bgColor) => {
                     if (theme === "theme-1") {
@@ -293,8 +303,8 @@ const Style = ({ attributes, setAttributes, device = "desktop" }) => {
                     theme === "theme-1"
                       ? style?.ctaStyle?.button?.bgHoverColor
                       : theme === "theme-2"
-                      ? style?.ctaStyle?.button?.bgHoverColorTwo
-                      : style?.ctaStyle?.button?.bgHoverColorThree 
+                        ? style?.ctaStyle?.button?.bgHoverColorTwo
+                        : style?.ctaStyle?.button?.bgHoverColorThree
                   }
                   onChange={(hoverBgColor) => {
                     if (theme === "theme-1") {
@@ -306,7 +316,7 @@ const Style = ({ attributes, setAttributes, device = "desktop" }) => {
                         style: updateData(style, hoverBgColor, 'ctaStyle', 'button', 'bgHoverColorTwo'),
                       });
                     }
-                     else if (theme === "theme-3") {
+                    else if (theme === "theme-3") {
                       setAttributes({
                         style: updateData(style, hoverBgColor, 'ctaStyle', 'button', 'bgHoverColorThree'),
                       });

@@ -3624,8 +3624,9 @@ const Style = ({
         ${mainTextSection}:hover .icon-button{
          background-color: ${style?.iconButton?.hoverBg} !important;
         }
-        ${mainTextSection}:hover .icon-button svg{
-          color: ${style?.icon?.hoverColor} !important;
+        ${mainTextSection}:hover .icon-button .icon-svg svg{
+          color: ${style?.icon?.hoverColor};
+          fill: ${style?.icon?.hoverColor};
         }
 
        ${iconButton}{
@@ -3673,11 +3674,14 @@ const Style = ({
         ${featureItem}:hover .feature-link{
           color: ${style?.title?.hoverColor} !important;
         }
+
         ${featureItem}:hover .icon-wrapper{
          background-color: ${style?.iconButton?.hoverBg} !important;
         }
-        ${featureItem}:hover .icon-wrapper svg{
-          color: ${style?.icon?.hoverColor} !important;
+
+        ${featureItem}:hover .icon-wrapper .badge-icon  svg{
+          color: ${style?.icon?.hoverColor};
+          fill: ${style?.icon?.hoverColor};
         }
 
         ${iconWrapper}{
@@ -3685,7 +3689,7 @@ const Style = ({
           height: ${style?.iconButton?.height};
           ${(0,_bpl_tools_utils_getCSS__WEBPACK_IMPORTED_MODULE_2__.isValidCSS)("border-radius", (0,_bpl_tools_utils_getCSS__WEBPACK_IMPORTED_MODULE_2__.getBoxCSS)(style?.iconButton?.border?.radius))}!important;
           background-color: ${style?.iconButton?.colorBg};
-        ${(0,_utils_functions__WEBPACK_IMPORTED_MODULE_3__.getBorderStyles)(style?.iconButton?.border)}!important; 
+          ${(0,_utils_functions__WEBPACK_IMPORTED_MODULE_3__.getBorderStyles)(style?.iconButton?.border)}!important; 
         }
         ${badgeIcon} svg{
            width: ${style?.icon?.height};
@@ -4382,9 +4386,9 @@ const themeSwitch = (layout, attributes = {}) => (0,immer__WEBPACK_IMPORTED_MODU
       };
       draft["section"]["padding"]["mobile"] = {
         top: '30px',
-        right: '0px',
+        right: '30px',
         bottom: '30px',
-        left: '0px'
+        left: '30px'
       };
       draft["section"]["margin"]["desktop"] = {
         top: '0px',
@@ -4670,7 +4674,7 @@ const themeSwitch = (layout, attributes = {}) => (0,immer__WEBPACK_IMPORTED_MODU
       }];
       draft["layout"]["theme"] = "theme-3";
       draft["section"]["background"]["type"] = 'solid';
-      draft["section"]["background"]["color"] = '#2B3035';
+      draft["section"]["background"]["color"] = '#2b303500';
       draft["section"]["background"]["gradient"] = 'linear-gradient(45deg, #FF0000, #00FF00)';
       draft["section"]["background"]["image"]["url"] = 'https://templates.bplugins.com/wp-content/uploads/2025/02/section-collection-plugin-bg-1.png';
       draft["section"]["background"]["position"] = 'center center';
@@ -4679,22 +4683,22 @@ const themeSwitch = (layout, attributes = {}) => (0,immer__WEBPACK_IMPORTED_MODU
       draft["section"]["background"]["size"] = 'cover';
       draft["section"]["background"]["overlayColor"] = 'rgba(0, 0, 0, 0.1)';
       draft["section"]["padding"]["desktop"] = {
-        top: '100px',
+        top: '0px',
         right: '0px',
-        bottom: '100px',
+        bottom: '0px',
         left: '0px'
       };
       draft["section"]["padding"]["tablet"] = {
-        top: '60px',
+        top: '0px',
         right: '0px',
-        bottom: '60px',
+        bottom: '0px',
         left: '0px'
       };
       draft["section"]["padding"]["mobile"] = {
-        top: '30px',
-        right: '0px',
-        bottom: '30px',
-        left: '0px'
+        top: '0px',
+        right: '30px',
+        bottom: '0px',
+        left: '30px'
       };
       draft["section"]["margin"]["desktop"] = {
         top: '0px',
@@ -4818,7 +4822,7 @@ const themeSwitch = (layout, attributes = {}) => (0,immer__WEBPACK_IMPORTED_MODU
       }];
       draft["layout"]["theme"] = "theme-4";
       draft["section"]["background"]["type"] = 'solid';
-      draft["section"]["background"]["color"] = '#2B3035';
+      draft["section"]["background"]["color"] = '#2b303600';
       draft["section"]["background"]["gradient"] = 'linear-gradient(45deg, #FF0000, #00FF00)';
       draft["section"]["background"]["image"]["url"] = 'https://templates.bplugins.com/wp-content/uploads/2025/02/section-collection-plugin-bg-1.png';
       draft["section"]["background"]["position"] = 'center center';
@@ -4827,22 +4831,22 @@ const themeSwitch = (layout, attributes = {}) => (0,immer__WEBPACK_IMPORTED_MODU
       draft["section"]["background"]["size"] = 'cover';
       draft["section"]["background"]["overlayColor"] = 'rgba(0, 0, 0, 0.1)';
       draft["section"]["padding"]["desktop"] = {
-        top: '50px',
+        top: '0px',
         right: '0px',
-        bottom: '50px',
+        bottom: '0px',
         left: '0px'
       };
       draft["section"]["padding"]["tablet"] = {
-        top: '60px',
+        top: '0px',
         right: '0px',
-        bottom: '60px',
+        bottom: '0px',
         left: '0px'
       };
       draft["section"]["padding"]["mobile"] = {
-        top: '30px',
-        right: '0px',
-        bottom: '30px',
-        left: '0px'
+        top: '0px',
+        right: '30px',
+        bottom: '0px',
+        left: '30px'
       };
       draft["section"]["margin"]["desktop"] = {
         top: '0px',
@@ -5060,7 +5064,7 @@ __webpack_require__.r(__webpack_exports__);
 // import FeatureSection from './Components/Common/Theme/FeatureSection';
 
 document.addEventListener('DOMContentLoaded', () => {
-  const blockNameEls = document.querySelectorAll('.wp-block-b-blocks-feature-section');
+  const blockNameEls = document.querySelectorAll('.wp-block-b-blocks-info-list');
   blockNameEls.forEach(blockNameEl => {
     const attributes = JSON.parse(blockNameEl.dataset.attributes);
     (0,react_dom_client__WEBPACK_IMPORTED_MODULE_1__.createRoot)(blockNameEl).render((0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_Components_Common_Style__WEBPACK_IMPORTED_MODULE_3__["default"], {

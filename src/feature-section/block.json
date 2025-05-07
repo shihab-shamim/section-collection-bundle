@@ -1,12 +1,12 @@
 {
   "$schema": "https://schemas.wp.org/trunk/block.json",
   "apiVersion": 3,
-  "name": "b-blocks/feature-section",
-  "version": "1.0.0",
-  "title": "Feature Section",
+  "name": "b-blocks/info-list",
+  "version": "1.0.2",
+  "title": "Info List Section",
   "category": "section_collection",
-  "description": "Feature Section plugin showcases your website's key features effortlessly and beautifully",
-  "keywords": ["Feature Section", "Feature", "Section"],
+  "description": "Info List plugin showcases your website's key features effortlessly and beautifully",
+  "keywords": ["Info List","Info", "List","Info List Section","Feature"],
   "textdomain": "b-blocks",
   "attributes": {
     "alignment": {
@@ -24,7 +24,7 @@
       "default": {
         "background": {
           "type": "image",
-          "color": "#2B3035",
+          "color": "#2b303600",
           "gradient": "linear-gradient(45deg, #FF0000, #00FF00)",
           "image": {
             "url": "https://templates.bplugins.com/wp-content/uploads/2025/02/section-collection-plugin-bg-1.png"
@@ -70,9 +70,9 @@
           },
           "mobile": {
             "top": "30px",
-            "right": "0px",
+            "right": "30px",
             "bottom": "30px",
-            "left": "0px"
+            "left": "30px"
           }
         }
       }
@@ -483,8 +483,7 @@
   "example": {
     "attributes": {}
   },
-  "editorScript": "file:./index.js",
-  "editorStyle": "file:./index.css",
+  "editorScript": "file:../index.js",
   "style": "file:./view.css",
   "render": "file:./render.php",
   "viewScript": "file:./view.js"

@@ -14,7 +14,7 @@ export const horizontalLineIcon = <svg xmlns='http://www.w3.org/2000/svg' width=
 	<path d='M357,204H0v-51h357V204z' />
 </svg>;
 
-export const FeatureIcon =<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#22d38f" stroke="#22d38f"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M2 3h7v1H2zm7 4H6v1h3zm0 4H3v1h6zm12-8H11v1h10zM11 7v1h5V7zm0 5h8v-1h-8zM1 19h22v3H1zm1 2h20v-1H2zm7-5v-1H5v1zm2 0h10v-1H11z"></path><path fill="none" d="M0 0h24v24H0z"></path></g></svg>;
+export const FeatureIcon =<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#22d38f" stroke="#000"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M2 3h7v1H2zm7 4H6v1h3zm0 4H3v1h6zm12-8H11v1h10zM11 7v1h5V7zm0 5h8v-1h-8zM1 19h22v3H1zm1 2h20v-1H2zm7-5v-1H5v1zm2 0h10v-1H11z"></path><path fill="none" d="M0 0h24v24H0z"></path></g></svg>;
 
 
   

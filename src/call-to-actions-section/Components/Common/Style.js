@@ -1,6 +1,7 @@
 import { generateCSS } from '../../../../../bpl-tools/Advanced/generateCSS';
 import { getBackgroundCSS, getBoxCSS, getTypoCSS, isValidCSS } from '../../../../../bpl-tools/utils/getCSS';
 const Style = ({ attributes, id, }) => {
+	
 
 	const { advanced, style } = attributes;
 
@@ -68,6 +69,7 @@ const Style = ({ attributes, id, }) => {
 		${ctaMainContainer}{
 			${getBackgroundCSS(style?.background)}
 			${isValidCSS("padding", getBoxCSS(style?.padding?.desktop))}
+			${isValidCSS("margin", getBoxCSS(style?.margin?.desktop))}
 			${isValidCSS("border-radius", getBoxCSS(style?.radius))}
 		}
 		${ctaSubContainer}{
@@ -140,6 +142,7 @@ const Style = ({ attributes, id, }) => {
         @media only screen and (min-width: 641px) and (max-width: 1024px) {
             ${ctaMainContainer}{
 		      ${isValidCSS("padding", getBoxCSS(style?.padding?.tablet))}
+		      ${isValidCSS("margin", getBoxCSS(style?.margin?.tablet))}
 		    }
 			${ctaSubContainer}{
 			  max-width: ${style?.ctaStyle?.containerWidth?.tablet};
@@ -158,6 +161,7 @@ const Style = ({ attributes, id, }) => {
 		@media only screen and (max-width: 641px) {
             ${ctaMainContainer}{
               ${isValidCSS("padding", getBoxCSS(style?.padding?.mobile))}
+              ${isValidCSS("margin", getBoxCSS(style?.margin?.mobile))}
             }
 			${ctaSubContainer}{
 			  max-width: ${style?.ctaStyle?.containerWidth?.mobile};

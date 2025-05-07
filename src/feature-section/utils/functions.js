@@ -112,7 +112,7 @@ export const themeSwitch = (layout, attributes = {}) => produce(attributes, (dra
 
       draft["section"]["padding"]["desktop"] = { top: '136px', right: '0px', bottom: '136px', left: '0px' };
       draft["section"]["padding"]["tablet"] = { top: '60px', right: '0px', bottom: '60px', left: '0px' };
-      draft["section"]["padding"]["mobile"] = { top: '30px', right: '0px', bottom: '30px', left: '0px' };
+      draft["section"]["padding"]["mobile"] = { top: '30px', right: '30px', bottom: '30px', left: '30px' };
 
       draft["section"]["margin"]["desktop"] = { top: '0px', right: '0px', bottom: '0px', left: '0px' };
       draft["section"]["margin"]["tablet"] = { top: '0px', right: '0px', bottom: '0px', left: '0px' };
@@ -356,10 +356,10 @@ export const themeSwitch = (layout, attributes = {}) => produce(attributes, (dra
 
         },
       ]
-        draft["layout"]["theme"]="theme-3"
+      draft["layout"]["theme"]="theme-3"
 
       draft["section"]["background"]["type"] = 'solid';
-      draft["section"]["background"]["color"] = '#2B3035';
+      draft["section"]["background"]["color"] = '#2b303500';
       draft["section"]["background"]["gradient"] = 'linear-gradient(45deg, #FF0000, #00FF00)';
       draft["section"]["background"]["image"]["url"] = 'https://templates.bplugins.com/wp-content/uploads/2025/02/section-collection-plugin-bg-1.png';
       draft["section"]["background"]["position"] = 'center center';
@@ -368,9 +368,9 @@ export const themeSwitch = (layout, attributes = {}) => produce(attributes, (dra
       draft["section"]["background"]["size"] = 'cover';
       draft["section"]["background"]["overlayColor"] = 'rgba(0, 0, 0, 0.1)';
 
-      draft["section"]["padding"]["desktop"] = { top: '100px', right: '0px', bottom: '100px', left: '0px' };
-      draft["section"]["padding"]["tablet"] = { top: '60px', right: '0px', bottom: '60px', left: '0px' };
-      draft["section"]["padding"]["mobile"] = { top: '30px', right: '0px', bottom: '30px', left: '0px' };
+      draft["section"]["padding"]["desktop"] = { top: '0px', right: '0px', bottom: '0px', left: '0px' };
+      draft["section"]["padding"]["tablet"] = { top: '0px', right: '0px', bottom: '0px', left: '0px' };
+      draft["section"]["padding"]["mobile"] = { top: '0px', right: '30px', bottom: '0px', left: '30px' };
 
       draft["section"]["margin"]["desktop"] = { top: '0px', right: '0px', bottom: '0px', left: '0px' };
       draft["section"]["margin"]["tablet"] = { top: '0px', right: '0px', bottom: '0px', left: '0px' };
@@ -503,7 +503,7 @@ export const themeSwitch = (layout, attributes = {}) => produce(attributes, (dra
       ]
       draft["layout"]["theme"]="theme-4"
       draft["section"]["background"]["type"] = 'solid';
-      draft["section"]["background"]["color"] = '#2B3035';
+      draft["section"]["background"]["color"] = '#2b303600';
       draft["section"]["background"]["gradient"] = 'linear-gradient(45deg, #FF0000, #00FF00)';
       draft["section"]["background"]["image"]["url"] = 'https://templates.bplugins.com/wp-content/uploads/2025/02/section-collection-plugin-bg-1.png';
       draft["section"]["background"]["position"] = 'center center';
@@ -512,9 +512,9 @@ export const themeSwitch = (layout, attributes = {}) => produce(attributes, (dra
       draft["section"]["background"]["size"] = 'cover';
       draft["section"]["background"]["overlayColor"] = 'rgba(0, 0, 0, 0.1)';
 
-      draft["section"]["padding"]["desktop"] = { top: '50px', right: '0px', bottom: '50px', left: '0px' };
-      draft["section"]["padding"]["tablet"] = { top: '60px', right: '0px', bottom: '60px', left: '0px' };
-      draft["section"]["padding"]["mobile"] = { top: '30px', right: '0px', bottom: '30px', left: '0px' };
+      draft["section"]["padding"]["desktop"] = { top: '0px', right: '0px', bottom: '0px', left: '0px' };
+      draft["section"]["padding"]["tablet"] = { top: '0px', right: '0px', bottom: '0px', left: '0px' };
+      draft["section"]["padding"]["mobile"] = { top: '0px', right: '30px', bottom: '0px', left: '30px' };
 
       draft["section"]["margin"]["desktop"] = { top: '0px', right: '0px', bottom: '0px', left: '0px' };
       draft["section"]["margin"]["tablet"] = { top: '0px', right: '0px', bottom: '0px', left: '0px' };

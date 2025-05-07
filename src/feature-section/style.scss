@@ -1,6 +1,6 @@
 $primaryColor: #4527a4;
-
-.wp-block-b-blocks-feature-section {
+// .wp-block-b-blocks-feature-section
+.wp-block-b-blocks-info-list {
   @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 
   box-sizing: border-box;
@@ -218,7 +218,7 @@ $primaryColor: #4527a4;
             display: flex;
             flex-direction: row;
             margin: 0;
-            padding: 0;
+            padding: 0px;
             list-style: none;
             align-items: center !important;
             justify-content: center !important;
@@ -256,6 +256,7 @@ $primaryColor: #4527a4;
           @media only screen and (max-width: 641px) {
             .list-section {
               gap: 6px !important;
+              padding: 30px;
             }
           }
         }
@@ -402,7 +403,6 @@ $primaryColor: #4527a4;
     left: 0;
     width: 100%;
     height: 100%;
-
     pointer-events: none;
   }
   @media (min-width: 576px) {
@@ -518,9 +518,14 @@ $primaryColor: #4527a4;
                   margin: 0px 0px 16px;
                   width: 286px;
                 }
-                @media only screen and (max-width: 641px) {
+                @media only screen and (min-width: 641px) {
                   .feature-description {
-                    width: 375px;
+                    width: 291px;
+                  }
+                }
+                @media only screen and (min-width: 320px) and (max-width: 375px) {
+                  .feature-description {
+                    width: 238px;
                   }
                 }
                 .feature-description p {

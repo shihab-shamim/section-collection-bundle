@@ -21,7 +21,7 @@ export const themeSwitch = (layout, attributes = {}) => produce(attributes, (dra
         ];
       //main cta
       draft["style"]["background"]["type"] = 'solid';
-      draft["style"]["background"]["color"] = '#2B3035';
+      draft["style"]["background"]["color"] = '#49505700';
       draft["style"]["background"]["gradient"] = 'linear-gradient(45deg, #FF0000, #00FF00)';
       draft["style"]["background"]["image"]["url"] = 'https://templates.bplugins.com/wp-content/uploads/2025/02/section-collection-plugin-bg-1.png';
       draft["style"]["background"]["position"] = 'center center';
@@ -30,9 +30,13 @@ export const themeSwitch = (layout, attributes = {}) => produce(attributes, (dra
       draft["style"]["background"]["size"] = 'cover';
       draft["style"]["background"]["overlayColor"] = 'rgba(0, 0, 0, 0.1)';
 
-      draft["style"]["padding"]["desktop"] = { top: '136px', right: '0px', bottom: '136px', left: '0px' };
-      draft["style"]["padding"]["tablet"] = { top: '60px', right: '0px', bottom: '60px', left: '0px' };
-      draft["style"]["padding"]["mobile"] = { top: '30px', right: '0px', bottom: '30px', left: '0px' };
+      draft["style"]["padding"]["desktop"] = { top: '0px', right: '0px', bottom: '0px', left: '0px' };
+      draft["style"]["padding"]["tablet"] = { top: '0px', right: '50px', bottom: '0px', left: '50px' };
+      draft["style"]["padding"]["mobile"] = { top: '0px', right: '40px', bottom: '0px', left: '40px' };
+
+      draft["style"]["margin"]["desktop"] = { top: '0px', right: '0px', bottom: '0px', left: '0px' };
+      draft["style"]["margin"]["tablet"] = { top: '0px', right: '0px', bottom: '0px', left: '0px' };
+      draft["style"]["margin"]["mobile"] = { top: '0px', right: '0px', bottom: '0px', left: '0px' };
 
       draft["style"]["radius"] = { top: '0px', right: '0px', bottom: '0px', left: '0px' };
 
@@ -149,7 +153,7 @@ export const themeSwitch = (layout, attributes = {}) => produce(attributes, (dra
 
       // main cta bg 2
       draft["style"]["background"]["type"] = 'solid';
-      draft["style"]["background"]["color"] = '#2B3035';
+      draft["style"]["background"]["color"] = '#2b303600';
       draft["style"]["background"]["gradient"] = 'linear-gradient(45deg, #FF0000, #00FF00)';
       draft["style"]["background"]["image"]["url"] = 'https://templates.bplugins.com/wp-content/uploads/2025/02/section-collection-plugin-bg-1.png';
       draft["style"]["background"]["position"] = 'center center';
@@ -158,9 +162,13 @@ export const themeSwitch = (layout, attributes = {}) => produce(attributes, (dra
       draft["style"]["background"]["size"] = 'cover';
       draft["style"]["background"]["overlayColor"] = 'rgba(0, 0, 0, 0.1)';
 
-      draft["style"]["padding"]["desktop"] = { top: '136px', right: '0px', bottom: '136px', left: '0px' };
-      draft["style"]["padding"]["tablet"] = { top: '60px', right: '0px', bottom: '60px', left: '0px' };
-      draft["style"]["padding"]["mobile"] = { top: '30px', right: '0px', bottom: '30px', left: '0px' };
+      draft["style"]["padding"]["desktop"] = { top: '0px', right: '0px', bottom: '0px', left: '0px' };
+      draft["style"]["padding"]["tablet"] = { top: '0px', right: '50px', bottom: '0px', left: '50px' };
+      draft["style"]["padding"]["mobile"] = { top: '0px', right: '40px', bottom: '0px', left: '40px' };
+
+      draft["style"]["margin"]["desktop"] = { top: '0px', right: '0px', bottom: '0px', left: '0px' };
+      draft["style"]["margin"]["tablet"] = { top: '0px', right: '0px', bottom: '0px', left: '0px' };
+      draft["style"]["margin"]["mobile"] = { top: '0px', right: '0px', bottom: '0px', left: '0px' };
       draft["style"]["radius"] = { top: '0px', right: '0px', bottom: '0px', left: '0px' };
 
       //cta bg2
@@ -272,7 +280,7 @@ export const themeSwitch = (layout, attributes = {}) => produce(attributes, (dra
         ];
       // main cta bg 3
       draft["style"]["background"]["type"] = 'solid';
-      draft["style"]["background"]["color"] = '#2B3035';
+      draft["style"]["background"]["color"] = '#2b303600';
       draft["style"]["background"]["gradient"] = 'linear-gradient(45deg, #FF0000, #00FF00)';
       draft["style"]["background"]["image"]["url"] = 'https://templates.bplugins.com/wp-content/uploads/2025/02/section-collection-plugin-bg-1.png';
       draft["style"]["background"]["position"] = 'center center';
@@ -281,9 +289,13 @@ export const themeSwitch = (layout, attributes = {}) => produce(attributes, (dra
       draft["style"]["background"]["size"] = 'cover';
       draft["style"]["background"]["overlayColor"] = 'rgba(0, 0, 0, 0.1)';
 
-      draft["style"]["padding"]["desktop"] = { top: '136px', right: '0px', bottom: '136px', left: '0px' };
-      draft["style"]["padding"]["tablet"] = { top: '60px', right: '0px', bottom: '60px', left: '0px' };
-      draft["style"]["padding"]["mobile"] = { top: '30px', right: '0px', bottom: '30px', left: '0px' };
+      draft["style"]["padding"]["desktop"] = { top: '0px', right: '0px', bottom: '0px', left: '0px' };
+      draft["style"]["padding"]["tablet"] = { top: '0px', right: '50px', bottom: '0px', left: '50px' };
+      draft["style"]["padding"]["mobile"] = { top: '0px', right: '40px', bottom: '0px', left: '40px' };
+      
+      draft["style"]["margin"]["desktop"] = { top: '0px', right: '0px', bottom: '0px', left: '0px' };
+      draft["style"]["margin"]["tablet"] = { top: '0px', right: '0px', bottom: '0px', left: '0px' };
+      draft["style"]["margin"]["mobile"] = { top: '0px', right: '0px', bottom: '0px', left: '0px' };
       draft["style"]["radiusThree"] = { top: '16px', right: '16px', bottom: '16px', left: '16px'};
 
 

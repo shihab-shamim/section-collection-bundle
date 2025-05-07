@@ -252,8 +252,9 @@ const Style = ({ attributes, id , device="desktop"}) => {
         ${mainTextSection}:hover .icon-button{
          background-color: ${style?.iconButton?.hoverBg} !important;
         }
-        ${mainTextSection}:hover .icon-button svg{
-          color: ${style?.icon?.hoverColor} !important;
+        ${mainTextSection}:hover .icon-button .icon-svg svg{
+          color: ${style?.icon?.hoverColor};
+          fill: ${style?.icon?.hoverColor};
         }
 
        ${iconButton}{
@@ -301,11 +302,14 @@ const Style = ({ attributes, id , device="desktop"}) => {
         ${featureItem}:hover .feature-link{
           color: ${style?.title?.hoverColor} !important;
         }
+
         ${featureItem}:hover .icon-wrapper{
          background-color: ${style?.iconButton?.hoverBg} !important;
         }
-        ${featureItem}:hover .icon-wrapper svg{
-          color: ${style?.icon?.hoverColor} !important;
+
+        ${featureItem}:hover .icon-wrapper .badge-icon  svg{
+          color: ${style?.icon?.hoverColor};
+          fill: ${style?.icon?.hoverColor};
         }
 
         ${iconWrapper}{
@@ -313,7 +317,7 @@ const Style = ({ attributes, id , device="desktop"}) => {
           height: ${style?.iconButton?.height};
           ${isValidCSS("border-radius",getBoxCSS(style?.iconButton?.border?.radius))}!important;
           background-color: ${style?.iconButton?.colorBg};
-        ${getBorderStyles(style?.iconButton?.border)}!important; 
+          ${getBorderStyles(style?.iconButton?.border)}!important; 
         }
         ${badgeIcon} svg{
            width: ${style?.icon?.height};

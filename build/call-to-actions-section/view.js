@@ -2382,6 +2382,7 @@ const Style = ({
 		${ctaMainContainer}{
 			${(0,_bpl_tools_utils_getCSS__WEBPACK_IMPORTED_MODULE_2__.getBackgroundCSS)(style?.background)}
 			${(0,_bpl_tools_utils_getCSS__WEBPACK_IMPORTED_MODULE_2__.isValidCSS)("padding", (0,_bpl_tools_utils_getCSS__WEBPACK_IMPORTED_MODULE_2__.getBoxCSS)(style?.padding?.desktop))}
+			${(0,_bpl_tools_utils_getCSS__WEBPACK_IMPORTED_MODULE_2__.isValidCSS)("margin", (0,_bpl_tools_utils_getCSS__WEBPACK_IMPORTED_MODULE_2__.getBoxCSS)(style?.margin?.desktop))}
 			${(0,_bpl_tools_utils_getCSS__WEBPACK_IMPORTED_MODULE_2__.isValidCSS)("border-radius", (0,_bpl_tools_utils_getCSS__WEBPACK_IMPORTED_MODULE_2__.getBoxCSS)(style?.radius))}
 		}
 		${ctaSubContainer}{
@@ -2454,6 +2455,7 @@ const Style = ({
         @media only screen and (min-width: 641px) and (max-width: 1024px) {
             ${ctaMainContainer}{
 		      ${(0,_bpl_tools_utils_getCSS__WEBPACK_IMPORTED_MODULE_2__.isValidCSS)("padding", (0,_bpl_tools_utils_getCSS__WEBPACK_IMPORTED_MODULE_2__.getBoxCSS)(style?.padding?.tablet))}
+		      ${(0,_bpl_tools_utils_getCSS__WEBPACK_IMPORTED_MODULE_2__.isValidCSS)("margin", (0,_bpl_tools_utils_getCSS__WEBPACK_IMPORTED_MODULE_2__.getBoxCSS)(style?.margin?.tablet))}
 		    }
 			${ctaSubContainer}{
 			  max-width: ${style?.ctaStyle?.containerWidth?.tablet};
@@ -2472,6 +2474,7 @@ const Style = ({
 		@media only screen and (max-width: 641px) {
             ${ctaMainContainer}{
               ${(0,_bpl_tools_utils_getCSS__WEBPACK_IMPORTED_MODULE_2__.isValidCSS)("padding", (0,_bpl_tools_utils_getCSS__WEBPACK_IMPORTED_MODULE_2__.getBoxCSS)(style?.padding?.mobile))}
+              ${(0,_bpl_tools_utils_getCSS__WEBPACK_IMPORTED_MODULE_2__.isValidCSS)("margin", (0,_bpl_tools_utils_getCSS__WEBPACK_IMPORTED_MODULE_2__.getBoxCSS)(style?.margin?.mobile))}
             }
 			${ctaSubContainer}{
 			  max-width: ${style?.ctaStyle?.containerWidth?.mobile};
