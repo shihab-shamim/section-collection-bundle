@@ -5,7 +5,7 @@
   "version": "1.0.0",
   "title": "Ticker",
   "category": "section_collection",
-  "description": "Dynamic ticker for urgent notifications and messages",
+  "description": "Display dynamic updates or brand slogans with a scrolling ticker.",
   "keywords": ["Ticker Text", "Ticker Plugins"],
   "textdomain": "b-blocks",
   "attributes": {

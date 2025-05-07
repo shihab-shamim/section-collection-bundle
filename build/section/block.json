@@ -2,13 +2,14 @@
   "$schema": "https://schemas.wp.org/trunk/block.json",
   "apiVersion": 3,
   "name": "bpsc/section-collection",
-  "title": "Section Collection",
+  "title": "Hero Section",
   "description": "A call to action block collection plugin, newer section will come near future soon. ",
   "category": "section_collection",
   "keywords": [
     "section",
     "collection",
-    "block"
+    "block",
+    "hero"
   ],
   "textdomain": "section-collection",
   "attributes": {
@@ -50,9 +51,9 @@
         },
         "padding": {
           "desktop": {
-            "top": "30px",
-            "right": "15px",
-            "bottom": "30px",
+            "top": "40px",
+            "right": "40px",
+            "bottom": "40px",
             "left": "40px"
           },
           "tablet": {
@@ -62,10 +63,10 @@
             "left": "40px"
           },
           "mobile": {
-            "top": "10px",
-            "right": "10px",
-            "bottom": "10px",
-            "left": "100px"
+            "top": "30px",
+            "right": "30px",
+            "bottom": "30px",
+            "left": "30px"
           }
         },
         "border": {

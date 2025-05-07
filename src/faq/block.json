@@ -5,7 +5,7 @@
   "version": "1.0.0",
   "title": "FAQ!",
   "category": "section_collection",
-  "description": "Short description of the Test Purpose",
+  "description": "Address common questions to enhance user understanding.",
   "keywords": [
     "Faq",
     "faqs",
@@ -48,10 +48,10 @@
               "left": "50px"
             },
             "mobile": {
-              "top": "30px",
-              "right": "30px",
-              "bottom": "30px",
-              "left": "30px"
+              "top": "",
+              "right": "",
+              "bottom": "",
+              "left": ""
             }
           },
           "margin": {

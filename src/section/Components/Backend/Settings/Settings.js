@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { __ } from '@wordpress/i18n';
 import { InspectorControls } from '@wordpress/block-editor';
-import { PanelBody, PanelRow, TabPanel, TextControl, ToggleControl, SelectControl, __experimentalBoxControl as BoxControl } from '@wordpress/components';
+import { PanelBody, PanelRow, TabPanel, ToggleControl, SelectControl, __experimentalBoxControl as BoxControl } from '@wordpress/components';
 import { produce } from 'immer';
 
 // Settings Components
