@@ -93,7 +93,7 @@ export const themes = {
           overlayColor: "#00000080",
         },
         mobile: {
-          type: "image",
+          type: "gradient",
           color: "#ff0000",
           gradient: "linear-gradient(184deg, #2b3035 0%, #343a40 25.55%)",
           image: {
@@ -105,7 +105,7 @@ export const themes = {
           overlayColor: "#00000080",
         },
         tablet: {
-          type: "image",
+          type: "gradient",
           color: "#ff0000",
           gradient: "linear-gradient(184deg, #2b3035 0%, #343a40 25.55%)",
           image: {

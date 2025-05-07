@@ -2,10 +2,10 @@
   "$schema": "https://schemas.wp.org/trunk/block.json",
   "apiVersion": 3,
   "name": "b-blocks/about-us",
-  "version": "1.0.0",
-  "title": "About Us",
+  "version": "1.0.2",
+  "title": "About Us Section",
   "category": "section_collection",
-  "description": "Short description of the about us",
+  "description": "Create a customizable About Us section with images, headings, buttons, and feature lists. Easily style backgrounds, typography, and layouts for a professional look on all devices.",
   "keywords": [
     "about",
     "about us",
@@ -89,7 +89,7 @@
             "overlayColor": "#00000080"
           },
           "mobile": {
-            "type": "image",
+            "type": "gradient",
             "color": "#ff0000",
             "gradient": "linear-gradient(184deg, #2b3035 0%, #343a40 25.55%)",
             "image": {
@@ -101,7 +101,7 @@
             "overlayColor": "#00000080"
           },
           "tablet": {
-            "type": "image",
+            "type": "gradient",
             "color": "#ff0000",
             "gradient": "linear-gradient(184deg, #2b3035 0%, #343a40 25.55%)",
             "image": {

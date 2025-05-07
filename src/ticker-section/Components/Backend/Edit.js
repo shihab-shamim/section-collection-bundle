@@ -18,7 +18,7 @@ const Edit = (props) => {
 
     
        <div className="mainWrapper">
-       <MarqueeText attributes={attributes} setAttributes={setAttributes} />
+        <MarqueeText attributes={attributes} setAttributes={setAttributes} />
        </div>
 
       </div>

@@ -5,14 +5,12 @@ import { updateData } from "../../../../../bpl-tools/utils/functions";
 import { __ } from "@wordpress/i18n";
 
 const Timeline1 = ({ attributes, setAttributes, from }) => {
-  const { timeline , options} = attributes || {};
+  const { timeline, options } = attributes || {};
   return (
     <div className="main-cont">
       <div className="plugin-cont">
         <div className="plugin">
-          <div
-            className=" text-cont"
-          >
+          <div className=" text-cont">
             {/* insider content*/}
             <div className="left-part">
               {/*left part*/}
@@ -29,11 +27,17 @@ const Timeline1 = ({ attributes, setAttributes, from }) => {
                     }
                     placeholder={__("Title...")}
                   />
-                  {
-                    options.button.status && <a className="link" target={ options.button.isNewTab ? `_blank`: "_self"} href={timeline.button.link}><button type="button" className="btn">
-                    {timeline.button.title}
-                  </button></a>
-                  }
+                  {options.button.status && (
+                    <a
+                      className="link"
+                      target={options.button.isNewTab ? `_blank` : "_self"}
+                      href={timeline.button.link}
+                    >
+                      <button type="button" className="btn">
+                        {timeline.button.title}
+                      </button>
+                    </a>
+                  )}
                   {/* left side card  */}
                   <div className=" left-cards-cont">
                     {timeline.leftContent.cards.map((card, index) => (

@@ -1119,6 +1119,18 @@ const Style = ({ attributes, setAttributes, device }) => {
         initialOpen={false}
       >
         <BoxControl
+          label={__("Border Radius", "b-blocks")}
+          values={container?.borderRadius}
+          onChange={(values) =>
+            setAttributes({
+              styles: updateData(styles, values, "container", "borderRadius"),
+            })
+          }
+        />
+
+        <div style={{ marginTop: "20px" }}></div>
+
+        <BoxControl
           label={__("Padding", "b-blocks")}
           values={container?.padding}
           onChange={(values) => {

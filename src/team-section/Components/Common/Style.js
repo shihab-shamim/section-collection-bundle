@@ -38,7 +38,7 @@ const Style = ({ attributes, id }) => {
   const itemColSl = `${itemRowSl} .col-sm-6`;
   const itemTeamMemberSl = `${itemColSl} .team-member-1`;
   const itemTeamMemberRoundedSl = `${itemTeamMemberSl} .rounded`;
-  // const itemTeamMemberImgSl = `${itemTeamMemberRoundedSl} img`;
+  const itemTeamMemberImgSl = `${itemTeamMemberRoundedSl} img`;
   const itemTeamMemberContentSl = `${itemTeamMemberSl} .team-member-1__content`;
   const itemTeamMemberContentBgSl = `${itemTeamMemberContentSl} .bg-light-subtle`;
   const itemTeamMemberContentFlexSl = `${itemTeamMemberContentBgSl} .flex-grow-1`;
@@ -87,13 +87,13 @@ const Style = ({ attributes, id }) => {
   // const teamTwoImgSl = `${teamTwoSl} .team-image`;
   // const teamTwoContentSl = `${teamTwoSl} .team-content`;
   const teamTwoNameTypoSl = `${teamNameSl} h5`;
-  // const teamTwoRoleSl = `${teamRoleSl} .team-role`;     
+  // const teamTwoRoleSl = `${teamRoleSl} .team-role`;
 
   const shadowValue =
     shadow?.map((s) => getShadowCSS(s, "box")).join(", ") || "none";
 
   const hoverShadowValue =
-    hoverShadow?.map((s) => getShadowCSS(s, "box")).join(", ") || "none"; 
+    hoverShadow?.map((s) => getShadowCSS(s, "box")).join(", ") || "none";
 
   const imageShadowValue =
     image?.shadow?.map((s) => getShadowCSS(s, "box")).join(", ") || "none";
@@ -199,12 +199,14 @@ const Style = ({ attributes, id }) => {
           background-color: ${container?.bgColor};
           margin: ${getBoxCSS(container?.margin)};
           padding: ${getBoxCSS(container?.padding)};
+          border-radius: ${getBoxCSS(container?.borderRadius)};
         }
 
         ${speakersSectionOneSl}{
           background-color: ${container?.bgColor};
           margin: ${getBoxCSS(container?.margin)};
           padding: ${getBoxCSS(container?.padding)};
+          border-radius: ${getBoxCSS(container?.borderRadius)};
         }
 
         ${secTitleTitleSl}{
@@ -270,6 +272,7 @@ const Style = ({ attributes, id }) => {
           background-color: ${container?.bgColor};
           margin: ${getBoxCSS(container?.margin)};
           padding: ${getBoxCSS(container?.padding)};
+          border-radius: ${getBoxCSS(container?.borderRadius)};
         }
 
         ${headingTitleSl}{
@@ -349,19 +352,26 @@ const Style = ({ attributes, id }) => {
           fill: ${badge?.bgColor?.hover?.color} !important;
         }
 
-        ${deskBreakpoint}{
-        .small{
-          max-width: 165px;
-          min-height: 165px;
-          objectFit: cover;
-        }
 
-        .large{
-          max-width: 360px;
-          min-height: 360px;
-          objectFit: cover;
+        ${deskBreakpoint}{
+          .small{
+            max-width: 165px;
+            min-height: 165px;
+            object-fit: cover;
+          }
+
+          .large{
+            max-width: 360px;
+            min-height: 360px;
+            object-fit: cover;
+          }
+
+           ${itemTeamMemberImgSl}{
+            width: 100%;
+            height: 368.77px;
+          }
         }
-        }
+        
 
         ${tabBreakpoint}{
           ${headingBtnFSSl}{
@@ -382,15 +392,20 @@ const Style = ({ attributes, id }) => {
           }
 
           .small{
-            max-width: 165px;
-            min-height: 165px;
-            objectFit: cover;
+            max-width: 220px;
+            min-height: 220px;
+            object-fit: cover;
           }
 
           .large{
             max-width: 360px;
             min-height: 360px;
-            objectFit: cover;
+            object-fit: cover;
+          }
+
+          ${itemTeamMemberImgSl}{
+            width: 100%;
+            height: 368.77px;
           }
         }
 
@@ -415,13 +430,22 @@ const Style = ({ attributes, id }) => {
           .small{
             width: 120px;
             height: 120px;
-            objectFit: cover;
+            object-fit: cover;
           }
 
           .large{
             width: 290px;
             height: 290px;
-            objectFit: cover;
+            object-fit: cover;
+          }
+
+          ${itemTeamMemberImgSl}{
+           width: 100%;
+           height: 368.77px;
+          }
+
+          ${itemRowSl}{
+           padding: 0px 30px 0px 30px;
           }
         }
 

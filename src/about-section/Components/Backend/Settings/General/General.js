@@ -96,36 +96,6 @@ const General = ({ attributes, setAttributes, device }) => {
             }
           />
 
-          {/* <Spacer /> */}
-
-          {/* <InputControl
-              type="text"
-              label={__("Button URL", "b-blocks")}
-              value={url}
-              onChange={(url) => {
-                setAttributes({
-                  about: {
-                    ...about,
-                    heading: { ...heading, button: { ...button, url } },
-                  },
-                });
-              }}
-            />
-
-            <Spacer />
-
-            <ToggleControl
-              label={__("Open Link in New Tab", "b-blocks")}
-              checked={target}
-              onChange={(target) => {
-                setAttributes({
-                  about: { ...about, heading: { ...heading, target } },
-                });
-              }}
-            /> */}
-
-          <Spacer />
-
           <div style={{ marginTop: "20px" }}></div>
 
           <TextareaControl
@@ -191,84 +161,40 @@ const General = ({ attributes, setAttributes, device }) => {
 
           {/* Image Two And Three */}
           {(themeSl === "themeTwo" || themeSl === "themeThree") && (
-            // <PanelBody
-            //   className="bPlPanelBody"
-            //   title={__("Images", "b-blocks")}
-            //   initialOpen={false}
-            // >
             <>
-              {/* <ItemsPanel
-                  attributes={about?.heading?.images}
-                  setAttributes={(newImages) =>
+              <PanelRow>
+                <Label className="">{__("Image", "b-blocks")}</Label>
+                <Device />
+              </PanelRow>
+
+              {about?.heading?.images?.[device]?.map((img, index) => (
+                <InlineMediaUpload
+                  key={index}
+                  value={img.url}
+                  onChange={(newImage) => {
                     setAttributes({
                       about: {
                         ...about,
                         heading: {
                           ...about.heading,
                           images: {
-                            ...about?.heading?.images,
-                            ...newImages,
+                            ...about.heading.images,
+                            [device]: about.heading.images[device].map(
+                              (image, i) =>
+                                i === index
+                                  ? { ...image, url: newImage }
+                                  : image
+                            ),
                           },
                         },
                       },
-                    })
-                  }
-                  themeSl={themeSl}
-                  arrKey={`${device}`}
-                  newItem={{
-                    url: "https://pixellyo.com/nextai/html/assets/img/mission-img-1.png",
-                    alt: "About Us",
-                    width: "300",
-                    height: "225",
-                    borderRadius: {
-                      top: "0.25rem",
-                      right: "0.25rem",
-                      bottom: "0.25rem",
-                      left: "0.25rem",
-                    },
-                    imageGap: 15,
+                    });
                   }}
-                  ItemSettings={ImageItemPanel}
-                  itemLabel="Image"
-                  design="sortable"
-                /> */}
-
-              <>
-                <PanelRow>
-                  <Label className="">{__("Image", "b-blocks")}</Label>
-                  <Device />
-                </PanelRow>
-
-                {about?.heading?.images?.[device]?.map((img, index) => (
-                  <InlineMediaUpload
-                    key={index}
-                    value={img.url}
-                    onChange={(newImage) => {
-                      setAttributes({
-                        about: {
-                          ...about,
-                          heading: {
-                            ...about.heading,
-                            images: {
-                              ...about.heading.images,
-                              [device]: about.heading.images[device].map(
-                                (image, i) =>
-                                  i === index
-                                    ? { ...image, url: newImage }
-                                    : image
-                              ),
-                            },
-                          },
-                        },
-                      });
-                    }}
-                    type="image"
-                    size="full"
-                  />
-                ))}
-              </>
+                  type="image"
+                  size="full"
+                />
+              ))}
             </>
-            
           )}
         </PanelBody>
 

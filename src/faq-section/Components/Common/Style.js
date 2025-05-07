@@ -50,6 +50,7 @@ const Style = ({ attributes, id }) => {
       return `${color} ${background}`;
     }
   };
+ 
 
   return (
     <>

@@ -478,7 +478,7 @@ const Testimonial = ({ attributes, setAttributes, from }) => {
 
             {/*---------------------- column3 ----------------------------- */}
 
-            <div className="column">
+            <div className="column column3">
               <ul className="lists theme1Ani">
                 {testimonials.map((testimonial, index) => {
                   const { name, image, content, tags, designation } =

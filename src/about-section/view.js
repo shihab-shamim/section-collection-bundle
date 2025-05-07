@@ -5,7 +5,6 @@ import AboutUs from "./Components/AboutUs/AboutUs";
 import AboutUsTwo from "./Components/AboutUs/AboutUsTwo";
 import AboutUsThree from "./Components/AboutUs/AboutUsThree";
 import AboutUsFour from "./Components/AboutUs/AboutUsFour";
-import AboutUsFive from "./Components/AboutUs/AboutUsFive";
 
 document.addEventListener("DOMContentLoaded", () => {
   const blockNameEls = document.querySelectorAll(".wp-block-b-blocks-about-us");
@@ -21,7 +20,6 @@ document.addEventListener("DOMContentLoaded", () => {
         {themeSl === "themeTwo" && <AboutUsTwo attributes={attributes} />}
         {themeSl === "themeThree" && <AboutUsThree attributes={attributes} />}
         {themeSl === "themeFour" && <AboutUsFour attributes={attributes} />}
-        {themeSl === "themeFive" && <AboutUsFive attributes={attributes} />}
       </>
     );
 

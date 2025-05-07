@@ -243,10 +243,10 @@ draft["styles"]["question"]["colors"]={color: "#192534",bgType: "solid",bg: ""}
         left: "60px"
       },
       mobile: {
-        top: "30px",
-        right: "30px",
-        bottom: "30px",
-        left: "30px"
+        top: "0px",
+        right: "0px",
+        bottom: "0px",
+        left: "0px"
       }
     };
 

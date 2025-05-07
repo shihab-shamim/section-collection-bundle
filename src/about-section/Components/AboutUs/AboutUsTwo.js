@@ -35,53 +35,14 @@ const AboutUsTwo = ({ attributes, setAttributes, device }) => {
 
   const imageSet = images?.[device] || images?.desktop;
 
-  // const onSelectImage = (media, index) => {
-  //   if (!media || !media.url) return;
-
-  //   setAttributes({
-  //     about: {
-  //       ...about,
-  //       heading: {
-  //         ...about.heading,
-  //         images: {
-  //           ...about.heading.images,
-  //           [device]: about.heading.images[device].map((img, i) =>
-  //             i === index ? media.url : img
-  //           ),
-  //         },
-  //       },
-  //     },
-  //   });
-  // };
-
-  // const onSelectImage = (media, index) => {
-  //   if (!media || !media.url) return;
-
-  //   setAttributes({
-  //     about: {
-  //       ...about,
-  //       heading: {
-  //         ...about.heading,
-  //         images: {
-  //           ...about.heading.images,
-  //           [device]: about?.heading?.images[device].map((img, i) =>
-  //             i === index ? { ...img, url: media.url } : img
-  //           ),
-  //         },
-  //       },
-  //     },
-  //   });
-  // };
-
   const onSelectImage = (media, index) => {
     if (!media || !media.url) return;
 
-    // Ensure images[device] is always an array before mapping
     const updatedImages = Array.isArray(about?.heading?.images?.[device])
       ? about.heading.images[device].map((img, i) =>
           i === index ? { ...img, url: media.url } : img
         )
-      : [{ url: media.url }]; // Fallback: Initialize with selected image
+      : [{ url: media.url }];
 
     setAttributes({
       about: {
@@ -90,7 +51,7 @@ const AboutUsTwo = ({ attributes, setAttributes, device }) => {
           ...about.heading,
           images: {
             ...about.heading.images,
-            [device]: updatedImages, // Ensure it's always an array
+            [device]: updatedImages,
           },
         },
       },
@@ -104,40 +65,6 @@ const AboutUsTwo = ({ attributes, setAttributes, device }) => {
           <div className="col-lg-5 col-xl-6">
             <div className="row g-4">
               <div className="col-sm-6">
-                {/* {isEditor && imageSet.length > 0 && imageSet[0]?.url && (
-                      <>
-                        <MediaUploadCheck>
-                          <MediaUpload
-                            onSelect={(media) => onSelectImage(media, 0)}
-                            allowedTypes={["image"]}
-                            value={imageSet[0]?.url}
-                            render={({ open }) => (
-                              <div onClick={open} style={{ cursor: "pointer" }}>
-                                {images?.[device] ? (
-                                  <img
-                                    className="img-fluid"
-                                    src={imageSet[0]?.url}
-                                    alt="Selected"
-                                  />
-                                ) : (
-                                  <Button variant="primary">
-                                    Select Image
-                                  </Button>
-                                )}
-                              </div>
-                            )}
-                          />
-                        </MediaUploadCheck>
-                      </>
-                    )
-                  : imageSet[0]?.url && (
-                      <img
-                        src={imageSet[0]?.url}
-                        alt="about us"
-                        className="img-fluid"
-                      />
-                    )} */}
-
                 {isEditor &&
                 Array.isArray(imageSet) &&
                 imageSet.length > 0 &&
@@ -173,45 +100,10 @@ const AboutUsTwo = ({ attributes, setAttributes, device }) => {
                     className="img-fluid"
                   />
                 ) : (
-                  <Button variant="primary">Select Image</Button> // Fallback if no image
+                  <Button variant="primary">Select Image</Button>
                 )}
               </div>
               <div className="col-sm-6">
-                {/* {isEditor
-                  ? imageSet[1]?.url && (
-                      <>
-                        <MediaUploadCheck>
-                          <MediaUpload
-                            onSelect={(media) => onSelectImage(media, 1)}
-                            allowedTypes={["image"]}
-                            value={imageSet[1]?.url}
-                            render={({ open }) => (
-                              <div onClick={open} style={{ cursor: "pointer" }}>
-                                {images?.[device] ? (
-                                  <img
-                                    className="img-fluid"
-                                    src={imageSet[1]?.url}
-                                    alt="Selected"
-                                  />
-                                ) : (
-                                  <Button variant="primary">
-                                    Select Image
-                                  </Button>
-                                )}
-                              </div>
-                            )}
-                          />
-                        </MediaUploadCheck>
-                      </>
-                    )
-                  : imageSet[1]?.url && (
-                      <img
-                        src={imageSet[1]?.url}
-                        alt="about us"
-                        className="img-fluid"
-                      />
-                    )} */}
-
                 {isEditor &&
                 Array.isArray(imageSet) &&
                 imageSet.length > 0 &&
@@ -247,45 +139,10 @@ const AboutUsTwo = ({ attributes, setAttributes, device }) => {
                     className="img-fluid"
                   />
                 ) : (
-                  <Button variant="primary">Select Image</Button> // Fallback if no image
+                  <Button variant="primary">Select Image</Button>
                 )}
               </div>
               <div className="col-12">
-                {/* {isEditor
-                  ? imageSet[2]?.url && (
-                      <>
-                        <MediaUploadCheck>
-                          <MediaUpload
-                            onSelect={(media) => onSelectImage(media, 2)}
-                            allowedTypes={["image"]}
-                            value={imageSet[2]?.url}
-                            render={({ open }) => (
-                              <div onClick={open} style={{ cursor: "pointer" }}>
-                                {images?.[device] ? (
-                                  <img
-                                    className="img-fluid"
-                                    src={imageSet[2]?.url}
-                                    alt="Selected"
-                                  />
-                                ) : (
-                                  <Button variant="primary">
-                                    Select Image
-                                  </Button>
-                                )}
-                              </div>
-                            )}
-                          />
-                        </MediaUploadCheck>
-                      </>
-                    )
-                  : imageSet[2]?.url && (
-                      <img
-                        src={imageSet[2]?.url}
-                        alt="about us"
-                        className="img-fluid"
-                      />
-                    )} */}
-
                 {isEditor &&
                 Array.isArray(imageSet) &&
                 imageSet.length > 0 &&
@@ -321,7 +178,7 @@ const AboutUsTwo = ({ attributes, setAttributes, device }) => {
                     className="img-fluid"
                   />
                 ) : (
-                  <Button variant="primary">Select Image</Button> // Fallback if no image
+                  <Button variant="primary">Select Image</Button>
                 )}
               </div>
             </div>

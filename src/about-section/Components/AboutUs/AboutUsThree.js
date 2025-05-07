@@ -21,25 +21,6 @@ const AboutUsThree = ({ attributes, setAttributes, device }) => {
 
   const imageSet = images?.[device] || images?.desktop;
 
-  // const onSelectImage = (media, index) => {
-  //   if (!media || !media.url) return;
-
-  //   setAttributes({
-  //     about: {
-  //       ...about,
-  //       heading: {
-  //         ...about.heading,
-  //         images: {
-  //           ...about.heading.images,
-  //           [device]: about?.heading?.images[device].map((img, i) =>
-  //             i === index ? media.url : img.url
-  //           ),
-  //         },
-  //       },
-  //     },
-  //   });
-  // };
-
   const onSelectImage = (media, index) => {
     if (!media || !media.url) return;
 
@@ -66,7 +47,6 @@ const AboutUsThree = ({ attributes, setAttributes, device }) => {
           <div className="row g-4 align-items-center justify-content-between">
             <div className="col-lg-6 col-xxl-5">
               <span className="btn btn-sm align-items-center bg-primary-emphasis hover:bg-primary-emphasis text-primary-subtle hover:text-primary-subtle cursor-default mb-4">
-                
                 <div
                   className="align-middle btn-icon fs-20 flex-shrink-0"
                   dangerouslySetInnerHTML={{
@@ -74,7 +54,6 @@ const AboutUsThree = ({ attributes, setAttributes, device }) => {
                   }}
                 />
 
-               
                 {isEditor ? (
                   <RichText
                     className="d-inline-block flex-grow-1 fw-medium btn-text"
@@ -196,172 +175,6 @@ const AboutUsThree = ({ attributes, setAttributes, device }) => {
                 <p className="mb-0 item-description">{item?.description}</p>
               )}
             </div>
-
-            {/* Images */}
-            {/* <div className="col-lg-6">
-              <div className="row g-4">
-                <div className="col-sm-7">
-                  {isEditor
-                    ? imageSet[0]?.url && (
-                        <>
-                          <MediaUploadCheck>
-                            <MediaUpload
-                              onSelect={(media) => onSelectImage(media, 0)}
-                              allowedTypes={["image"]}
-                              value={imageSet[0]?.url}
-                              render={({ open }) => (
-                                <div
-                                  onClick={open}
-                                  style={{ cursor: "pointer" }}
-                                >
-                                  {images?.[device] ? (
-                                    <img
-                                      className="img-fluid rounded-3 w-100"
-                                      src={imageSet[0]?.url}
-                                      alt="Selected"
-                                      // style={{ maxWidth: "100%", height: "auto" }}
-                                    />
-                                  ) : (
-                                    <Button variant="primary">
-                                      Select Image
-                                    </Button>
-                                  )}
-                                </div>
-                              )}
-                            />
-                          </MediaUploadCheck>
-                        </>
-                      )
-                    : imageSet[0]?.url && (
-                        <img
-                          src={imageSet[0]?.url}
-                          alt="about us"
-                          className="img-fluid rounded-3 w-100"
-                        />
-                      )}
-                </div>
-                <div className="col-sm-5">
-                  {isEditor
-                    ? imageSet[1]?.url && (
-                        <>
-                          <MediaUploadCheck>
-                            <MediaUpload
-                              onSelect={(media) => onSelectImage(media, 1)}
-                              allowedTypes={["image"]}
-                              value={imageSet[1]?.url}
-                              render={({ open }) => (
-                                <div
-                                  onClick={open}
-                                  style={{ cursor: "pointer" }}
-                                >
-                                  {images?.[device] ? (
-                                    <img
-                                      className="img-fluid rounded-3 w-100"
-                                      src={imageSet[1]?.url}
-                                      alt="Selected"
-                                      // style={{ maxWidth: "100%", height: "auto" }}
-                                    />
-                                  ) : (
-                                    <Button variant="primary">
-                                      Select Image
-                                    </Button>
-                                  )}
-                                </div>
-                              )}
-                            />
-                          </MediaUploadCheck>
-                        </>
-                      )
-                    : imageSet[1]?.url && (
-                        <img
-                          src={imageSet[1]?.url}
-                          alt="about us"
-                          className="img-fluid rounded-3 w-100"
-                        />
-                      )}
-                </div>
-                <div className="col-sm-5">
-                  {isEditor
-                    ? imageSet[2]?.url && (
-                        <>
-                          <MediaUploadCheck>
-                            <MediaUpload
-                              onSelect={(media) => onSelectImage(media, 2)}
-                              allowedTypes={["image"]}
-                              value={imageSet[2]?.url}
-                              render={({ open }) => (
-                                <div
-                                  onClick={open}
-                                  style={{ cursor: "pointer" }}
-                                >
-                                  {images?.[device] ? (
-                                    <img
-                                      className="img-fluid rounded-3 w-100"
-                                      src={imageSet[2]?.url}
-                                      alt="Selected"
-                                      // style={{ maxWidth: "100%", height: "auto" }}
-                                    />
-                                  ) : (
-                                    <Button variant="primary">
-                                      Select Image
-                                    </Button>
-                                  )}
-                                </div>
-                              )}
-                            />
-                          </MediaUploadCheck>
-                        </>
-                      )
-                    : imageSet[2]?.url && (
-                        <img
-                          src={imageSet[2]?.url}
-                          alt="about us"
-                          className="img-fluid rounded-3 w-100"
-                        />
-                      )}
-                </div>
-                <div className="col-sm-7">
-                  {isEditor
-                    ? imageSet[3]?.url && (
-                        <>
-                          <MediaUploadCheck>
-                            <MediaUpload
-                              onSelect={(media) => onSelectImage(media, 3)}
-                              allowedTypes={["image"]}
-                              value={imageSet[3]?.url}
-                              render={({ open }) => (
-                                <div
-                                  onClick={open}
-                                  style={{ cursor: "pointer" }}
-                                >
-                                  {images?.[device] ? (
-                                    <img
-                                      className="img-fluid rounded-3 w-100"
-                                      src={imageSet[3]?.url}
-                                      alt="Selected"
-                                      // style={{ maxWidth: "100%", height: "auto" }}
-                                    />
-                                  ) : (
-                                    <Button variant="primary">
-                                      Select Image
-                                    </Button>
-                                  )}
-                                </div>
-                              )}
-                            />
-                          </MediaUploadCheck>
-                        </>
-                      )
-                    : imageSet[3]?.url && (
-                        <img
-                          src={imageSet[3]?.url}
-                          alt="about us"
-                          className="img-fluid rounded-3 w-100"
-                        />
-                      )}
-                </div>
-              </div>
-            </div> */}
 
             <div className="col-lg-6">
               <div className="row g-4">

@@ -173,16 +173,12 @@ const AboutUsFour = ({ attributes, setAttributes, device }) => {
                           <div
                             className="item-icon"
                             style={{
-                              // display: "flex",
-                              // alignItems: "center",
-                              // justifyContent: "center",
                               position: "absolute",
                               top: "50%",
                               left: "50%",
                               transform: "translate(-50%, -50%)",
                               width: "24px",
                               height: "24px",
-                              // borderRadius: "50%",
                             }}
                             dangerouslySetInnerHTML={{
                               __html: item?.image?.url,

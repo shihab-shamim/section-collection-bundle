@@ -1010,6 +1010,7 @@ export const styleItems = {
           ],
         },
       ],
+      headingNumberOfPerson: 3,
     },
     styles: {
       heading: {
@@ -1200,7 +1201,6 @@ export const styleItems = {
     },
   },
 };
-
 
 export const toolTipPresets = [
   {

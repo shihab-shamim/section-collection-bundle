@@ -1,0 +1,134 @@
+/*!****************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/hero-section/style.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************************/
+html {
+  scroll-behavior: smooth;
+}
+
+.dashicons {
+  font-family: dashicons !important;
+}
+
+.wp-block-bpsc-section-collection * {
+  box-sizing: border-box;
+}
+.wp-block-bpsc-section-collection .prefixBlockName {
+  display: inline-block;
+}
+.wp-block-bpsc-section-collection .icon {
+  font-style: inherit;
+}
+.wp-block-bpsc-section-collection a {
+  text-decoration: none;
+}
+.wp-block-bpsc-section-collection a:focus {
+  outline: none;
+}
+.wp-block-bpsc-section-collection img {
+  width: 100%;
+  max-width: 100%;
+}
+.wp-block-bpsc-section-collection h2,
+.wp-block-bpsc-section-collection h4 {
+  margin: 0;
+  padding: 0;
+}
+.wp-block-bpsc-section-collection .bpscSectionCollection .layoutStyle .mainArea h2 {
+  color: #fff;
+}
+.wp-block-bpsc-section-collection .bpscSectionCollection .layoutStyle .mainArea h4 {
+  color: #fff;
+}
+.wp-block-bpsc-section-collection .bpscSectionCollection .layoutStyle .mainArea a.btn {
+  color: #fff;
+  padding: 13px 24px;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  border: 0;
+  border-radius: 5px;
+  background-color: #7EC954;
+  transition-property: all;
+  transition-duration: 0.15s;
+  transition-timing-function: ease-in-out;
+  margin-bottom: 10px;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+.wp-block-bpsc-section-collection .bpscSectionCollection .layoutStyle .mainArea a.btn a {
+  text-decoration: none;
+}
+.wp-block-bpsc-section-collection .bpscSectionCollection .layoutStyle.style1 {
+  text-align: center;
+}
+.wp-block-bpsc-section-collection .bpscSectionCollection .layoutStyle.style1 .mainArea .title {
+  width: 90%;
+  margin: 0 auto;
+}
+@media (max-width: 576px) {
+  .wp-block-bpsc-section-collection .bpscSectionCollection .layoutStyle.style1 .mainArea .title {
+    width: 100%;
+  }
+}
+.wp-block-bpsc-section-collection .bpscSectionCollection .layoutStyle.style1 .mainArea .subTitle {
+  margin: 20px 0px 20px;
+}
+.wp-block-bpsc-section-collection .bpscSectionCollection .layoutStyle.style2 .mainArea, .wp-block-bpsc-section-collection .bpscSectionCollection .layoutStyle.style3 .mainArea {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: self-start;
+}
+@media (max-width: 768px) {
+  .wp-block-bpsc-section-collection .bpscSectionCollection .layoutStyle.style2 .mainArea, .wp-block-bpsc-section-collection .bpscSectionCollection .layoutStyle.style3 .mainArea {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.wp-block-bpsc-section-collection .bpscSectionCollection .layoutStyle.style2 .mainArea .buttonArea, .wp-block-bpsc-section-collection .bpscSectionCollection .layoutStyle.style3 .mainArea .buttonArea {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.wp-block-bpsc-section-collection .bpscSectionCollection .layoutStyle.style3 .mainArea {
+  gap: 20px;
+  align-items: center;
+}
+.wp-block-bpsc-section-collection .bpscSectionCollection .layoutStyle.style3 .mainArea .subTitle {
+  margin-top: 15px;
+}
+.wp-block-bpsc-section-collection .bpscSectionCollection .layoutStyle.style3 .mainArea .buttonArea {
+  justify-content: center;
+  gap: 20px;
+}
+.wp-block-bpsc-section-collection .bpscSectionCollection .layoutStyle.style4 .mainArea {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 15px;
+}
+@media (max-width: 768px) {
+  .wp-block-bpsc-section-collection .bpscSectionCollection .layoutStyle.style4 .mainArea {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.wp-block-bpsc-section-collection .bpscSectionCollection .layoutStyle.style4 .mainArea .subTitle {
+  margin: 15px 0px;
+}
+.wp-block-bpsc-section-collection .bpscSectionCollection .layoutStyle.style4 .mainArea .imgArea {
+  width: 100%;
+  height: 100%;
+}
+.wp-block-bpsc-section-collection .bpscSectionCollection .layoutStyle.style4 .mainArea .imgArea .img {
+  width: 100%;
+  height: 100%;
+}
+.wp-block-bpsc-section-collection .bpscSectionCollection .layoutStyle.style4 .mainArea .imgArea .img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/*# sourceMappingURL=view.css.map*/

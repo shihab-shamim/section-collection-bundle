@@ -2,16 +2,17 @@
   "$schema": "https://schemas.wp.org/trunk/block.json",
   "apiVersion": 3,
   "name": "b-blocks/testimonials-pro",
-  "version": "1.0.0",
-  "title": "Testimonials Pro",
+  "version": "1.0.2",
+  "title": "Testimonials Section",
   "category": "section_collection",
   "description": "Showcase customer reviews beautifully with the WordPress Testimonials-Pro Plugin customizable, smooth, and responsive!",
   "keywords": [
     "Testimonial Pro",
     "pro",
-    "Pro",
     "testimonials",
-    "Testimonials"
+    "Testimonials",
+    "section",
+    "collection"
   ],
   "textdomain": "b-blocks",
   "attributes": {
@@ -125,7 +126,7 @@
               "fontFamily": "Default",
               "fontSize": {
                 "desktop": 48,
-                "mobile": 36,
+                "mobile": 22,
                 "tablet": 38
               },
               "fontVariant": 400,
@@ -145,7 +146,7 @@
                 "fontFamily": "Default",
                 "fontSize": {
                   "desktop": 16,
-                  "mobile": 14,
+                  "mobile": 13,
                   "tablet": 16
                 },
                 "fontVariant": 400,
@@ -275,9 +276,9 @@
           },
           "padding": {
             "top": "120px",
-            "right": "0px",
+            "right": "36px",
             "bottom": "0px",
-            "left": "0px"
+            "left": "36px"
           },
           "borderRadius": {
             "top": "0px",

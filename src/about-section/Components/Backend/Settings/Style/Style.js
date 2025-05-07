@@ -15,7 +15,7 @@ import {
   BoxControl,
   Background,
 } from "../../../../../../../bpl-tools/Components";
-import { updateData } from "../../../../utils/functions"; 
+import { updateData } from "../../../../utils/functions";
 
 const Style = ({ attributes, setAttributes, device }) => {
   const { styles, themeSl, about } = attributes;
@@ -30,27 +30,6 @@ const Style = ({ attributes, setAttributes, device }) => {
           title={__("About Heading", "b-blocks")}
           initialOpen={true}
         >
-          {/* <IconLibrary
-            label={__("Set Badge Icon", "b-blocks")}
-            value={button?.icon?.svg}
-            onChange={(icon) =>
-              setAttributes({
-                styles: updateData(
-                  styles,
-                  icon,
-                  "heading",
-                  "button",
-                  "icon",
-                  "svg"
-                ),
-              })
-            }
-          />
-
-          <Spacer />
-
-          <div style={{ marginTop: "20px" }}></div> */}
-
           <PanelRow>
             <Label className="">{__("Badge Icon Size", "b-blocks")}</Label>
             <Device />
@@ -439,30 +418,6 @@ const Style = ({ attributes, setAttributes, device }) => {
               }
             />
           )}
-
-          {/* <Spacer />
-          <div style={{ marginTop: "20px" }}></div>
-
-          {themeSl === "themeThree" && (
-            <RangeControl
-              label={__("Image Gap", "b-blocks")}
-              value={heading?.layout?.imageGap}
-              onChange={(value) =>
-                setAttributes({
-                  styles: updateData(
-                    styles,
-                    value,
-                    "heading",
-                    "layout",
-                    "imageGap"
-                  ),
-                })
-              }
-              min={0}
-              max={100}
-              step={1}
-            />
-          )} */}
 
           <div style={{ marginTop: "20px" }}></div>
 

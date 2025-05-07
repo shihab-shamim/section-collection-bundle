@@ -2,11 +2,11 @@
   "$schema": "https://schemas.wp.org/trunk/block.json",
   "apiVersion": 3,
   "name": "b-blocks/timeline-wpblock",
-  "version": "1.0.0",
-  "title": "Timeline Block",
+  "version": "1.0.2",
+  "title": "Timeline Section",
   "category": "section_collection",
-  "description": "Short description of the Timeline Block",
-  "keywords": ["Timeline Block"],
+  "description": "The Timeline Block is a visual component that displays a sequence of events or milestones in chronological order.",
+  "keywords": ["Timeline Block", "section", "collection"],
   "textdomain": "b-blocks",
   "attributes": {
     "timeline": {

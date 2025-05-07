@@ -13,7 +13,7 @@ const TeamSectionTwo = ({ attributes, setAttributes }) => {
     []
   );
   const { styleSl, team } = attributes;
-  const { heading, items } = team;
+  const { heading, items, headingNumberOfPerson } = team;
 
   return (
     <div className={`team-section ${styleSl}`}>
@@ -142,7 +142,7 @@ const TeamSectionTwo = ({ attributes, setAttributes }) => {
           </div>
 
           <div className="row">
-            {items?.slice(0, 3).map((item, index) => (
+            {items?.slice(0, headingNumberOfPerson).map((item, index) => (
               <div key={index} className="col-md-4 col-sm-12">
                 <div className="team">
                   <div className="team-image">
@@ -300,7 +300,7 @@ const TeamSectionTwo = ({ attributes, setAttributes }) => {
           </div>
 
           <div className="row">
-            {items?.slice(3).map((item, index) => (
+            {items?.slice(headingNumberOfPerson).map((item, index) => (
               <div key={index} className="col-md-2 col-sm-4 col-xs-6">
                 <div className="team">
                   <div className="team-image">

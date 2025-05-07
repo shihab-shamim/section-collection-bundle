@@ -5,6 +5,7 @@ import {
   __experimentalInputControl as InputControl,
   __experimentalSpacer as Spacer,
   TextareaControl,
+  __experimentalNumberControl as NumberControl,
 } from "@wordpress/components";
 import { getNewItemByStyle, updateData } from "../../../../utils/functions";
 import { styleItems } from "../../../../utils/options";
@@ -16,7 +17,7 @@ import TeamItemsPanel from "../../TeamItemsPanel/TeamItemsPanel";
 
 const General = ({ attributes, setAttributes }) => {
   const { styleSl, team } = attributes;
-  const { heading } = team || {};
+  const { heading, headingNumberOfPerson } = team || {};
   const { highlightText, titleText, descriptionLine1, descriptionLine2 } =
     heading || {};
 
@@ -118,6 +119,24 @@ const General = ({ attributes, setAttributes }) => {
 
         {styleSl === "styleTwo" && (
           <>
+            <NumberControl
+              label={__("Heading Number Of Person", "b-blocks")}
+              value={headingNumberOfPerson}
+              onChange={(headingNumberOfPerson) =>
+                setAttributes({
+                  team: {
+                    ...team,
+                    headingNumberOfPerson,
+                  },
+                })
+              }
+              min={1}
+              max={100}
+              step={1}
+            />
+
+            <div style={{ marginTop: "20px" }}></div>
+
             <InputControl
               type="text"
               label={__("Highlight Title", "b-blocks")}
