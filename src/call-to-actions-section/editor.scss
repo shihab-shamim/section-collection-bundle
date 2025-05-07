@@ -1,0 +1,59 @@
+$primaryColor: #4527a4;
+
+.bBlocksInspectorInfo {
+  padding: 6px;
+
+  a {
+    text-decoration: none;
+    font-weight: 700;
+  }
+}
+
+.wp-block-b-blocks-call-to-actions {
+  .span {
+    font-size: 14px;
+    color: red;
+    font-style: italic;
+    font-weight: 500;
+  }
+  .text {
+    color: rgba(255, 0, 0, 0.795);
+    font-style: italic;
+  }
+  .tab {
+    margin-top: 20px;
+  }
+  .tabCo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .tabCon {
+    width: 114px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background: #f8f5f587;
+    outline: 1px solid #b80f0f00;
+    white-space: nowrap;
+    color: #010411;
+    box-shadow:
+      inset 0 0 0 1px #4527a4,
+      0 0 0px #4527a4,
+      0 0 0px #4527a4;
+  }
+  .tabCon:focus:not(:disabled) {
+    border: 2px solid #4527a4 !important;
+    outline: none !important;
+	  box-shadow: 0 0 0 0 #4527a4 !important;
+  }
+  .tabCon.active {
+    background-color: #551fd4;
+    color: white;
+  }
+
+  .selectHelp {
+    color: #616063;
+  }
+}

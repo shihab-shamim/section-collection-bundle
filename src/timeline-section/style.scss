@@ -1,0 +1,357 @@
+.wp-block-b-blocks-timeline-wpblock {
+  .link{
+    text-decoration: none;
+  }
+  .main-cont {
+    // padding-block-start: clamp(3.75rem, 6.5vw + 1rem, 7.5rem);
+    // padding-block-end: clamp(1rem, 1.68vw + 1rem, 2rem);
+			display:flex;
+			justify-content:center;
+			align-items:center;
+    min-height: 600px;
+
+    .plugin-cont {
+
+      .plugin {
+        // background-image: url("https://templates.bplugins.com/wp-content/uploads/2025/04/timeline-block-13-04-25.png");
+        // background-size: cover;
+        // background-position: center;
+        // background-repeat: no-repeat;
+        // border-top: 1px solid #dbdbdb;
+        // border-bottom: 1px solid #0d0e10;
+        // position: relative;
+        isolation: isolate;
+        overflow: hidden;
+        padding: 4.5rem;
+
+        .text-cont {
+          display: flex;
+          margin-top: 0;
+          margin-right: -0.75rem;
+          margin-left: -0.75rem;
+          align-items: start;
+
+          .left-part {
+            // flex: 0 0 auto;
+            // width: 50%;
+            z-index: 10;
+            h4 {
+              padding-bottom: 1.5rem;
+              font-family: inter, sans-serif;
+              margin: 0 0 1rem;
+            }
+            .btn {
+              font-size: 16px;
+              border: none;
+              // border-color: #6328ff;
+              // hover-color: #fff;
+              // hover-bg: #8eaf22;
+              // hover-border-color: #4f20cc;
+              // focus-shadow-rgb: 122, 72, 255;
+              // active-color: #fff;
+              // active-bg: #4f20cc;
+              // active-border-color: #4a1ebf;
+              // active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+              // disabled-color: #fff;
+              // disabled-bg: #6328ff;
+              // disabled-border-color: #6328ff;
+              padding: 16px;
+              font-weight: 600;
+              border-radius: 8px;
+            }
+            .left-cards-cont {
+              display: flex;
+              flex-wrap: wrap;
+              align-items: stretch;
+              -moz-column-gap: 1.5rem;
+              column-gap: 1.5rem;
+              row-gap: 1rem;
+              margin-block-start: 3.75rem;
+              .left-card {
+                min-height: 112px;
+                max-width: 224px;
+                position: relative;
+                isolation: isolate;
+                border-radius: 1rem;
+                padding: 1.5rem;
+                overflow: hidden;
+                // background-color: #000;
+                // border-top: 1px solid red;
+                // border-bottom: 1px solid blue;
+                .ball-svg {
+                  position: absolute;
+                  top: 0;
+                  inset-inline-start: 0;
+                  pointer-events: none;
+                }
+                .card-text-cont {
+                  position: relative;
+                  z-index: 10;
+                  h4 {
+                    padding: 0;
+                    margin-bottom: 4px;
+                  }
+                  p {
+                    margin-block-end: 0;
+                  }
+                }
+              }
+            }
+          }
+
+          .right-part {
+            // flex: 0 0 auto;
+            // width: 50%;
+            .dashed-line li {
+              position: relative;
+              isolation: isolate;
+            }
+            .dashed-line li::before {
+              content: "";
+              width: 1px;
+              position: absolute;
+              top: 0.5rem;
+              bottom: 0;
+              // border-left: 1px dashed red;
+              left: 1.5rem;
+              pointer-events: none;
+              opacity: 0.5;
+            }
+            .dashed-line li:last-child {
+              padding-bottom: 0px;
+            }
+            .dashed-line li:last-child::before {
+              display: none;
+            }
+            .lists-cont {
+              display: flex;
+              flex-direction: column;
+              margin: 0;
+              padding: 0;
+              list-style: none;
+              
+              .list {
+                display: flex;
+                align-items: start;
+                padding-block-end: 3rem;
+                gap: 2rem;
+                .timeline-serial {
+                  display: grid;
+                  width: 3rem;
+                  height: 3rem;
+                  border-radius: 50%;
+                  place-content: center;
+                  font-weight: 800;
+                  
+                  flex-shrink: 0;
+                  z-index: 10;
+                }
+                .timeline-text {
+                  font-family: inter, sans-serif;
+                  flex-grow: 1;
+                  .title {
+                    font-size: 24px;
+                    color: white;
+                    font-weight: 600;
+                    margin: 0 0 1rem;
+                  }
+                  .description {
+                    color: white;
+                    font-size: 16px;
+                    font-weight: 300;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // extra css for theme 1
+
+  @media  (min-width:641px) and (max-width: 1024px){
+
+    .text-cont{
+      flex-direction: column;
+      gap: 64px;
+    }
+    
+    }
+    
+    @media (max-width: 480px){
+        
+      .text-cont{
+        flex-direction: column;
+        gap: 24px;
+      }
+    
+    }
+
+
+      //================== styles for theme 2 ===============================//
+
+    .main-cont2{
+      // background-color: #0F0F11;
+      // background-image: url("https://templates.bplugins.com/wp-content/uploads/2025/04/Screenshot-2025-04-23-141152.png");
+      // background-size: cover;
+      // background-position: center;
+      // background-repeat: no-repeat;
+      .container {
+        color: white;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 60px 20px;
+        position: relative;
+        .header {
+          max-width: 700px;
+          margin-bottom: 60px;
+          h1 {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: rgba(255, 255, 255);
+          }
+          p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: rgba(255, 255, 255, 0.7);
+          }
+        }
+        .body {
+          position: relative;
+          display: flex;
+          min-height: 400px;
+          .play-button-container {
+            position: absolute;
+            left: 25%; /* Position on the left side */
+            top: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 10;
+            .play-button {
+              width: 80px;
+              height: 80px;
+              background-color: #6C5CE7;
+              border-radius: 50%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              cursor: pointer;
+              box-shadow: 0 0 30px rgba(108, 92, 231, 0.6);
+              .play-icon {
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 15px 0 15px 25px;
+                border-color: transparent transparent transparent #FFFFFF;
+                margin-left: 5px;
+              }
+            }
+          }
+          .content-section {
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+            // flex: 0 0 auto;
+            // width: 50%;
+            .dashed-line li {
+              position: relative;
+              isolation: isolate;
+            }
+            .dashed-line li::before {
+              content: "";
+              width: 1px;
+              position: absolute;
+              top: 0.5rem;
+              bottom: 0;
+              border-left: 1px solid red;
+              left: 1.5rem;
+              pointer-events: none;
+              opacity: 0.5;
+            }
+            .dashed-line li:last-child {
+              padding-bottom: 0px;
+            }
+            .dashed-line li:last-child::before {
+              display: none;
+            }
+            .lists-cont {
+              display: flex;
+              flex-direction: column;
+              margin: 0;
+              padding: 0;
+              list-style: none;
+              
+              .list {
+                display: flex;
+                align-items: start;
+                padding-block-end: 3rem;
+                gap: 2rem;
+                .timeline-serial {
+                  display: grid;
+                  width: 3rem;
+                  height: 3rem;
+                  border-radius: 50%;
+                  place-content: center;
+                  font-weight: 800;
+                  background-color: blue;
+                  flex-shrink: 0;
+                  z-index: 10;
+                }
+                .timeline-text {
+                  font-family: inter, sans-serif;
+                  flex-grow: 1;
+                  .title {
+                    font-size: 24px;
+                    color: white;
+                    font-weight: 600;
+                    margin: 0 0 1rem;
+                  }
+                  .description {
+                    color: white;
+                    font-size: 16px;
+                    font-weight: 300;
+                  }
+                }
+              }
+            }
+            .timeline-content {
+              width: 50%;
+              padding-left: 30px;
+              .timeline-item {
+                margin-bottom: 80px;
+                .timeline-title {
+                  font-size: 24px;
+                  font-weight: 600;
+                  margin-bottom: 12px;
+                  color: rgba(255, 255, 255);
+                }
+                .timeline-text {
+                  font-size: 14px;
+                  line-height: 1.6;
+                  color: rgba(255, 255, 255, 0.7);
+                  max-width: 400px;
+                }
+              }
+              .timeline-item:last-child {
+                margin-bottom: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+}
+
+// testing css
+
+
+
+
+
+
+
+
+
+

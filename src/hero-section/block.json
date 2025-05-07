@@ -1,0 +1,215 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "bpsc/section-collection",
+	"version": "1.0.2",
+	"title": "Hero Section",
+	"description": "A call to action block collection plugin, newer section will come near future soon. ",
+	"category": "section_collection",
+	"keywords": [
+		"section",
+		"collection",
+		"block",
+		"hero"
+	],
+	"textdomain": "section-collection",
+	"attributes": {
+		"content": {
+			"type": "object",
+			"default": {
+				"title": "It has never been that easy",
+				"subTitle": "Connect into Internet of Things everywhere The size of the columns is determined by the size of the container and on the size of the content of the items in the column",
+				"btnOneText": "Let's Do It",
+				"btnOneUrl": {},
+				"btnTwoText": "Learn More",
+				"btnTwoUrl": {},
+				"img": {
+					"url": "https://templates.bplugins.com/wp-content/uploads/2025/02/n-30.jpg"
+				}
+			}
+		},
+		"template": {
+			"type": "object",
+			"default": {
+				"style": "style4"
+			}
+		},
+		"elements": {
+			"type": "object",
+			"default": {
+				"isTitle": true,
+				"isSubTitle": true,
+				"isBtnOne": true,
+				"isBtnTwo": true,
+				"isImg": true
+			}
+		},
+		"wrapper": {
+			"type": "object",
+			"default": {
+				"background": {
+					"color": "#000"
+				},
+				"padding": {
+					"desktop": {
+						"top": "40px",
+						"right": "40px",
+						"bottom": "40px",
+						"left": "40px"
+					},
+					"tablet": {
+						"top": "30px",
+						"right": "15px",
+						"bottom": "30px",
+						"left": "40px"
+					},
+					"mobile": {
+						"top": "30px",
+						"right": "30px",
+						"bottom": "30px",
+						"left": "30px"
+					}
+				},
+				"border": {
+					"radius": "5px",
+					"color": "#000",
+					"width": "1px"
+				}
+			}
+		},
+		"layoutPadding": {
+			"type": "object",
+			"default": {
+				"top": "30px",
+				"right": "15px",
+				"bottom": "30px",
+				"left": "40px"
+			}
+		},
+		"title": {
+			"type": "object",
+			"default": {
+				"typo": {
+					"fontSize": {
+						"desktop": 25,
+						"tablet": 20,
+						"mobile": 15
+					},
+					"fontWeight": 400,
+					"fontFamily": "Arial, sans-serif",
+					"lineHeight": "135%"
+				},
+				"color": "#fff"
+			}
+		},
+		"subTitle": {
+			"type": "object",
+			"default": {
+				"typo": {
+					"fontSize": {
+						"desktop": 18,
+						"tablet": 15,
+						"mobile": 15
+					},
+					"fontWeight": 400,
+					"fontFamily": "Arial, sans-serif",
+					"lineHeight": "135%"
+				},
+				"color": "#fff"
+			}
+		},
+		"button": {
+			"type": "object",
+			"default": {
+				"typo": {
+					"fontSize": {
+						"desktop": 18,
+						"tablet": 15,
+						"mobile": 15
+					},
+					"fontWeight": 400,
+					"fontFamily": "Arial, sans-serif",
+					"lineHeight": "135%"
+				},
+				"colors": {
+					"color": "#000",
+					"bg": "#fff"
+				},
+				"hoverColors": {
+					"color": "#000",
+					"bg": "#fff"
+				},
+				"padding": {
+					"desktop": {
+						"top": "10px",
+						"right": "20px",
+						"bottom": "10px",
+						"left": "20px"
+					},
+					"tablet": {
+						"top": "10px",
+						"right": "20px",
+						"bottom": "10px",
+						"left": "20px"
+					},
+					"mobile": {
+						"top": "10px",
+						"right": "20px",
+						"bottom": "10px",
+						"left": "20px"
+					}
+				},
+				"border": {
+					"radius": "5px",
+					"color": "#000",
+					"width": "0px"
+				}
+			}
+		},
+		"btnPadding": {
+			"type": "object",
+			"default": {
+				"top": "10px",
+				"right": "20px",
+				"bottom": "10px",
+				"left": "20px"
+			}
+		},
+		"align": {
+			"type": "string",
+			"default": "wide"
+		},
+		"cId": {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"supports": {
+		"align": [
+			"wide",
+			"full"
+		],
+		"html": false
+	},
+	"example": {
+		"attributes": {
+			"preview": true,
+			"columns": {
+				"desktop": 1,
+				"tablet": 1,
+				"mobile": 1
+			}
+		}
+	},
+	"editorScript": [
+		"file:./index.js"
+	],
+	"editorStyle": [
+		"file:./index.css"
+	],
+	"style": [
+		"file:./view.css"
+	],
+	"render": "file:./render.php",
+	"viewScript": "file:./view.js"
+}

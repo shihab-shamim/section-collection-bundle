@@ -27,7 +27,7 @@ if( !class_exists( 'BPSCPlugin' ) ){
 		}
 
 		function onInit(){
-			$blocks =['faq',"ticker","team","about","timeline","testimonial","feature","call-to-actions","section"];
+			$blocks =['faq-section',"ticker-section","team-section","about-section","timeline-section","testimonial-section","feature-section","call-to-actions-section","hero-section"];
 			foreach ( $blocks as $block ) {
 				register_block_type( __DIR__ . "/build/".$block );
 			}

@@ -1,0 +1,82 @@
+.about-us {
+  &.layoutTwo {
+    background-color: $primary-bg;
+    border-radius: $border-radius-xl;
+    padding: 1rem;
+
+    .badge {
+      @include flex-center;
+      gap: 0.25rem;
+      padding: 0.25rem 0.5rem;
+      font-weight: 500;
+      font-size: 0.75rem;
+      background-color: $primary-bg;
+      color: $primary-color;
+      border-radius: 0.15rem;
+      font-family: $font-family;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+
+      & > * {
+        width: 100%;
+      }
+
+      .col-sm-6 {
+        .fs-14 {
+          font-family: $font-family;
+        }
+      }
+    }
+
+    // Responsive Grid
+    @include responsive(sm) {
+      .col-sm-6 {
+        width: 50%;
+      }
+    }
+
+    @include responsive(lg) {
+      .col-lg-5 {
+        width: 41.66%;
+      }
+      .col-lg-7 {
+        width: 58.33%;
+      }
+    }
+
+    @include responsive(xl) {
+      .col-xl-6 {
+        width: 50%;
+      }
+    }
+
+    // Utility classes
+    .text-bg-primary {
+      background-color: $primary-bg;
+      color: $primary-color;
+    }
+
+    .rounded-4 {
+      border-radius: $border-radius-xl;
+    }
+
+    .lh-1 {
+      line-height: 1 !important;
+    }
+
+    .mb-0 {
+      margin-bottom: 0 !important;
+    }
+    .mt-2 {
+      margin-top: 0.5rem !important;
+    }
+    .mb-12 {
+      margin-bottom: 3rem !important;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+h4, h6 {
+  font-weight: 700;
+  font-family: $font-family;
+  line-height: 1.2;
+  color: $heading-color;
+}
+
+h4 {
+  font-size: $h4-size;
+}
+
+h6 {
+  font-size: $h6-size;
+}
