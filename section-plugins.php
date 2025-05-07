@@ -43,7 +43,7 @@ if( !class_exists( 'BPSCPlugin' ) ){
 		function registerCategories( $categories ){
 			return array_merge( [ [
 				'slug'	=> 'section_collection',
-				'title'	=> __( 'b-blocks', 'b-plugins' ),
+				'title'	=> __( 'section-collection', 'b-plugins' ),
 			] ], $categories );
 		}
 	}

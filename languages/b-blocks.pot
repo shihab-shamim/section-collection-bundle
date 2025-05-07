@@ -1,74 +1,302 @@
-# Copyright (C) 2024 bPlugins
+# Copyright (C) 2025 bPlugins
 # This file is distributed under the GPLv3.
 msgid ""
 msgstr ""
-"Project-Id-Version: Plugin Name 1.0.0\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/plugin-slug\n"
+"Project-Id-Version: Section Collection 1.0.2\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/practice-bundle\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-08-05T11:12:37+00:00\n"
+"POT-Creation-Date: 2025-05-07T11:48:21+02:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"X-Generator: WP-CLI 2.8.1\n"
+"X-Generator: WP-CLI 2.11.0\n"
 "X-Domain: b-blocks\n"
 
 #. Plugin Name of the plugin
-msgid "Plugin Name"
+#: section-plugins.php
+msgid "Section Collection"
 msgstr ""
 
 #. Description of the plugin
-msgid "Short description of the plugin"
+#: section-plugins.php
+msgid "A versatile section collection plugin featuring essential UI blocks to craft impactful, engaging, and user-centric web pages."
 msgstr ""
 
 #. Author of the plugin
+#: section-plugins.php
 msgid "bPlugins"
 msgstr ""
 
 #. Author URI of the plugin
+#: section-plugins.php
 msgid "https://bplugins.com"
 msgstr ""
 
-#: build/index.js:1
-msgid "Layout:"
-msgstr ""
-
-#: build/index.js:1
-msgid "Add New Item"
-msgstr ""
-
-#: build/block.json
+#: build/about-section/block.json
 msgctxt "block title"
-msgid "Block Name"
+msgid "About Us Section"
 msgstr ""
 
-#: build/block.json
+#: build/about-section/block.json
 msgctxt "block description"
-msgid "Short description of the block"
+msgid "Create a customizable About Us section with images, headings, buttons, and feature lists. Easily style backgrounds, typography, and layouts for a professional look on all devices."
 msgstr ""
 
-#: build/block.json
+#: build/about-section/block.json
 msgctxt "block keyword"
-msgid "key1"
+msgid "about"
 msgstr ""
 
-#: build/block.json
+#: build/about-section/block.json
 msgctxt "block keyword"
-msgid "key2"
+msgid "about us"
 msgstr ""
 
-#: build/block.json
+#: build/about-section/block.json
 msgctxt "block keyword"
-msgid "key3"
+msgid "about section"
 msgstr ""
 
-#: build/block.json
+#: build/about-section/block.json
 msgctxt "block keyword"
-msgid "key4"
+msgid "about us section"
 msgstr ""
 
-#: build/block.json
+#: build/about-section/block.json
 msgctxt "block keyword"
-msgid "key5"
+msgid "about us block"
+msgstr ""
+
+#: build/about-section/block.json
+msgctxt "block keyword"
+msgid "about us b-blocks"
+msgstr ""
+
+#: build/call-to-actions-section/block.json
+msgctxt "block title"
+msgid "Call To Actions"
+msgstr ""
+
+#: build/call-to-actions-section/block.json
+msgctxt "block description"
+msgid "Call To Actions plugin showcases your website's key features effortlessly and beautifully."
+msgstr ""
+
+#: build/call-to-actions-section/block.json
+msgctxt "block keyword"
+msgid "Call To Actions"
+msgstr ""
+
+#: build/call-to-actions-section/block.json
+msgctxt "block keyword"
+msgid "CTA Blocks"
+msgstr ""
+
+#: build/call-to-actions-section/block.json
+msgctxt "block keyword"
+msgid "Engagement Blocks"
+msgstr ""
+
+#: build/call-to-actions-section/block.json
+msgctxt "block keyword"
+msgid "Conversion Blocks"
+msgstr ""
+
+#: build/call-to-actions-section/block.json
+msgctxt "block keyword"
+msgid "Marketing Blocks"
+msgstr ""
+
+#: build/faq-section/block.json
+msgctxt "block title"
+msgid "FAQ Section"
+msgstr ""
+
+#: build/faq-section/block.json
+msgctxt "block description"
+msgid "Address common questions to enhance user understanding."
+msgstr ""
+
+#: build/faq-section/block.json
+msgctxt "block keyword"
+msgid "Faq"
+msgstr ""
+
+#: build/faq-section/block.json
+msgctxt "block keyword"
+msgid "faqs"
+msgstr ""
+
+#: build/faq-section/block.json
+msgctxt "block keyword"
+msgid "FAQS"
+msgstr ""
+
+#: build/faq-section/block.json
+msgctxt "block keyword"
+msgid "f"
+msgstr ""
+
+#: build/faq-section/block.json
+msgctxt "block keyword"
+msgid "fa"
+msgstr ""
+
+#: build/faq-section/block.json
+msgctxt "block keyword"
+msgid "collapsible"
+msgstr ""
+
+#: build/faq-section/block.json
+msgctxt "block keyword"
+msgid "accessibility"
+msgstr ""
+
+#: build/feature-section/block.json
+msgctxt "block title"
+msgid "Info List Section"
+msgstr ""
+
+#: build/feature-section/block.json
+msgctxt "block description"
+msgid "Info List plugin showcases your website's key features effortlessly and beautifully"
+msgstr ""
+
+#: build/feature-section/block.json
+msgctxt "block keyword"
+msgid "Info List"
+msgstr ""
+
+#: build/feature-section/block.json
+msgctxt "block keyword"
+msgid "Info"
+msgstr ""
+
+#: build/feature-section/block.json
+msgctxt "block keyword"
+msgid "List"
+msgstr ""
+
+#: build/feature-section/block.json
+msgctxt "block keyword"
+msgid "Info List Section"
+msgstr ""
+
+#: build/feature-section/block.json
+msgctxt "block keyword"
+msgid "Feature"
+msgstr ""
+
+#: build/team-section/block.json
+msgctxt "block title"
+msgid "Team Section"
+msgstr ""
+
+#: build/team-section/block.json
+msgctxt "block description"
+msgid "The Team Section highlights your team with images, titles, and brief descriptions in a compact design."
+msgstr ""
+
+#: build/team-section/block.json
+msgctxt "block keyword"
+msgid "team section block"
+msgstr ""
+
+#: build/team-section/block.json
+msgctxt "block keyword"
+msgid "team section"
+msgstr ""
+
+#: build/team-section/block.json
+msgctxt "block keyword"
+msgid "team"
+msgstr ""
+
+#: build/team-section/block.json
+msgctxt "block keyword"
+msgid "members"
+msgstr ""
+
+#: build/team-section/block.json
+msgctxt "block keyword"
+msgid "profile"
+msgstr ""
+
+#: build/testimonial-section/block.json
+msgctxt "block title"
+msgid "Testimonials Section"
+msgstr ""
+
+#: build/testimonial-section/block.json
+msgctxt "block description"
+msgid "Showcase customer reviews beautifully with the WordPress Testimonials-Pro Plugin customizable, smooth, and responsive!"
+msgstr ""
+
+#: build/testimonial-section/block.json
+msgctxt "block keyword"
+msgid "Testimonial Pro"
+msgstr ""
+
+#: build/testimonial-section/block.json
+msgctxt "block keyword"
+msgid "pro"
+msgstr ""
+
+#: build/testimonial-section/block.json
+msgctxt "block keyword"
+msgid "testimonials"
+msgstr ""
+
+#: build/testimonial-section/block.json
+msgctxt "block keyword"
+msgid "Testimonials"
+msgstr ""
+
+#: build/testimonial-section/block.json
+#: build/timeline-section/block.json
+msgctxt "block keyword"
+msgid "section"
+msgstr ""
+
+#: build/testimonial-section/block.json
+#: build/timeline-section/block.json
+msgctxt "block keyword"
+msgid "collection"
+msgstr ""
+
+#: build/ticker-section/block.json
+msgctxt "block title"
+msgid "Ticker Section"
+msgstr ""
+
+#: build/ticker-section/block.json
+msgctxt "block description"
+msgid "Display dynamic updates or brand slogans with a scrolling ticker."
+msgstr ""
+
+#: build/ticker-section/block.json
+msgctxt "block keyword"
+msgid "Ticker Text"
+msgstr ""
+
+#: build/ticker-section/block.json
+msgctxt "block keyword"
+msgid "Ticker Plugins"
+msgstr ""
+
+#: build/timeline-section/block.json
+msgctxt "block title"
+msgid "Timeline Section"
+msgstr ""
+
+#: build/timeline-section/block.json
+msgctxt "block description"
+msgid "The Timeline Block is a visual component that displays a sequence of events or milestones in chronological order."
+msgstr ""
+
+#: build/timeline-section/block.json
+msgctxt "block keyword"
+msgid "Timeline Block"
 msgstr ""

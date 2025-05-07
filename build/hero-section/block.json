@@ -4,7 +4,7 @@
   "name": "bpsc/section-collection",
   "version": "1.0.2",
   "title": "Hero Section",
-  "description": "A call to action block collection plugin, newer section will come near future soon. ",
+  "description": "Create an engaging Hero Section with customizable titles, buttons, and images. Style backgrounds, typography, and layouts for a responsive, professional look.",
   "category": "section_collection",
   "keywords": [
     "section",
@@ -52,9 +52,9 @@
         },
         "padding": {
           "desktop": {
-            "top": "40px",
-            "right": "40px",
-            "bottom": "40px",
+            "top": "30px",
+            "right": "15px",
+            "bottom": "30px",
             "left": "40px"
           },
           "tablet": {
@@ -64,10 +64,10 @@
             "left": "40px"
           },
           "mobile": {
-            "top": "30px",
-            "right": "30px",
-            "bottom": "30px",
-            "left": "30px"
+            "top": "10px",
+            "right": "10px",
+            "bottom": "10px",
+            "left": "100px"
           }
         },
         "border": {
@@ -202,7 +202,7 @@
     }
   },
   "editorScript": [
-    "file:./index.js"
+    "file:../index.js"
   ],
   "editorStyle": [
     "file:./index.css"
